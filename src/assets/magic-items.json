@@ -1,0 +1,17 @@
+{
+    "posts": [
+        {
+            "title": "title1",
+            "description": "desc1",
+            "type": "type1",
+            "detail": "detail1"
+        },
+
+        {
+            "title": "title2",
+            "description": "desc2",
+            "type": "type2",
+            "detail": "detail2"
+        }
+    ]
+}
