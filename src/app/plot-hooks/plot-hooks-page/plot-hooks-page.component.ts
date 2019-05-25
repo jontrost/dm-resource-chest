@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PlotHookComponent } from '../plot-hook/plot-hook.component';
+import { PlotHooksDataService } from '../plot-hooks-data.service';
 
 @Component({
   selector: 'app-plot-hooks-page',
@@ -10,9 +11,10 @@ export class PlotHooksPageComponent implements OnInit {
 
   posts: PlotHookComponent[];
 
-  constructor() { }
+  constructor(private plotHooksDataService: PlotHooksDataService) { }
 
   ngOnInit() {
+    this.posts = this.plotHooksDataService.getPosts();
   }
 
 }
