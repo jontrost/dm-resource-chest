@@ -4,8 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { MagicItemsPageComponent } from './magic-items/magic-items-page/magic-items-page.component';
 
 const routes: Routes = [
-  {path: "", component: HomeComponent},
-  {path: "magic-items", loadChildren: './magic-items/magic-items.module#MagicItemsModule'}
+  {path: 'magic-items', loadChildren: './magic-items/magic-items.module#MagicItemsModule'},
+  {path: 'npcs', loadChildren: './npcs/npcs.module#NpcsModule'},
+  {path: '', component: HomeComponent}
 ];
 
 @NgModule({

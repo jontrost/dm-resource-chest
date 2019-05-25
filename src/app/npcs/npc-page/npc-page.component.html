@@ -1,0 +1,18 @@
+<div id="npc-page" *ngFor="let post of posts; let i=index">
+  <div class="npc-post">
+    <p class="npc-name">
+      {{post.name}}
+    </p>
+    <p class="npc-quote">
+      {{post.quote}}
+    </p>
+    <p class="npc-description">
+      {{post.description}}
+    </p>
+    <ul class="npc-stats">
+      <li *ngFor="let stat of post.stats">
+        {{stat}}
+      </li>
+    </ul>
+  </div>
+</div>
