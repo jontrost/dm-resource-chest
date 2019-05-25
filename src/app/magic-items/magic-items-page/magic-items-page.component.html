@@ -1,5 +1,18 @@
-<div id="magic-items-page" *ngFor="let posts of posts">
-  {{posts}}
+<div id="magic-items-page" *ngFor="let post of posts">
+  <div class="magic-item-post">
+    <p class="magic-item-title">
+      {{post.title}}
+    </p>
+    <p class="magic-item-desc">
+      {{post.description}}
+    </p>
+    <p class="magic-item-type">
+      {{post.type}}
+    </p>
+    <p class="magic-item-details">
+      {{post.details}}
+    </p>
+  </div>  
 </div>
 
 

@@ -1,17 +1,17 @@
 {
     "posts": [
         {
-            "title": "title1",
-            "description": "desc1",
-            "type": "type1",
-            "detail": "detail1"
+            "title": "Orb of Darkness",
+            "description": "A smooth black orb that does not reflect any light whatsoever.",
+            "type": "Wondrous Item, Uncommon",
+            "details": "Any light within 25 feet of the orb is sucked into the orb and destroyed, thus rendering the area around the orb in complete darkness. No light will function within this range and all vision (including darkvision) is rendered useless."
         },
 
         {
-            "title": "title2",
-            "description": "desc2",
-            "type": "type2",
-            "detail": "detail2"
+            "title": "Beast Clay",
+            "description": "A smooth lump of clay that radiates a gentle heat when held.",
+            "type": "Wondrous Item, Uncommon",
+            "details": "After being sculpted into a beast of Challenge Rating 1 or lower, the clay will transform into the beast. The clay will grow or shrink to the size of the beast that has been sculpted. The sculptor shares consciousness with the beast and can control the beast’s actions, but the beast is unable make any attacks. After 5 minutes the beast will return to its clay form."
         }
     ]
 }
