@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { MagicItemComponent } from './magic-item/magic-item.component';
 import { MagicItemsPageComponent } from './magic-items-page/magic-items-page.component';
 import { MagicItemsRoutingModule } from './magic-items-routing.module'
-import { HttpClientModule } from '@angular/common/http';
-
 
 
 @NgModule({
   declarations: [MagicItemComponent, MagicItemsPageComponent],
   imports: [
     CommonModule,
-    MagicItemsRoutingModule,
-    HttpClientModule
+    MagicItemsRoutingModule
   ]
 })
 export class MagicItemsModule { }

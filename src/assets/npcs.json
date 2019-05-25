@@ -1,0 +1,11 @@
+{
+    "posts": [
+        {
+            "name": "Gust",
+            "quote": "\"If you want to get your hands on something that you probably shouldn’t, Gust will find a way to make sure you get it, no matter how difficult it is.\"",
+            "quoteAuthor": "One of Gust's frequent employers",
+            "description": "Gust is a young male kenku smuggler with pitch black feathers. He wears a loose-fitting darkly-colored cloak that shrouds most of his face. He is difficult to find during the day since that’s when he is usually sleeping or planning how to smuggle his next item to its prospective buyer. At night, he can be found lurking around cities and darting between dark corridors. He is exceptionally nimble and crafty from spending nearly his entire life smuggling illegal goods into the hands of those who have the gold to pay for them. Despite his criminal appearance, he has compassion for the poor and tries to help them whenever possible.",
+            "stats": ["Strength: 9", "Dexterity: 16", "Constitution: 9", "Intelligence: 12", "Wisdom: 14", "Charisma: 11"]
+        }
+    ]
+}

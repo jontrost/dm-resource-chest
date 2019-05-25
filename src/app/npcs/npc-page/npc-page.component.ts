@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NpcComponent } from '../npc/npc.component';
+import { NpcsDataService } from '../npcs-data.service';
 
 @Component({
   selector: 'app-npc-page',
@@ -8,11 +9,12 @@ import { NpcComponent } from '../npc/npc.component';
 })
 export class NpcPageComponent implements OnInit {
 
-  posts: NpcComponent[] = [new NpcComponent('name', 'quote', 'desc', ['str: 1', 'int: 2'])];
+  posts: NpcComponent[];
 
-  constructor() { }
+  constructor(private npcsDataService: NpcsDataService) { }
 
   ngOnInit() {
+    this.posts = this.npcsDataService.getPosts();
   }
 
 }

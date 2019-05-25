@@ -1,0 +1,20 @@
+#npc-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.npc-post{
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: black;
+    margin-top: 50px;
+}
+
+ul{
+    list-style-position: inside;
+}
