@@ -6,11 +6,42 @@
 }
 
 .magic-item-post{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
     text-align: center;
     background-color: white;
     outline-style: solid;
     outline-width: 2px;
     outline-color: black;
-    margin-top: 50px;
+    margin-top: 4%;
+    padding: 2%;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.magic-item-title{
+    font-size: 30pt;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: 'Fondamento', cursive;
+}
+
+.magic-item-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 16pt;
+    background-color: #eaeaea;
+    color: #cb3d3d;
+    font-style: italic;
+    min-height: 6vh;
+}
+
+.magic-item-type{
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.magic-item-details{
+    font-size: 16pt;
 }

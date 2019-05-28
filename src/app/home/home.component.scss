@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    width: 45%;
     margin-top: 3%;
     background-color: white;
     outline-color: #424242;
@@ -15,6 +15,7 @@
     outline-width: 2px;
     font-size: 16pt;
     color:  #424242;
+    box-shadow: inset 0 0 10px #000000;
 }
 #home-text{
     margin-top: 4%;
