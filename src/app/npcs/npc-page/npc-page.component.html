@@ -3,19 +3,21 @@
     <p class="npc-name">
       {{post.name}}
     </p>
-    <p class="npc-quote">
-      {{post.quote}}
-    </p>
-    <p class="npc-quote-author">
-      {{post.quoteAuthor}}
-    </p>
+    <div class="npc-quote-area">
+      <p class="npc-quote">
+        {{post.quote}}
+      </p>
+      <p class="npc-quote-author">
+        {{post.quoteAuthor}}
+      </p>
+    </div>
     <p class="npc-description">
       {{post.description}}
     </p>
-    <ul class="npc-stats">
-      <li *ngFor="let stat of post.stats">
+    <div class="npc-stats">
+      <span *ngFor="let stat of post.stats">
         {{stat}}
-      </li>
-    </ul>
+      </span>
+    </div>
   </div>
 </div>

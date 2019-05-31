@@ -20,28 +20,29 @@
 }
 
 .magic-item-title{
-    font-size: 30pt;
+    font-size: 36pt;
     margin-top: 1%;
     margin-bottom: 1%;
     font-family: 'Fondamento', cursive;
+    color: #581611;
 }
 
 .magic-item-desc{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 16pt;
+    font-size: 15pt;
     background-color: #eaeaea;
-    color: #cb3d3d;
     font-style: italic;
-    min-height: 6vh;
+    padding: 1% 1% 1% 1%;
 }
 
 .magic-item-type{
-    font-size: 16pt;
+    font-size: 15pt;
     font-weight: bold;
+    color: #c6ac3c;
 }
 
 .magic-item-details{
-    font-size: 16pt;
+    font-size: 15pt;
 }

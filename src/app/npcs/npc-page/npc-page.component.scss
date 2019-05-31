@@ -6,15 +6,54 @@
 }
 
 .npc-post{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
     text-align: center;
     background-color: white;
     outline-style: solid;
     outline-width: 2px;
     outline-color: black;
-    margin-top: 50px;
+    margin-top: 4%;
+    padding: 2%;
+    box-shadow: inset 0 0 10px #000000;
 }
 
-ul{
+.npc-name{
+    font-size: 36pt;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: 'Fondamento', cursive;
+    color: #581611;
+}
+
+.npc-quote-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 15pt;
+    background-color: #eaeaea;
+    font-style: italic;
+    padding: 0 1% 1% 0;
+}
+
+.npc-quote-author{
+    margin-top: 0;
+    font-weight: bold;
+    color: #c6ac3c;
+}
+
+.npc-description{
+    font-size: 15pt;
+}
+
+.npc-stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //color: #c6ac3c;
+    font-size: 15pt;
     list-style-position: inside;
+    list-style: none;
+    //font-weight: bold;
 }
