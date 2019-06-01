@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+    background: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+        ),
+        url("./assets/textures/diamond_upholstery.png");
+    height: 100%;
+    width: 100%;
+}
+
 body{
     margin: 0;
     font-family: 'PT Serif', serif;
@@ -6,8 +16,23 @@ body{
     width: inherit;
 }
 
-html{
-    background-color: #eaeaea;
-    height: 100%;
-    width: 100%;
+a{
+    text-decoration: none;
+    color: #771716;
+    transition: 0.25s;
+}
+
+a:visited {
+    color: #581611;
+    transition: 0.25s;
+}
+
+a:hover {
+    transition: 0.25s;
+    color: #c6ac3c;
+    cursor: pointer;
+}  
+
+a:active {
+    color: #b68740;
 }

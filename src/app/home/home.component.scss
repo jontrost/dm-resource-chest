@@ -298,21 +298,3 @@
     height: auto;
     opacity: 0.1;
 }
-
-a{
-    text-decoration: none;
-    color: #771716;
-    transition: 0.25s;
-}
-a:visited {
-    color: #581611;
-    transition: 0.25s;
-}
-a:hover {
-    transition: 0.25s;
-    color: #c6ac3c;
-    cursor: pointer;
-}  
-a:active {
-    color: #b68740;
-}
