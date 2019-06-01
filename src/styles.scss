@@ -2,9 +2,12 @@
 body{
     margin: 0;
     font-family: 'PT Serif', serif;
+    height: inherit;
+    width: inherit;
 }
 
 html{
     background-color: #eaeaea;
-    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
 }
