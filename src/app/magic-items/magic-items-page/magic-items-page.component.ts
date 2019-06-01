@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MagicItemComponent } from '../magic-item/magic-item.component';
 import { MagicItemsDataService} from '../magic-items-data.service';
+import { magicItemPost } from '../models/magic-item-post';
 
 @Component({
   selector: 'app-magic-items-page',
@@ -10,7 +10,7 @@ import { MagicItemsDataService} from '../magic-items-data.service';
 })
 export class MagicItemsPageComponent implements OnInit {
 
-  posts: MagicItemComponent[];
+  posts: magicItemPost[];
 
   constructor(private magicItemsDataService: MagicItemsDataService) { 
   

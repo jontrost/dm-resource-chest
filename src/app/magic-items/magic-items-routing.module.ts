@@ -2,11 +2,18 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { MagicItemsPageComponent } from './magic-items-page/magic-items-page.component'
+import { MagicItemComponent } from './magic-item/magic-item.component';
 
 const routes: Routes = [
     {
       path: '',
-      component: MagicItemsPageComponent
+      component: MagicItemsPageComponent,
+      children: [
+        {
+          path: ':title', 
+          component: MagicItemComponent 
+        }
+      ]
     }
   ];
 

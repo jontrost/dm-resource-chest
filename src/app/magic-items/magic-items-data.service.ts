@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { MagicItemComponent } from './magic-item/magic-item.component';
 import { HttpClient } from '@angular/common/http'; 
 import { Observable } from '../../../node_modules/rxjs';
+import { magicItemPost } from './models/magic-item-post';
 
 @Injectable({
   providedIn: 'root'
@@ -14,20 +14,35 @@ export class MagicItemsDataService {
     return this.httpClient.get('../../assets/magic-items.json');
   }
 
-  getPosts(): MagicItemComponent[]{
-    let magicItemComponentsArray: MagicItemComponent[] = [];
+  getPosts(): magicItemPost[]{
+    let magicItemPostsArray: magicItemPost[] = [];
     this.getJSONData().subscribe(function(value){
       for(let i = 0; i < value.posts.length; i++){
-        let component = new MagicItemComponent(
+        let newPost = new magicItemPost(
           value.posts[i].title, 
           value.posts[i].description, 
           value.posts[i].type, 
           value.posts[i].details);
-        magicItemComponentsArray.push(component);
+        magicItemPostsArray.push(newPost);
       }
     });
-    
-    return magicItemComponentsArray;
+    return magicItemPostsArray;
+  }
+
+  getPostByTitle(titleToSearch: string): magicItemPost {
+    this.getJSONData().subscribe(function(value){
+      for(let i = 0; i < value.posts.length; i++){
+        if(value.posts[i].title === titleToSearch){
+          let newPost = new magicItemPost(
+            value.posts[i].title, 
+            value.posts[i].description, 
+            value.posts[i].type, 
+            value.posts[i].details);
+            return newPost;
+        }
+      }
+    });
+    return;
   }
 
 }
