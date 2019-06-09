@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { MagicItemsDataService } from '../magic-items-data.service';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-magic-item',
@@ -9,6 +11,7 @@ import { MagicItemsDataService } from '../magic-items-data.service';
 })
 export class MagicItemComponent implements OnInit {
 
+  post$: Observable<any>;
   title: string;
   description: string;
   type: string;
@@ -17,15 +20,12 @@ export class MagicItemComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private service: MagicItemsDataService
-  ) {}
+  ) {
+  }
 
   ngOnInit() {
-    let title = this.route.snapshot.paramMap.get('title');
-    let post = this.service.getPostByTitle(title);
-    this.title = post.title;
-    this.description = post.description;
-    this.type = post.type;
-    this.details = post.details;
+    this.post$ = this.service.getJSONData().pipe(map(value => value.posts.filter(value => value.url == this.route.snapshot.paramMap.get('url'))));
+    console.log(this.post$);
   }
 
 }

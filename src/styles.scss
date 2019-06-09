@@ -1,3 +1,5 @@
+@import './assets/colors/colors.scss';
+
 html{
     background: 
         linear-gradient(
@@ -18,21 +20,21 @@ body{
 
 a{
     text-decoration: none;
-    color: #771716;
+    color: $red;
     transition: 0.25s;
 }
 
 a:visited {
-    color: #581611;
+    color: $dark-red;
     transition: 0.25s;
 }
 
 a:hover {
     transition: 0.25s;
-    color: #c6ac3c;
+    color: $light-gold;
     cursor: pointer;
 }  
 
 a:active {
-    color: #b68740;
+    color: $gold;
 }

@@ -8,12 +8,10 @@ const routes: Routes = [
     {
       path: '',
       component: MagicItemsPageComponent,
-      children: [
-        {
-          path: ':title', 
-          component: MagicItemComponent 
-        }
-      ]
+    },
+    {
+      path: ':url',
+      component: MagicItemComponent
     }
   ];
 

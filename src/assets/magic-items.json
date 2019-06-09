@@ -1,66 +1,75 @@
 {
     "posts": [
         {
-            "title": "orb-of-darkness",
+            "title": "Orb of Darkness",
             "description": "A smooth black orb that does not reflect any light whatsoever.",
             "type": "Wondrous Item, Uncommon",
-            "details": "Any light within 25 feet of the orb is sucked into the orb and destroyed, thus rendering the area around the orb in complete darkness. No light will function within this range and all vision (including darkvision) is rendered useless."
+			"details": "Any light within 25 feet of the orb is sucked into the orb and destroyed, thus rendering the area around the orb in complete darkness. No light will function within this range and all vision (including darkvision) is rendered useless.",
+			"url": "orb-of-darkness" 
         },
 
         {
             "title": "Beast Clay",
             "description": "A smooth lump of clay that radiates a gentle heat when held.",
             "type": "Wondrous Item, Uncommon",
-            "details": "After being sculpted into a beast of Challenge Rating 1 or lower, the clay will transform into the beast. The clay will grow or shrink to the size of the beast that has been sculpted. The sculptor shares consciousness with the beast and can control the beast’s actions, but the beast is unable make any attacks. After 5 minutes the beast will return to its clay form."
+			"details": "After being sculpted into a beast of Challenge Rating 1 or lower, the clay will transform into the beast. The clay will grow or shrink to the size of the beast that has been sculpted. The sculptor shares consciousness with the beast and can control the beast’s actions, but the beast is unable make any attacks. After 5 minutes the beast will return to its clay form.",
+			"url": "beast-clay"
         },
 
         {
             "title": "Gambler’s Coin",
             "description": "A shiny golden coin with the face of a Kenku on one side and an ordinary crow on the other side.",
             "type": "Wondrous Item, Common",
-            "details": "Whenever the coin is flipped or thrown into the air, it will always land face up. Even if it is dropped face down right above a surface, it will still magically flip to land face up."
-        },
+            "details": "Whenever the coin is flipped or thrown into the air, it will always land face up. Even if it is dropped face down right above a surface, it will still magically flip to land face up.",
+			"url": "gamblers-coin"
+		},
 
         {
             "title": "Staff of Planar Suction",
             "description": "A brass staff adorned with a smooth onyx stone on top.",
             "type": "Staff, Uncommon",
-            "details": "After slamming the staff on the ground, any creatures within 50 feet of the user must succeed on a DC 13 strength saving throw to avoid being sucked 10 feet towards the staff. Each turn in combat, the wielder of the staff may use their action to continue to slam the staff and force the creatures caught in its radius to make another saving throw to avoid being sucked closer to the staff."
+			"details": "After slamming the staff on the ground, any creatures within 50 feet of the user must succeed on a DC 13 strength saving throw to avoid being sucked 10 feet towards the staff. Each turn in combat, the wielder of the staff may use their action to continue to slam the staff and force the creatures caught in its radius to make another saving throw to avoid being sucked closer to the staff.",
+			"url": "staff-of-planar-suction"
         },
 
         {
             "title": "Tankard of Transformation",
             "description": "A magical copper tankard that is prized by drunkards.",
             "type": "Wondrous Item, Common",
-            "details": "Any liquid poured into the tankard is instantly transformed into a delicious ale."
+			"details": "Any liquid poured into the tankard is instantly transformed into a delicious ale.",
+			"url": "tankard-of-transformation"
         },
 
         {
             "title": "Manacles of Enamoration",
             "description": "A set of magical manacles created by a lonely mage to help him find love.",
             "type": "Wondrous Item, Uncommon",
-            "details": "After shackling two creatures together with the manacles they will become madly in love. Each shackled creature must succeed on a DC 15 Charisma saving throw to resist the effect. If one creature succeeds on the saving throw and the other fails, the creature who succeeded will not feel any attraction towards the creature who failed. The creature who failed will still feel a burning attraction towards the creature who succeeded. The effect ends until the manacles are removed."
+			"details": "After shackling two creatures together with the manacles they will become madly in love. Each shackled creature must succeed on a DC 15 Charisma saving throw to resist the effect. If one creature succeeds on the saving throw and the other fails, the creature who succeeded will not feel any attraction towards the creature who failed. The creature who failed will still feel a burning attraction towards the creature who succeeded. The effect ends until the manacles are removed.",
+			"url": "manacles-of-enamoration"
         },
 
         {
             "title": "Scroll of Chronomancy",
             "description": "A scroll that constantly exudes a blue glow and a faint humming noise.",
             "type": "Scroll, Very Rare",
-            "details": "After reading the inscription on the scroll, the scroll glows with a bright blue light and disintegrates into thin air. All creatures within 50 feet of the user become instantly frozen in time, but non-living objects are left unaffected by the scroll. The effect lasts for 30 seconds."
+			"details": "After reading the inscription on the scroll, the scroll glows with a bright blue light and disintegrates into thin air. All creatures within 50 feet of the user become instantly frozen in time, but non-living objects are left unaffected by the scroll. The effect lasts for 30 seconds.",
+			"url": "scroll-of-chronomancy"
         },
 
         {
             "title": "Durgul’s Helm of Bloodlust",
             "description": "A helm that fills the mind of anyone who dares to wear it with maddening whispers. It is said that the whispers come from the souls of all the innocents killed by Durgul the Slayer.",
             "type": "Wondrous Item, Legendary",
-            "details": "Once the helm is worn, you will feel an irresistible urge to keep wearing it. The voices that you now hear in your head forbid you from removing it. You will fight until your dying breath to prevent anyone from removing it from your head unless they use the Remove Curse spell prior to removing it. The whispers corrupt every thought and immediately change your alignment to chaotic evil until the helm is removed. You feel immense pain in your head and take 1d10 psychic damage whenever you attempt to help another creature or perform any kind act. Whenever you see or smell the blood of the creature you are attacking, your melee attacks gain a +2 to hit and deal an extra 2d6 damage. If you happen to taste the blood of the creature you are attacking, you deal an extra 3d6 damage instead."
+			"details": "Once the helm is worn, you will feel an irresistible urge to keep wearing it. The voices that you now hear in your head forbid you from removing it. You will fight until your dying breath to prevent anyone from removing it from your head unless they use the Remove Curse spell prior to removing it. The whispers corrupt every thought and immediately change your alignment to chaotic evil until the helm is removed. You feel immense pain in your head and take 1d10 psychic damage whenever you attempt to help another creature or perform any kind act. Whenever you see or smell the blood of the creature you are attacking, your melee attacks gain a +2 to hit and deal an extra 2d6 damage. If you happen to taste the blood of the creature you are attacking, you deal an extra 3d6 damage instead.",
+			"url": "durguls-helm-of-bloodlust"
         },
 
         {
             "title": "Sticky Armor",
             "description": "A grotesque breastplate that is covered in a permanent sticky slime.",
             "type": "Armor (breastplate), Rare",
-            "details": "Any attacks made against you with melee weapons have a chance to disarm the attacker. The attacker must make a DC 10 strength saving throw after each melee attack to avoid their weapon becoming stuck to your armor. A successful DC 14 athletics check can remove the weapon from your armor on the attacker’s next turn. If the attacker makes a melee attack without a weapon and fails the saving throw, they become stuck to the armor and become restrained."
+			"details": "Any attacks made against you with melee weapons have a chance to disarm the attacker. The attacker must make a DC 10 strength saving throw after each melee attack to avoid their weapon becoming stuck to your armor. A successful DC 14 athletics check can remove the weapon from your armor on the attacker’s next turn. If the attacker makes a melee attack without a weapon and fails the saving throw, they become stuck to the armor and become restrained.",
+			"url": "sticky-armor"
         }
 
     ]
