@@ -25,7 +25,6 @@ export class MagicItemComponent implements OnInit {
 
   ngOnInit() {
     this.post$ = this.service.getJSONData().pipe(map(value => value.posts.filter(value => value.url == this.route.snapshot.paramMap.get('url'))));
-    console.log(this.post$);
   }
 
 }

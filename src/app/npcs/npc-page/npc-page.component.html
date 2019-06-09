@@ -1,9 +1,9 @@
 <div class="nav-spacer"></div>
-<div id="npc-page" *ngFor="let post of posts; let i=index">
+<div id="npc-page" *ngFor="let post of posts$ | async">
   <div class="npc-post">
-    <p class="npc-name">
+    <a [routerLink]="['/npcs', post.url]" class="npc-name">
       {{post.name}}
-    </p>
+    </a>
     <div class="npc-quote-area">
       <p class="npc-quote">
         {{post.quote}}
