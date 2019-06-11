@@ -79,6 +79,22 @@
 			"description": "Quintus is an old male human historian with gray hair that runs down his face. His back is hunched and he is unable to stand up straight. He wears a single monocle on his right eye, and his left eye appears to be blind. He speaks slowly and deliberately, often pausing to consider his words. He is courteous to everyone he meets and loves droning on about history. He is quite dull and uninteresting to talk to, but he is knowledgeable and wise.",
 			"stats": ["Strength: 9", "Dexterity: 7", "Constitution: 9", "Intelligence: 18", "Wisdom: 17", "Charisma: 10"],
 			"url": "quintus"
+		},
+		{
+			"name": "Heartsmasher",
+			"quote": "\"Something ain’t quite right with that boy. He has a kind heart, but he must be missing some connections up in that tiny brain of his.\"",
+			"quoteAuthor": "Heartsmasher's father",
+			"description": "Heartsmasher is a young male goliath thief with a bald, shiny head. He is extremely tall, even for a goliath. He talks very slowly and often has to pause to think while he is speaking. His movements appear uncoordinated and he is quite clumsy. Despite his hulking frame, he tries to pickpocket and steal from nobles without any luck. He is terrible at being quiet and always draws notice from the people around him. He is so remarkably unintelligent that most people simply tell him to move along when he is caught attempting to steal from them.",
+			"stats": ["Strength: 17", "Dexterity: 6", "Constitution: 14", "Intelligence: 4", "Wisdom: 5", "Charisma: 10"],
+			"url": "heartsmasher"
+		},
+		{
+			"name": "Ruul",
+			"quote": "\"Don’t stop and talk to him unless you plan on spending the rest of your day hearing about his magical mushrooms.\"",
+			"quoteAuthor": "- A poor soul who spent his entire day listening to Ruul",
+			"description": "Ruul is a middle-aged male halfling druid with long brown hair that covers most of his eyes. He wears a humorously oversized cloak that he often trips over while walking, and he has a noticeable odor if you get close to him. He is very energetic and talks so quickly that it’s hard to understand everything he says. He is friendly to everyone and does not seem to be deterred by anyone’s negativity. He eagerly attempts to sell magical mushrooms to anyone who will listen to him, but he has no idea what effect the mushrooms have.",
+			"stats": ["Strength: 11", "Dexterity: 10", "Constitution: 11", "Intelligence: 8", "Wisdom: 9", "Charisma: 13"],
+			"url": "ruul"
 		}
     ]
 }
