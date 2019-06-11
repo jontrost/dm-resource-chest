@@ -63,6 +63,22 @@
             "description": "Orpi is a young female gnomish bard with long red hair and eyes as blue as the ocean. She carries a lute adorned with beautiful designs with her at all times. She plays the lute beautifully, but it is almost impossible to hear the sound it makes because she has a truly horrendous singing voice that masks the sound of the instrument. She is friendly to everyone and loves to chat about any topic, especially music.",
             "stats": ["Strength: 9", "Dexterity: 11", "Constitution: 9", "Intelligence: 10", "Wisdom: 12", "Charisma: 14"],
             "url": "orpi"
-        }
+		},
+		{
+			"name": "Bagra",
+			"quote": "\"I made the mistake once of trying to duel her in the arena, and I lost my arm for it. That’s a mistake I’ll never make again.\"",
+			"quoteAuthor": "- A gladiator who once challenged Bagra in combat",
+			"description": "Bagra is a young half-orc female gladiator with a closely-shaved head. She has tattoos covering her muscular body and piercings covering her face. She carries two intricately carved battleaxes on her back, and she certainly knows how to wield them. She speaks with confidence and does not take kindly to insults from anyone. Some people consider her to be rude and arrogant, but those who know her well would describe her as having a kind heart hidden beneath her menacing looks.",
+			"stats": ["Strength: 15", "Dexterity: 13", "Constitution: 14", "Intelligence: 10", "Wisdom: 11", "Charisma: 8"],
+			"url": "bagra"
+		},
+		{
+			"name": "Quintus",
+			"quote": "\"I considered taking my own life to escape his never-ending story, but after a mere three hours he finished telling me the tale of some scholar I still can’t even remember the name of.\"",
+			"quoteAuthor": "- An apprentice who studied beneath Quintus",
+			"description": "Quintus is an old male human historian with gray hair that runs down his face. His back is hunched and he is unable to stand up straight. He wears a single monocle on his right eye, and his left eye appears to be blind. He speaks slowly and deliberately, often pausing to consider his words. He is courteous to everyone he meets and loves droning on about history. He is quite dull and uninteresting to talk to, but he is knowledgeable and wise.",
+			"stats": ["Strength: 9", "Dexterity: 7", "Constitution: 9", "Intelligence: 18", "Wisdom: 17", "Charisma: 10"],
+			"url": "quintus"
+		}
     ]
 }
