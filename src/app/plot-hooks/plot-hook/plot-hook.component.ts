@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
+import { PlotHooksDataService } from '../plot-hooks-data.service';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-plot-hook',
@@ -7,15 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlotHookComponent implements OnInit {
 
-  title: string;
-  content: string;
+  post$: Observable<any>;
 
-  constructor(title: string, content: string) { 
-    this.title = title;
-    this.content = content;
+  constructor(
+    private route: ActivatedRoute,
+    private service: PlotHooksDataService
+  ) {
   }
 
   ngOnInit() {
+    this.post$ = this.service.getJSONData().pipe(map(value => value.posts.filter(value => value.url == this.route.snapshot.paramMap.get('url'))));
   }
 
 }

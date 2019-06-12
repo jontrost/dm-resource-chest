@@ -12,11 +12,6 @@ import { map } from 'rxjs/operators';
 export class NpcComponent implements OnInit {
 
   post$: Observable<any>;
-  name: string;
-  quote: string;
-  quoteAuthor: string;
-  description: string;
-  stats: string[];
 
   constructor(
     private route: ActivatedRoute,

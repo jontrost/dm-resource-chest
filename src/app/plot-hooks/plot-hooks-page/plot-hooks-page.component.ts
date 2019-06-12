@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PlotHookComponent } from '../plot-hook/plot-hook.component';
 import { PlotHooksDataService } from '../plot-hooks-data.service';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-plot-hooks-page',
@@ -9,12 +11,12 @@ import { PlotHooksDataService } from '../plot-hooks-data.service';
 })
 export class PlotHooksPageComponent implements OnInit {
 
-  posts: PlotHookComponent[];
+  posts$: Observable<any>;
 
   constructor(private plotHooksDataService: PlotHooksDataService) { }
 
   ngOnInit() {
-    this.posts = this.plotHooksDataService.getPosts();
+    this.posts$ = this.plotHooksDataService.getJSONData().pipe(map(posts => posts.posts));
   }
 
 }

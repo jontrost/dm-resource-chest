@@ -12,10 +12,6 @@ import { map } from 'rxjs/operators';
 export class MagicItemComponent implements OnInit {
 
   post$: Observable<any>;
-  title: string;
-  description: string;
-  type: string;
-  details: string;
 
   constructor(
     private route: ActivatedRoute,

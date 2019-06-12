@@ -1,8 +1,8 @@
-<div class="plot-hook-post">
+<div class="plot-hook-post" *ngIf="(post$ | async) as post">
   <p class="plot-hook-title">
-    {{title}}
+    {{post[0].title}}
   </p>
   <p class="plot-hook-content">
-    {{content}}
+    {{post[0].content}}
   </p>
 </div>

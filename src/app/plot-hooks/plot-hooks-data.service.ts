@@ -14,18 +14,4 @@ export class PlotHooksDataService {
     return this.httpClient.get('../../assets/plot-hooks.json');
   }
 
-  getPosts(): PlotHookComponent[]{
-    let plotHooksComponentsArray: PlotHookComponent[] = [];
-    this.getJSONData().subscribe(function(value){
-      for(let i = 0; i < value.posts.length; i++){
-        let component = new PlotHookComponent(
-          value.posts[i].title, 
-          value.posts[i].content);
-       plotHooksComponentsArray.push(component);
-      }
-    });
-    
-    return plotHooksComponentsArray;
-  }
-
 }
