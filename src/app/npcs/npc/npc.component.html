@@ -1,20 +1,24 @@
 <div class="nav-spacer"></div>
-<div class="npc-post" *ngIf="(post$ | async) as post">
-  <p class="npc-name">
-    {{post[0].name}}
-  </p>
-  <p class="npc-quote">
-    {{post[0].quote}}
-  </p>
-  <p class="npc-quote-author">
-    {{post[0].quoteAuthor}}
-  </p>
-  <p class="npc-description">
-    {{post[0].description}}
-  </p>
-  <p class="npc-stats">
-    <li *ngFor="let stat of post[0].stats">
-      {{stat}}
-    </li>
-  </p>
+<div class="npc-page" *ngIf="(post$ | async) as post">
+  <div class="npc-post">
+    <p class="npc-name">
+      {{post[0].name}}
+    </p>
+    <div class="npc-quote-area">
+      <p class="npc-quote">
+        {{post[0].quote}}
+      </p>
+      <p class="npc-quote-author">
+        {{post[0].quoteAuthor}}
+      </p>
+    </div>
+    <p class="npc-description">
+      {{post[0].description}}
+    </p>
+    <div class="npc-stats">
+      <span class="npc-stat" *ngFor="let stat of post[0].stats">
+        {{stat}}
+      </span>
+    </div>
+  </div>
 </div>

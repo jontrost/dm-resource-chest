@@ -3,7 +3,7 @@
     height: 80px;
 }
 
-#npc-page{
+.npc-page{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +20,7 @@
     outline-width: 2px;
     outline-color: black;
     margin-top: 4%;
-    padding: 2%;
+    padding: 3%;
     box-shadow: 0 4px 32px 0 rgba(black, .32);
     //box-shadow: 10px 10px 14px -4px rgba(0,0,0,0.75);
 }
@@ -30,7 +30,7 @@
     margin-top: 1%;
     margin-bottom: 1%;
     font-family: 'Fondamento', cursive;
-    color: #581611;
+	//color: $dark-red;
 }
 
 .npc-quote-area{
@@ -40,7 +40,9 @@
     font-size: 15pt;
     background-color: #eaeaea;
     font-style: italic;
-    padding: 0 1% 1% 0;
+    padding: 2% 2% 2% 2%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .npc-quote-author{
@@ -51,6 +53,8 @@
 
 .npc-description{
     font-size: 15pt;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .npc-stats{
@@ -62,4 +66,14 @@
     list-style-position: inside;
     list-style: none;
     //font-weight: bold;
+    margin-top: 3%;
 }
+
+.npc-stat {
+    margin-bottom: 1.5%;
+}
+
+.npc-stat:last-child {
+    margin-bottom: 0;
+}
+

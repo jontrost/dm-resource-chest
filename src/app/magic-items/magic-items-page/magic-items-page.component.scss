@@ -5,24 +5,25 @@
     height: 80px;
 }
 
-#magic-items-page{
+.magic-items-page{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    //margin-bottom: 4%;
 }
 
 .magic-item-post{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
     text-align: center;
     background-color: white;
     outline-style: solid;
     outline-width: 2px;
     outline-color: black;
     margin-top: 4%;
-    padding: 2%;
+    padding: 3%;
     box-shadow: 0 4px 32px 0 rgba(black, .32);
     //box-shadow: 10px 10px 14px -4px rgba(0,0,0,0.75);
 }
@@ -42,7 +43,7 @@
     font-size: 15pt;
     background-color: $light-gray;
     font-style: italic;
-    padding: 1% 1% 1% 1%;
+    padding: 2% 2% 2% 2%;
 }
 
 .magic-item-type{

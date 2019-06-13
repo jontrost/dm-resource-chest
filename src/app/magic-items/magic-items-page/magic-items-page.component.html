@@ -1,5 +1,5 @@
 <div class="nav-spacer"></div>
-<div id="magic-items-page" *ngFor="let post of posts$ | async">
+<div class="magic-items-page" *ngFor="let post of posts$ | async">
   <div class="magic-item-post">
     <a [routerLink]="['/magic-items', post.url]" class="magic-item-title">
       {{post.title}}
