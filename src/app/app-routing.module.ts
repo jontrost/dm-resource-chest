@@ -6,6 +6,7 @@ const routes: Routes = [
   {path: 'magic-items', loadChildren: './magic-items/magic-items.module#MagicItemsModule'},
   {path: 'npcs', loadChildren: './npcs/npcs.module#NpcsModule'},
   {path: 'plot-hooks', loadChildren: './plot-hooks/plot-hooks.module#PlotHooksModule'},
+  {path: 'contact', loadChildren: './contact/contact.module#ContactModule'},
   {path: '', component: HomeComponent}
 ];
 

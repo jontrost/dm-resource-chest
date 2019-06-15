@@ -1,8 +1,11 @@
-<div class="plot-hook-post" *ngIf="(post$ | async) as post">
-  <p class="plot-hook-title">
-    {{post[0].title}}
-  </p>
-  <p class="plot-hook-content">
-    {{post[0].content}}
-  </p>
+<div class="nav-spacer"></div>
+<div class="plot-hooks-page">
+  <div class="plot-hook-post" *ngIf="(post$ | async) as post">
+    <p class="plot-hook-title">
+      {{post[0].title}}
+    </p>
+    <p class="plot-hook-content">
+      {{post[0].content}}
+    </p>
+  </div>
 </div>
