@@ -5,7 +5,8 @@
             "description": "A smooth black orb that does not reflect any light whatsoever.",
             "type": "Wondrous Item, Uncommon",
 			"details": "Any light within 25 feet of the orb is sucked into the orb and destroyed, thus rendering the area around the orb in complete darkness. No light will function within this range and all vision (including darkvision) is rendered useless.",
-			"url": "orb-of-darkness" 
+            "url": "orb-of-darkness",
+            "shareImage": "https://i.lensdump.com/i/WYcRkz.png"  
         },
 
         {

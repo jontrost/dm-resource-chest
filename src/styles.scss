@@ -1,41 +1,30 @@
 @import './assets/colors/colors.scss';
+@import './assets/fonts/fonts.scss';
 @import '~@ngx-share/button/themes/material/material-dark-theme';
+//@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Raleway&display=swap');
 
 html{
-    background: 
-        linear-gradient(
-        rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.6)
-        ),
-        url("./assets/textures/diamond_upholstery.png");
+    background-color: $black;
     height: 100%;
     width: 100%;
 }
 
 body{
     margin: 0;
-    font-family: 'PT Serif', serif;
+    font-family: $normal-font;
     height: inherit;
     width: inherit;
+    color: $black;
 }
 
 a{
     text-decoration: none;
-    color: $red;
-    transition: 0.25s;
-}
-
-a:visited {
-    color: $dark-red;
+    color: $dark-blue;
     transition: 0.25s;
 }
 
 a:hover {
     transition: 0.25s;
-    color: $light-gold;
+    color: $light-blue;
     cursor: pointer;
 }  
-
-a:active {
-    color: $gold;
-}

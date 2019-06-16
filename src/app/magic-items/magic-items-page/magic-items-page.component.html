@@ -1,21 +1,11 @@
 <div class="nav-spacer"></div>
-<div class="magic-items-page" *ngFor="let post of posts$ | async">
-  <div class="magic-item-post">
-    <a [routerLink]="['/magic-items', post.url]" class="magic-item-title">
+<div class="page">
+  <a [routerLink]="['/magic-items', post.url]" class="post" *ngFor="let post of posts$ | async">
+    <span class="title">
       {{post.title}}
-    </a>
-    <p class="magic-item-desc">
-      {{post.description}}
-    </p>
-    <p class="magic-item-type">
+    </span>
+    <span class="type">
       {{post.type}}
-    </p>
-    <p class="magic-item-details">
-      {{post.details}}
-    </p>
-  </div>  
+    </span>
+  </a>
 </div>
-
-
-
-

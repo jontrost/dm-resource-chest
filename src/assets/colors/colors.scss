@@ -1,8 +1,35 @@
-$blue: #2f7c87;
-$dark-purple: #201a2d;
-$purple: #32274f;
-$dark-red: #581611;
-$red: #771716;
-$gold: #b68740;
-$light-gold: #c6ac3c;
-$light-gray: #eaeaea;
+$black: #31393C;
+$white: #FFFFFF;
+$gold: #FFC857;
+$red: #E63946;
+$light-blue: #33A1FD;
+$blue: #2176FF;
+$dark-blue: #1D3557;
+
+@function black-transparent($opacity) {  
+	@return rgba(49, 57, 60, $opacity);  
+}
+
+@function white-transparent($opacity) {
+	@return rgba(245, 243, 245, $opacity);  
+}
+
+@function gold-transparent($opacity) {
+	@return rgba(255, 200, 87, $opacity);  
+}
+
+@function red-transparent($opacity) {
+	@return rgba(230, 57, 70, $opacity);  
+}
+
+@function light-blue-transparent($opacity) {
+	@return rgba(51, 161, 253, $opacity);  
+}
+
+@function blue-transparent($opacity) {
+	@return rgba(33, 118, 255, $opacity);  
+}
+
+@function dark-blue-transparent($opacity) {  
+	@return rgba(29, 53, 87, $opacity);  
+}

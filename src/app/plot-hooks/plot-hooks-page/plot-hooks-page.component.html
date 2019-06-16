@@ -1,11 +1,11 @@
 <div class="nav-spacer"></div>
-<div class="plot-hooks-page" *ngFor="let post of posts$ | async">
-  <div class="plot-hook-post">
-    <a [routerLink]="['/plot-hooks', post.url]" class="plot-hook-title">
+<div class="page">
+  <a [routerLink]="['/plot-hooks', post.url]" class="post" *ngFor="let post of posts$ | async">
+    <span class="title">
       {{post.title}}
-    </a>
-    <p class="plot-hook-content">
+    </span>
+    <span class="type">
       {{post.content}}
-    </p>
-  </div>
+    </span>
+  </a>
 </div>

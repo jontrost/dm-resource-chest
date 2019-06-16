@@ -1,0 +1,46 @@
+@import '../../../assets/colors/colors.scss';
+@import '../../../assets/fonts/fonts.scss';
+
+.nav-spacer{
+    width: 100%;
+    height: 80px;
+}
+
+.page{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 50px;
+    padding: 50px;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    min-height: 200px;
+    background-color: $white;
+    padding: 5%;
+    outline: 5px solid $dark-blue;
+    outline-offset: -20px;
+}
+
+.title{
+    font-size: 34pt;    
+    font-family: $fantasy-font;
+    margin-bottom: 2%;
+}
+
+.type{
+    font-size: 15pt;
+    font-weight: bold;
+    color: $red;
+    margin-top: 2%;
+}
+
+a:hover {
+    transition: 200ms;
+    outline-color: $light-blue;
+}

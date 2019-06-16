@@ -1,3 +1,6 @@
+@import '../../assets/fonts/fonts.scss';
+@import '../../assets/colors/colors.scss';
+
 .nav-spacer{
     width: 100%;
     height: 80px;
@@ -6,8 +9,8 @@
 #home-page{
     background: 
         linear-gradient(
-        rgba(0, 0, 0, 0.8), 
-        rgba(0, 0, 0, 0.8)
+        black-transparent(0.85), 
+        black-transparent(0.85)
         ),
         url("https://i.lensdump.com/i/WlsQP7.jpg");
     background-size: cover;
@@ -32,7 +35,7 @@
     font-size: 3vmax;
     grid-area: title;
     align-self: flex-end;
-    font-family: 'Fondamento', cursive;
+    font-family: $fantasy-font;
 }
 
 .home-text{
@@ -59,242 +62,10 @@
     margin-left: 7%;
 }
 
-.t1{
-    grid-area: t1;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
+a {
+    color: $blue; 
 
-.t2{
-    grid-area: t2;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t3{
-    grid-area: t3;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t4{
-    grid-area: t4;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t5{
-    grid-area: t5;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t6{
-    grid-area: t6;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t7{
-    grid-area: t7;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t8{
-    grid-area: t8;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t9{
-    grid-area: t9;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t10{
-    grid-area: t10;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t11{
-    grid-area: t11;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t12{
-    grid-area: t12;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t13{
-    grid-area: t13;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t14{
-    grid-area: t14;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t15{
-    grid-area: t15;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t16{
-    grid-area: t16;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t17{
-    grid-area: t17;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t18{
-    grid-area: t18;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t19{
-    grid-area: t19;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t20{
-    grid-area: t20;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t21{
-    grid-area: t21;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t22{
-    grid-area: t22;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t23{
-    grid-area: t23;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
-}
-
-.t24{
-    grid-area: t24;
-    background-color: white;
-    outline-color: gray;
-    outline-style: solid;
-    width: auto;
-    height: auto;
-    opacity: 0.1;
+    &:hover {
+        color: $light-blue;
+    }
 }

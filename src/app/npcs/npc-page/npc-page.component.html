@@ -1,24 +1,11 @@
 <div class="nav-spacer"></div>
-<div class="npc-page" *ngFor="let post of posts$ | async">
-  <div class="npc-post">
-    <a [routerLink]="['/npcs', post.url]" class="npc-name">
+<div class="page">
+  <a [routerLink]="['/npcs', post.url]" class="post" *ngFor="let post of posts$ | async">
+    <span class="title">
       {{post.name}}
-    </a>
-    <div class="npc-quote-area">
-      <p class="npc-quote">
-        {{post.quote}}
-      </p>
-      <p class="npc-quote-author">
-        {{post.quoteAuthor}}
-      </p>
-    </div>
-    <p class="npc-description">
+    </span>
+    <span class="type">
       {{post.description}}
-    </p>
-    <div class="npc-stats">
-      <span class="npc-stat" *ngFor="let stat of post.stats">
-        {{stat}}
-      </span>
-    </div>
-  </div>
+    </span>
+  </a>
 </div>
