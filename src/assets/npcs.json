@@ -8,6 +8,7 @@
             "stats": ["Strength: 9", "Dexterity: 16", "Constitution: 9", "Intelligence: 12", "Wisdom: 14", "Charisma: 11"],
             "url": "gust"
         },
+        
         {
             "name": "Isolde",
             "quote": "\"When I need someone to disappear, I always call Isolde. I don’t know how she does it, and quite frankly I don’t want to know. I just know that when I hire her the deed is as good as done.\"",
@@ -16,6 +17,7 @@
             "stats": ["Strength: 10", "Dexterity: 16", "Constitution: 9", "Intelligence: 12", "Wisdom: 13", "Charisma: 12"],
             "url": "isolde"
         },
+
         {
             "name": "Atugak",
             "quote": "\"The sword I bought from him is the finest blade I’ve ever laid my hands on. It’s light, perfectly balanced, and there’s not a single imperfection to be found.\"",
@@ -24,6 +26,7 @@
             "stats": ["Strength: 14", "Dexterity: 10", "Constitution: 12", "Intelligence: 11", "Wisdom: 10", "Charisma: 12"],
             "url": "atugak"
         },
+
         {
             "name": "Elegnos",
             "quote": "\"I’ve never met anyone as insufferable as him. Every condescending word he spoke was dripping with sarcasm.\"",
@@ -32,6 +35,7 @@
             "stats": ["Strength: 10", "Dexterity: 11", "Constitution: 10", "Intelligence: 12", "Wisdom: 10", "Charisma: 4"],
             "url": "elegnos"
         },
+
         {
             "name": "Lanashi",
             "quote": "\"I find myself visiting her more and more frequently. She provides me with peace of mind knowing that my future is taken care of.\"",
@@ -40,6 +44,7 @@
             "stats": ["Strength: 10", "Dexterity: 11", "Constitution: 9", "Intelligence: 14", "Wisdom: 11", "Charisma: 18"],
             "url": "lanashi"
         },
+
         {
             "name": "Dibu",
             "quote": "\"I would be quite proud of myself if I could live a life even half as exciting as Dibu’s.\"",
@@ -48,6 +53,7 @@
             "stats": ["Strength: 14", "Dexterity: 9", "Constitution: 12", "Intelligence: 11", "Wisdom: 17", "Charisma: 12"],
             "url": "dibu"
         },
+
         {
             "name": "Yugreg",
             "quote": "\"I don’t even keep track of the drinks he orders anymore, I just charge him a hefty fee at the end of each week and he happily pays it each time.\"",
@@ -56,6 +62,7 @@
             "stats": ["Strength: 12", "Dexterity: 9", "Constitution: 14", "Intelligence: 10", "Wisdom: 9", "Charisma: 13"],
             "url": "yugreg"
         },
+
         {
             "name": "Orpi",
             "quote": "\"She plays the lute with such grace and such beauty, but the moment she opens her mouth to sing I’m forced to cover my ears.\"",
@@ -63,7 +70,8 @@
             "description": "Orpi is a young female gnomish bard with long red hair and eyes as blue as the ocean. She carries a lute adorned with beautiful designs with her at all times. She plays the lute beautifully, but it is almost impossible to hear the sound it makes because she has a truly horrendous singing voice that masks the sound of the instrument. She is friendly to everyone and loves to chat about any topic, especially music.",
             "stats": ["Strength: 9", "Dexterity: 11", "Constitution: 9", "Intelligence: 10", "Wisdom: 12", "Charisma: 14"],
             "url": "orpi"
-		},
+        },
+        
 		{
 			"name": "Bagra",
 			"quote": "\"I made the mistake once of trying to duel her in the arena, and I lost my arm for it. That’s a mistake I’ll never make again.\"",
@@ -71,7 +79,8 @@
 			"description": "Bagra is a young half-orc female gladiator with a closely-shaved head. She has tattoos covering her muscular body and piercings covering her face. She carries two intricately carved battleaxes on her back, and she certainly knows how to wield them. She speaks with confidence and does not take kindly to insults from anyone. Some people consider her to be rude and arrogant, but those who know her well would describe her as having a kind heart hidden beneath her menacing looks.",
 			"stats": ["Strength: 15", "Dexterity: 13", "Constitution: 14", "Intelligence: 10", "Wisdom: 11", "Charisma: 8"],
 			"url": "bagra"
-		},
+        },
+        
 		{
 			"name": "Quintus",
 			"quote": "\"I considered taking my own life to escape his never-ending story, but after a mere three hours he finished telling me the tale of some scholar I still can’t even remember the name of.\"",
@@ -79,7 +88,8 @@
 			"description": "Quintus is an old male human historian with gray hair that runs down his face. His back is hunched and he is unable to stand up straight. He wears a single monocle on his right eye, and his left eye appears to be blind. He speaks slowly and deliberately, often pausing to consider his words. He is courteous to everyone he meets and loves droning on about history. He is quite dull and uninteresting to talk to, but he is knowledgeable and wise.",
 			"stats": ["Strength: 9", "Dexterity: 7", "Constitution: 9", "Intelligence: 18", "Wisdom: 17", "Charisma: 10"],
 			"url": "quintus"
-		},
+        },
+        
 		{
 			"name": "Heartsmasher",
 			"quote": "\"Something ain’t quite right with that boy. He has a kind heart, but he must be missing some connections up in that tiny brain of his.\"",
@@ -87,7 +97,8 @@
 			"description": "Heartsmasher is a young male goliath thief with a bald, shiny head. He is extremely tall, even for a goliath. He talks very slowly and often has to pause to think while he is speaking. His movements appear uncoordinated and he is quite clumsy. Despite his hulking frame, he tries to pickpocket and steal from nobles without any luck. He is terrible at being quiet and always draws notice from the people around him. He is so remarkably unintelligent that most people simply tell him to move along when he is caught attempting to steal from them.",
 			"stats": ["Strength: 17", "Dexterity: 6", "Constitution: 14", "Intelligence: 4", "Wisdom: 5", "Charisma: 10"],
 			"url": "heartsmasher"
-		},
+        },
+        
 		{
 			"name": "Ruul",
 			"quote": "\"Don’t stop and talk to him unless you plan on spending the rest of your day hearing about his magical mushrooms.\"",

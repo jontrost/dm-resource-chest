@@ -57,3 +57,18 @@
     margin-bottom: 3%;
     margin-left: 1%;
 }
+
+a {
+    margin-top: 2%;
+    padding: 8px;
+    color: $white;
+    outline: 2px solid $white;
+
+    &:hover {
+        outline-color: $light-blue;
+        color: $light-blue;
+        transition: 200ms;
+    }
+}
+
+
