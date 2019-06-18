@@ -1,4 +1,5 @@
 @import '../../../assets/colors/colors.scss';
+@import '../../../assets/fonts/fonts.scss';
 
 .nav-spacer{
     width: 100%;
@@ -73,9 +74,32 @@
 
 .npc-stat {
     margin-bottom: 1.5%;
-}
 
-.npc-stat:last-child {
-    margin-bottom: 0;
-}
+    &:nth-child(1)::before {
+        content: "Strength: ";
+    }
 
+    &:nth-child(2)::before {
+        content: "Dexterity: ";
+    }
+
+    &:nth-child(3)::before {
+        content: "Constitution: ";
+    }
+
+    &:nth-child(4)::before {
+        content: "Intelligence: ";
+    }
+
+    &:nth-child(5)::before {
+        content: "Wisdom: ";
+    }
+
+    &:nth-child(6)::before {
+        content: "Charisma: ";
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
