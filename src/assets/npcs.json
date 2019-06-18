@@ -9,8 +9,8 @@
             "url": "gust",
             "age": "young",
             "sex": "male",
-            "race": "kenku",
-            "profession": "smuggler"
+            "race": "Kenku",
+            "profession": "Smuggler"
         },
         
         {
@@ -22,8 +22,8 @@
             "url": "isolde",
             "age": "old",
             "sex": "female",
-            "race": "half-elf",
-            "profession": "assassin"
+            "race": "Half-Elf",
+            "profession": "Assassin"
         },
 
         {
@@ -35,8 +35,8 @@
             "url": "atugak",
             "age": "middle-aged",
             "sex": "male",
-            "race": "half-orc",
-            "profession": "blacksmith"
+            "race": "Half-Orc",
+            "profession": "Blacksmith"
         },
 
         {
@@ -48,8 +48,8 @@
             "url": "elegnos",
             "age": "young",
             "sex": "male",
-            "race": "elf",
-            "profession": "explorer"
+            "race": "High Elf",
+            "profession": "Explorer"
         },
 
         {
@@ -61,8 +61,8 @@
             "url": "lanashi",
             "age": "young",
             "sex": "female",
-            "race": "human",
-            "profession": "psychic"
+            "race": "Human",
+            "profession": "Psychic"
         },
 
         {
@@ -74,8 +74,8 @@
             "url": "dibu",
             "age": "old",
             "sex": "male",
-            "race": "tortle",
-            "profession": "storyteller"
+            "race": "Tortle",
+            "profession": "Storyteller"
         },
 
         {
@@ -87,8 +87,8 @@
             "url": "yugreg",
             "age": "middle-aged",
             "sex": "male",
-            "race": "dwarf",
-            "profession": "drunkard"
+            "race": "Mountain Dwarf",
+            "profession": "Drunkard"
         },
 
         {
@@ -100,8 +100,8 @@
             "url": "orpi",
             "age": "young",
             "sex": "female",
-            "race": "gnome",
-            "profession": "bard"
+            "race": "Gnome",
+            "profession": "Bard"
         },
         
 		{
@@ -113,8 +113,8 @@
             "url": "bagra",
             "age": "young",
             "sex": "female",
-            "race": "half-orc",
-            "profession": "gladiator"
+            "race": "Half-Orc",
+            "profession": "Gladiator"
         },
         
 		{
@@ -126,8 +126,8 @@
             "url": "quintus",
             "age": "old",
             "sex": "male",
-            "race": "human",
-            "profession": "historian"
+            "race": "Human",
+            "profession": "Historian"
         },
         
 		{
@@ -139,8 +139,8 @@
             "url": "heartsmasher",
             "age": "young",
             "sex": "male",
-            "race": "goliath",
-            "profession": "thief"
+            "race": "Goliath",
+            "profession": "Thief"
         },
         
 		{
@@ -152,8 +152,8 @@
             "url": "ruul",
             "age": "middle-aged",
             "sex": "male",
-            "race": "halfling",
-            "profession": "nomad"
+            "race": "Halfling",
+            "profession": "Nomad"
 		}
     ]
 }
