@@ -3,127 +3,134 @@
         {
             "title": "Trapped With the Unknown",
 			"content": "The party stumbles upon an abandoned necromancer’s lair. If they choose to enter, they encounter a variety of gruesome sights such as mangled, decomposing corpses strewn about the place. When they try to leave, they realize that the entrance was under the effect of some sort of magic, and now is unable to open even with extreme force. Suddenly, strange noises can be heard echoing from somewhere else in the lair.",
-			"url": "trapped-with-the-unknown"
+			"url": "trapped-with-the-unknown",
+			"tags": ["Combat", "Exploration", "Horror", "Mystery"]
 		},
 		
 		{
 			"title": "Double Trouble",
 			"content": "The party is tasked with slaying a powerful beast that has made its lair inside a local cave, but when they get there they discover that there are actually two of them.",
-			"url": "double-trouble"
+			"url": "double-trouble",
+			"tags": ["Combat"]
 		},
 
 		{
 			"title": "Giant Trouble",
 			"content": "An angry hill giant claims the party stole his special rock and he demands that they return it immediately. The real thief is another hill giant who thought the rock looked neat and took it for himself.",
-			"url": "giant-trouble"
+			"url": "giant-trouble",
+			"tags": ["Combat", "Social"]
 		},
 
 		{
 			"title": "Drunken Warning",
 			"content": "An unconscious drunkard who is passed out in a bush begins whispering strange omens to the party as they walk past. Upon further inspection it appears that he is simply talking in his sleep, but the next day his omens begin to come true.",
-			"url": "drunken-warning"
+			"url": "drunken-warning",
+			"tags": ["Humor", "Mystery"]
 		},
 
 		{
 			"title": "The Corrupted Tree",
-			"content": "A massive ancient tree that houses thousands of elves is beginning to slowly decay after a hooded figure was spotted pouring a magical substance on the roots a few nights ago. The elves have been unable to figure out how to save the tree and are calling on the help of anyone who can help.",
-			"url": "the-corrupted-tree"
+			"content": "A massive ancient tree that houses thousands of elves is beginning to slowly decay after a hooded figure was spotted pouring a magical substance on the roots a few nights ago. The elves have been unable to figure out how to save the tree and are calling on the help of anyone who can assist.",
+			"url": "the-corrupted-tree",
+			"tags": ["Mystery", "Social"]
 		},
 
 		{
 			"title": "Divine Heat",
 			"content": "An angry deity has been causing the sun to grow hotter and hotter each day and people are beginning to die from the heat.",
-			"url": "divine-heat"
+			"url": "divine-heat",
+			"tags": ["Social"]
 		},
 
 		{
 			"title": "Captivity",
 			"content": "A woman approaches the party and frantically pleads for help. She says that she managed to escape from the captivity of a necromancer who is practicing his magic on live victims, but there are more people to be saved.",
-			"url": "captivity"
+			"url": "captivity",
+			"tags": ["Exploration", "Horror"]
 		},
 
 		{
 			"title": "The Mischievous Bug",
 			"content": "One of the royal guards falls dead in front of the party and they see a tiny mechanical bug crawl out of his mouth afterwards. They watch the bug quickly scurry to the hand of a hooded figure who gives them a nod before taking off.",
-			"url": "the-mischievous-bug"
+			"url": "the-mischievous-bug",
+			"tags": ["Mystery"]
 		},
 
 		{
 			"title": "Untold Treasure",
 			"content": "A strange old man approaches the party and hands them a treasure map that shows the location of a nearby treasure. Immediately after handing over the treasure map he fades into the wind without muttering a word.",
-			"url": "untold-treasure"
+			"url": "untold-treasure",
+			"tags": ["Exploration", "Mystery"]
 		},
 
 		{
 			"title": "Whispers from the Well",
 			"content": "Shortly after a new well was dug near a town, many of the townspeople began hearing whispers coming from it. Those who can hear the whispers say that they invite them to jump into the well.",
-			"url": "whispers-from-the-well"
+			"url": "whispers-from-the-well",
+			"tags": ["Horror", "Mystery"]
 		},
 
 		{
 			"title": "Smithing Sabotage",
 			"content": "Someone has released a hoard of rust monsters into a large city and the monsters are destroying all of the tools and weapons crafted by the blacksmiths.",
-			"url": "smithing-sabotage"
+			"url": "smithing-sabotage",
+			"tags": ["Combat", "Social"]
 		},
 
 		{
 			"title": "The Cursed Text",
 			"content": "The party discovers an ancient book that lists the names of thousands of people and how they died. The next time they open it they see an entry written for each of them.",
-			"url": "the-cursed-text"
+			"url": "the-cursed-text",
+			"tags": ["Mystery"]
 		},
 
 		{
 			"title": "Rogue Contraption",
 			"content": "A tinkerer runs into town frantically yelling about a contraption gone wrong. Shortly afterwards a massive golem reaches the town and begins destroying everything.",
-			"url": "rogue-contraption"
+			"url": "rogue-contraption",
+			"tags": ["Combat"]
 		},
 
 		{
 			"title": "A Secret Ingredient",
 			"content": "A local brewery hosts a drinking competition to see who can drink two tankards of their ale the fastest. Shortly after the competition, everyone who drank the ale begins to fall unconscious on the ground.",
-			"url": "a-secret-ingredient"
-		},
-
-		{
-			"title": "Mist from the Depths",
-			"content": "An enormous fissure opens up in the middle of a town and a green mist begins to pool out of it. Everyone caught in the mist begins to slowly walk towards the fissure until they jump to their death.",
-			"url": "mist-from-the-depths"
+			"url": "a-secret-ingredient",
+			"tags": ["Mystery", "Social"]
 		},
 
 		{
 			"title": "The Stallion Message",
 			"content": "A horse runs into town with a dead man tied to its back. The man is covered in blood and appears to have a sealed note tucked into his mouth.",
-			"url": "the-stallion-message"
+			"url": "the-stallion-message",
+			"tags": ["Horror", "Mystery"]
 		},
 
 		{
 			"title": "Test Subject",
 			"content": "A local alchemist is offering gold to anyone who will allow him to test his new potion on them",
-			"url": "test-subject"
+			"url": "test-subject",
+			"tags": ["Social"]
 		},
 
 		{
 			"title": "Coin Before Family",
 			"content": "A shady travelling merchant approaches the party and offers to sell them one of her children for a ridiculously low price.",
-			"url": "coin-before-family"
+			"url": "coin-before-family",
+			"tags": ["Social"]
 		},
 
 		{
 			"title": "Glorious Grapes",
 			"content": "A wealthy noble wants a special wine to be made for his wedding, but it requires rare grapes that only grow deep in the center of a distant jungle.",
-			"url": "glorious-grapes"
+			"url": "glorious-grapes",
+			"tags": ["Exploration"]
 		},
 
 		{
 			"title": "Mystery in the Mines",
 			"content": "The party discovers a mining camp with recently deceased miners on the ground and a foul smell emerging from the mine entrance. A strange sound can also be heard coming from the mine.",
-			"url": "mystery-in-the-mines"
-		},
-
-		{
-			"title": "Speaking with the Dead",
-			"content": "A young girl has been accidentally raising the dead from a nearby graveyard in her attempts to communicate with her deceased mother’s spirit.",
-			"url": "speaking-with-the-dead"
+			"url": "mystery-in-the-mines",
+			"tags": ["Exploration", "Horror", "Mystery"]
 		}
     ]
 }

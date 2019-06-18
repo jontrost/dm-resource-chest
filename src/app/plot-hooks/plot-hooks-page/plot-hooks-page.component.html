@@ -4,8 +4,8 @@
     <span class="title">
       {{post.title}}
     </span>
-    <span class="type">
-      {{post.content}}
+    <span class="preview">
+      <span class="tags" *ngFor="let tag of post.tags">{{tag}}</span>
     </span>
   </a>
 </div>
