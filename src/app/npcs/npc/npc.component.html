@@ -5,12 +5,12 @@
       {{post[0].name}}
     </p>
     <div class="npc-quote-area">
-      <p class="npc-quote">
+      <span class="npc-quote">
         {{post[0].quote}}
-      </p>
-      <p class="npc-quote-author">
+      </span>
+      <span class="npc-quote-author">
         {{post[0].quoteAuthor}}
-      </p>
+      </span>
     </div>
     <p class="npc-description">
       {{post[0].description}}
@@ -19,6 +19,9 @@
       <span class="npc-stat" *ngFor="let stat of post[0].stats">
         {{stat}}
       </span>
+    </div>
+    <div class="social-buttons">
+      <share-buttons [theme]="'material-dark'" [include]="['facebook','twitter','pinterest','reddit']" [show]="4"></share-buttons>
     </div>
   </div>
 </div>

@@ -1,5 +1,7 @@
 @import '../../../assets/colors/colors.scss';
 @import '../../../assets/fonts/fonts.scss';
+@import '../../../assets/style-templates/mixins.scss';
+
 
 .nav-spacer{
     width: 100%;
@@ -7,29 +9,19 @@
 }
 
 .magic-items-page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: calc(100% - 80px);
+    @include page-layout;
 }
 
 .magic-item-post{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 45%;
-    background-color: $white;
-    outline: 2px solid $black;
-    padding: 3%;
+    // display: flex;
+    @include post-spacing;
 }
 
 .magic-item-title{
     font-size: 36pt;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-family: $fantasy-font;
-	color: $dark-blue;
+    @include remove-margins;
+    line-height: 1;
+    @include header;
 }
 
 .magic-item-desc{
@@ -39,36 +31,31 @@
     font-size: 15pt;
     background-color: dark-blue-transparent(.1);
     font-style: italic;
-    padding: 2% 2% 2% 2%;
+    padding: 2%;
+    @include remove-margins;
 }
 
 .magic-item-type{
     font-size: 15pt;
     font-weight: bold;
     color: $red;
+    @include remove-margins;
 }
 
 .magic-item-details{
     font-size: 15pt;
+    @include remove-margins;
 }
 
 .social-buttons {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 1%;
+    @include remove-margins;
+    //margin-left: 1%;
+}
+
+share-buttons {
+    margin-left: -.3125em
 }
 
 a {
-    margin-top: 2%;
-    padding: 8px;
     color: $white;
-    outline: 2px solid $white;
-
-    &:hover {
-        outline-color: $light-blue;
-        color: $light-blue;
-        transition: 200ms;
-    }
 }
-
-

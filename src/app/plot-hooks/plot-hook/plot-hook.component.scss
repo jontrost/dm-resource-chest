@@ -1,4 +1,6 @@
 @import '../../../assets/colors/colors.scss';
+@import '../../../assets/fonts/fonts.scss';
+@import '../../../assets/style-templates/mixins.scss';
 
 .nav-spacer{
     width: 100%;
@@ -6,44 +8,27 @@
 }
 
 .plot-hooks-page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    //margin-bottom: 4%;
+    @include page-layout;
 }
 
 .plot-hook-post{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    text-align: center;
-    background-color: white;
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: black;
-    margin-top: 4%;
-    padding: 3%;
-    box-shadow: 0 4px 32px 0 rgba(black, .32);
-    //box-shadow: 10px 10px 14px -4px rgba(0,0,0,0.75);
+    @include post-spacing;
 }
 
 .plot-hook-title{
     font-size: 36pt;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-family: 'Fondamento', cursive;
+    @include remove-margins;
+    @include header;
+    line-height: 1;
 	//color: $dark-red;
 }
 
 .plot-hook-content{
     font-size: 15pt;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    @include remove-margins;
 }
 
 .social-buttons {
-    margin-top: 3%;
-    margin-bottom: 3%;
+    @include remove-margins;
     margin-left: 1%;
 }

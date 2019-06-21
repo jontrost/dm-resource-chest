@@ -1,5 +1,6 @@
 @import '../../../assets/colors/colors.scss';
 @import '../../../assets/fonts/fonts.scss';
+@import '../../../assets/style-templates/mixins.scss';
 
 .nav-spacer{
     width: 100%;
@@ -7,99 +8,95 @@
 }
 
 .npc-page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include page-layout;
 }
 
 .npc-post{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    text-align: center;
-    background-color: white;
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: black;
-    margin-top: 4%;
-    padding: 3%;
-    box-shadow: 0 4px 32px 0 rgba(black, .32);
-    //box-shadow: 10px 10px 14px -4px rgba(0,0,0,0.75);
+    @include post-spacing;
+    
+    // max-height: 500px;
+    // overflow-y: scroll;
 }
 
 .npc-name{
 	font-size: 36pt;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-family: 'Fondamento', cursive;
-	//color: $dark-red;
+    @include remove-margins;
+    line-height: 1;
+    @include header;
 }
 
 .npc-quote-area{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: 15pt;
-    background-color: #eaeaea;
+    background-color: dark-blue-transparent(.1);
     font-style: italic;
-    padding: 2% 2% 2% 2%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    padding: 2%;
+    @include remove-margins;
 }
 
 .npc-quote-author{
-    margin-top: 0;
+    margin-top: 2%;
     font-weight: bold;
-    color: #c6ac3c;
+    color: $red;
 }
 
 .npc-description{
     font-size: 15pt;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    @include remove-margins;
 }
 
 .npc-stats{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     //color: #c6ac3c;
     font-size: 15pt;
     list-style-position: inside;
     list-style: none;
     //font-weight: bold;
-    margin-top: 3%;
+    @include remove-margins;
 }
 
 .npc-stat {
-    margin-bottom: 1.5%;
+    color: $dark-blue;
 
     &:nth-child(1)::before {
-        content: "Strength: ";
+        content: "STR: ";
+        margin-left: 0;
     }
 
     &:nth-child(2)::before {
-        content: "Dexterity: ";
+        content: "DEX: ";
     }
 
     &:nth-child(3)::before {
-        content: "Constitution: ";
+        content: "CON: ";
     }
 
     &:nth-child(4)::before {
-        content: "Intelligence: ";
+        content: "INT: ";
     }
 
     &:nth-child(5)::before {
-        content: "Wisdom: ";
+        content: "WIS: ";
     }
 
     &:nth-child(6)::before {
-        content: "Charisma: ";
+        content: "CHA: ";
     }
 
-    &:last-child {
-        margin-bottom: 0;
+    &:nth-child(n) {
+        margin-left: 4%;
     }
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.social-buttons {
+    @include remove-margins;
+    margin-left: 1%;
 }
