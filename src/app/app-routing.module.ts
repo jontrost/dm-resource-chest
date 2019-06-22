@@ -7,6 +7,7 @@ const routes: Routes = [
   {path: 'npcs', loadChildren: './npcs/npcs.module#NpcsModule'},
   {path: 'plot-hooks', loadChildren: './plot-hooks/plot-hooks.module#PlotHooksModule'},
   {path: 'contact', loadChildren: './contact/contact.module#ContactModule'},
+  {path: 'support-the-site', loadChildren: './support-the-site/support-the-site.module#SupportTheSiteModule'},
   {path: 'home', component: HomeComponent},
   {path: '', component: HomeComponent}
 ];
