@@ -10,6 +10,6 @@ export class NpcsDataService {
   constructor(private httpClient: HttpClient) { }
 
   getJSONData(): Observable<any> {
-    return this.httpClient.get('http://localhost:3000/npcs');
+    return this.httpClient.get('https://dm-resource-chest-server.herokuapp.com/npcs');
   }
 }
