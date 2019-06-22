@@ -1,0 +1,40 @@
+@import '../../../assets/colors/colors.scss';
+@import '../../../assets/fonts/fonts.scss';
+@import '../../../assets/style-templates/mixins.scss';
+
+.nav-spacer{
+    width: 100%;
+    height: 80px;
+}
+
+.contact-page{
+    @include page-layout;
+}
+
+.contact-form{
+    @include post-spacing;
+    grid-row-gap: 25px;
+}
+
+.submit-button {
+    width: 100px;
+    height: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: $normal-font;
+    border: 1px solid $dark-blue;
+
+    &:focus {
+        border-color: $light-blue;
+    }
+
+}
+
+textarea {
+    min-height: 150px;
+}
