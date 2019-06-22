@@ -10,10 +10,12 @@
 	display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 35px;
-    text-align: center;
-    width: 50%;
+    align-items: left;
+    width: 45%;
     background-color: $white;
     padding: 3%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 23px 2px rgba(0,0,0,0.75);
 }
 
 @mixin remove-margins {
@@ -27,4 +29,9 @@
     justify-content: center;
     align-items: center;
     min-height: calc(100% - 80px);
+}
+
+@mixin social-buttons {
+    @include remove-margins;
+    margin-left: -.3125em
 }

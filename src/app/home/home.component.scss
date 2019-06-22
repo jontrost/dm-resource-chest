@@ -22,11 +22,11 @@
     grid-template-columns: 7% 1fr 1fr 1fr 10%;
     grid-template-rows: 10% 1fr 1fr 1fr 10%;
     grid-template-areas: 
-    "t1 t2 t3 t4 t5"
-    "t6 title logo logo t9"
-    "t10 text logo logo t14"
-    "t15 credits logo logo t19"
-    "t20 t21 t22 t23 t24";
+    ". . . . ."
+    ". title logo logo ."
+    ". text logo logo ."
+    ". credits logo logo ."
+    ". . . . .";
 }
 
 .home-title{
@@ -63,9 +63,9 @@
 }
 
 a {
-    color: $blue; 
+    color: $light-blue; 
 
     &:hover {
-        color: $light-blue;
+        color: $gold;
     }
 }

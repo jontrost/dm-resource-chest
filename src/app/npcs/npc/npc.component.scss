@@ -13,9 +13,6 @@
 
 .npc-post{
     @include post-spacing;
-    
-    // max-height: 500px;
-    // overflow-y: scroll;
 }
 
 .npc-name{
@@ -50,7 +47,7 @@
 .npc-stats{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+   // justify-content: space-between;
     //color: #c6ac3c;
     font-size: 15pt;
     list-style-position: inside;
@@ -88,7 +85,7 @@
     }
 
     &:nth-child(n) {
-        margin-left: 4%;
+        margin-left: 6%;
     }
 
     &:first-child {
@@ -97,6 +94,5 @@
 }
 
 .social-buttons {
-    @include remove-margins;
-    margin-left: 1%;
+    @include social-buttons;
 }

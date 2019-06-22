@@ -23,12 +23,43 @@
 	//color: $dark-red;
 }
 
+.plot-hook-tags{
+    @include remove-margins;
+    font-size: 15pt;
+    font-weight: bold;
+    color: $red;
+
+    &::after {
+        content: ",";
+    }
+    
+    &::before {
+        content: "\00a0 ";
+	}
+	
+	&:last-child {
+		&::after {
+			content: none;
+		}
+    }
+    
+    &:first-child {
+		&::before {
+			content: none;
+		}
+	}
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
+}
+
 .plot-hook-content{
     font-size: 15pt;
     @include remove-margins;
 }
 
 .social-buttons {
-    @include remove-margins;
-    margin-left: 1%;
+    @include social-buttons;
 }

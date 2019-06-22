@@ -43,9 +43,9 @@
 		},
 
 		{
-			"title": "Captivity",
+			"title": "Dark Captivity",
 			"content": "A woman approaches the party and frantically pleads for help. She says that she managed to escape from the captivity of a necromancer who is practicing his magic on live victims, but there are more people to be saved.",
-			"url": "captivity",
+			"url": "dark-captivity",
 			"tags": ["Exploration", "Horror"]
 		},
 

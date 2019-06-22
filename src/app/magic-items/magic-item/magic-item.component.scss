@@ -13,7 +13,6 @@
 }
 
 .magic-item-post{
-    // display: flex;
     @include post-spacing;
 }
 
@@ -48,12 +47,7 @@
 }
 
 .social-buttons {
-    @include remove-margins;
-    //margin-left: 1%;
-}
-
-share-buttons {
-    margin-left: -.3125em
+    @include social-buttons;
 }
 
 a {
