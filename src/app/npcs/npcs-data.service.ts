@@ -10,6 +10,6 @@ export class NpcsDataService {
   constructor(private httpClient: HttpClient) { }
 
   getJSONData(): Observable<any> {
-    return this.httpClient.get('../../assets/npcs.json');
+    return this.httpClient.get('http://localhost:3000/npcs');
   }
 }

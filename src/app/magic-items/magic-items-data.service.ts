@@ -10,6 +10,6 @@ export class MagicItemsDataService {
   constructor(private httpClient: HttpClient) { }
 
   getJSONData(): Observable<any> {
-    return this.httpClient.get('../../assets/magic-items.json');
+    return this.httpClient.get('http://localhost:3000/magic-items');
   }
 }
