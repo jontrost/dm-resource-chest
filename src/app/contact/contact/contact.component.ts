@@ -9,8 +9,8 @@ import { ContactDataService } from "../contact-data.service";
 export class ContactComponent {
   constructor(private contactDataService: ContactDataService) {}
   formPayload = {
-    email: "jontrost426@gmail.com",
-    name: "name"
+    "email": "jontrost426@gmail.com",
+    "name": "name"
   };
   formSubmit() {
     this.contactDataService.sendEmail(this.formPayload);
