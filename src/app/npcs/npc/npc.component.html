@@ -16,8 +16,13 @@
       {{post[0].description}}
     </p>
     <div class="npc-stats">
-      <span class="npc-stat" *ngFor="let stat of post[0].stats">
-        {{stat}}
+      <span class="npc-stat" *ngFor="let stat of post[0].stats; let i = index">
+        <span *ngIf="i==0" class="strength"></span>
+        <span *ngIf="i==1" class="dexterity"></span>
+        <span *ngIf="i==2" class="constitution"></span>
+        <span *ngIf="i==3" class="intelligence"></span>
+        <span *ngIf="i==4" class="wisdom"></span>
+        <span *ngIf="i==5" class="charisma"></span>{{stat}}
       </span>
     </div>
     <div class="social-buttons">

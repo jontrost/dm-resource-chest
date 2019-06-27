@@ -47,42 +47,18 @@
 .npc-stats{
     display: flex;
     flex-direction: row;
-   // justify-content: space-between;
-    //color: #c6ac3c;
+    justify-content: space-between;
     font-size: 15pt;
     list-style-position: inside;
     list-style: none;
-    //font-weight: bold;
     @include remove-margins;
 }
 
 .npc-stat {
     color: $dark-blue;
-
-    &:nth-child(1)::before {
-        content: "STR: ";
-        margin-left: 0;
-    }
-
-    &:nth-child(2)::before {
-        content: "DEX: ";
-    }
-
-    &:nth-child(3)::before {
-        content: "CON: ";
-    }
-
-    &:nth-child(4)::before {
-        content: "INT: ";
-    }
-
-    &:nth-child(5)::before {
-        content: "WIS: ";
-    }
-
-    &:nth-child(6)::before {
-        content: "CHA: ";
-    }
+    font-size: 20pt;
+    display: inherit;
+    align-items: center;
 
     &:nth-child(n) {
         margin-left: 6%;
@@ -91,6 +67,36 @@
     &:first-child {
         margin-left: 0;
     }
+}
+
+.strength {
+    @include stat-icon;
+    content: url(src\assets\icons\strength.svg);
+}
+
+.dexterity {
+    @include stat-icon;
+    content: url(src\assets\icons\dexterity.svg);
+}
+
+.constitution {
+    @include stat-icon;
+    content: url(src\assets\icons\constitution.svg);
+}
+
+.intelligence {
+    @include stat-icon;
+    content: url(src\assets\icons\intelligence.svg);
+}
+
+.wisdom {
+    @include stat-icon;
+    content: url(src\assets\icons\wisdom.svg);
+}
+
+.charisma {
+    @include stat-icon;
+    content: url(src\assets\icons\charisma.svg);
 }
 
 .social-buttons {

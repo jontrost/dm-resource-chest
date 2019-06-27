@@ -35,3 +35,10 @@
     @include remove-margins;
     margin-left: -.3125em
 }
+
+@mixin stat-icon {
+    display:block;
+    height: 40px;
+    width: 40px;
+    margin-right: 12px;
+}
