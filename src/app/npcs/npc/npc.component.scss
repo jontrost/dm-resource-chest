@@ -1,104 +1,104 @@
-@import '../../../assets/colors/colors.scss';
-@import '../../../assets/fonts/fonts.scss';
-@import '../../../assets/style-templates/mixins.scss';
+@import "../../../assets/colors/colors.scss";
+@import "../../../assets/fonts/fonts.scss";
+@import "../../../assets/style-templates/mixins.scss";
 
-.nav-spacer{
-    width: 100%;
-    height: 80px;
+.nav-spacer {
+  width: 100%;
+  height: 80px;
 }
 
-.npc-page{
-    @include page-layout;
+.npc-page {
+  @include page-layout;
 }
 
-.npc-post{
-    @include post-spacing;
+.npc-post {
+  @include post-spacing;
 }
 
-.npc-name{
-	font-size: 36pt;
-    @include remove-margins;
-    line-height: 1;
-    @include header;
+.npc-name {
+  font-size: 36pt;
+  @include remove-margins;
+  line-height: 1;
+  @include header;
 }
 
-.npc-quote-area{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 15pt;
-    background-color: dark-blue-transparent(.1);
-    font-style: italic;
-    padding: 2%;
-    @include remove-margins;
+.npc-quote-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 15pt;
+  background-color: dark-blue-transparent(0.1);
+  font-style: italic;
+  padding: 2%;
+  @include remove-margins;
 }
 
-.npc-quote-author{
-    margin-top: 2%;
-    font-weight: bold;
-    color: $red;
+.npc-quote-author {
+  margin-top: 2%;
+  font-weight: bold;
+  color: $red;
 }
 
-.npc-description{
-    font-size: 15pt;
-    @include remove-margins;
+.npc-description {
+  font-size: 15pt;
+  @include remove-margins;
 }
 
-.npc-stats{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 15pt;
-    list-style-position: inside;
-    list-style: none;
-    @include remove-margins;
+.npc-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15pt;
+  list-style-position: inside;
+  list-style: none;
+  @include remove-margins;
 }
 
 .npc-stat {
-    color: $dark-blue;
-    font-size: 20pt;
-    display: inherit;
-    align-items: center;
+  color: $dark-blue;
+  font-size: 20pt;
+  display: inherit;
+  align-items: center;
 
-    &:nth-child(n) {
-        margin-left: 6%;
-    }
+  &:nth-child(n) {
+    margin-left: 6%;
+  }
 
-    &:first-child {
-        margin-left: 0;
-    }
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .strength {
-    @include stat-icon;
-    content: url(src\assets\icons\strength.svg);
+  @include stat-icon;
+  content: url(src\assets\icons\ability-scores\strength.svg);
 }
 
 .dexterity {
-    @include stat-icon;
-    content: url(src\assets\icons\dexterity.svg);
+  @include stat-icon;
+  content: url(src\assets\icons\ability-scores\dexterity.svg);
 }
 
 .constitution {
-    @include stat-icon;
-    content: url(src\assets\icons\constitution.svg);
+  @include stat-icon;
+  content: url(src\assets\icons\ability-scores\constitution.svg);
 }
 
 .intelligence {
-    @include stat-icon;
-    content: url(src\assets\icons\intelligence.svg);
+  @include stat-icon;
+  content: url(src\assets\icons\ability-scores\intelligence.svg);
 }
 
 .wisdom {
-    @include stat-icon;
-    content: url(src\assets\icons\wisdom.svg);
+  @include stat-icon;
+  content: url(src\assets\icons\ability-scores\wisdom.svg);
 }
 
 .charisma {
-    @include stat-icon;
-    content: url(src\assets\icons\charisma.svg);
+  @include stat-icon;
+  content: url(src\assets\icons\ability-scores\charisma.svg);
 }
 
 .social-buttons {
-    @include social-buttons;
+  @include social-buttons;
 }
