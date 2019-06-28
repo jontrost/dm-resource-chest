@@ -38,3 +38,7 @@ input, textarea {
 textarea {
     min-height: 150px;
 }
+
+.after-submit {
+    @include post-spacing;
+}

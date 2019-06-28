@@ -8,35 +8,28 @@ import { ContactDataService } from "../contact-data.service";
 })
 export class ContactComponent {
   constructor(private contactDataService: ContactDataService) {}
-  formPayload = {
-    "email": "jontrost426@gmail.com",
-    "name": "name"
-  };
-  formSubmit() {
-    this.contactDataService.sendEmail(this.formPayload);
+
+  serverResponse;
+  captchaResolved: boolean = false;
+  formSubmitted: boolean = false;
+
+  formData = {
+    name: '',
+    email: '',
+    message: ''
   }
-  //
-  // ngOnInit(): void {
-  //   console.log(nodemailer);
-  // }
-  // testAccount = this.nodemailer.createTestAccount();
-  // // create reusable transporter object using the default SMTP transport
-  // transporter = this.nodemailer.createTransport({
-  //   host: "smtp.ethereal.email",
-  //   port: 587,
-  //   secure: false, // true for 465, false for other ports
-  //   auth: {
-  //     user: this.testAccount.user, // generated ethereal user
-  //     pass: this.testAccount.pass // generated ethereal password
-  //   }
-  // });
-  // sendEmail() {
-  //   this.transporter.sendMail({
-  //     from: '"Fred Foo " <foo@example.com>', // sender address
-  //     to: "bar@example.com, baz@example.com", // list of receivers
-  //     subject: "Hello ✔", // Subject line
-  //     text: "Hello world?", // plain text body
-  //     html: "<b>Hello world?</b>" // html body
-  //   });
-  // }
+
+  resolved() {
+    this.captchaResolved = true;
+  }
+
+  async submitForm() {
+    this.formSubmitted = true;
+    try {
+      this.serverResponse = await this.contactDataService.sendEmail(this.formData);
+    } catch (error) {
+      this.serverResponse = "Your message was unable to send, please try again later."
+    }
+  }
+ 
 }
