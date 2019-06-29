@@ -1,18 +1,19 @@
 <div class="nav-spacer"></div>
 <div class="contact-page">
   <form (ngSubmit)="submitForm()" class="contact-form" *ngIf="!formSubmitted">
+    <span class="header">Send me a message and I'll reply as soon as I can!</span>
     <div class="field">
-      <input type="text" name="contactForm" placeholder="Name" [(ngModel)]="formData.name" />
+      <input type="text" name="contactForm" placeholder="Name" [(ngModel)]="formData.name" required maxlength="40"  />
     </div>
     <div class="field">
-      <input type="email" name="contactForm" placeholder="Email" [(ngModel)]="formData.email" />
+      <input type="email" name="contactForm" placeholder="Email" [(ngModel)]="formData.email" required maxlength="40" />
     </div>
     <div class="field">
-      <textarea name="contactForm" class="textarea" placeholder="Message" [(ngModel)]="formData.message"></textarea>
+      <textarea name="contactForm" class="textarea" placeholder="Message" [(ngModel)]="formData.message" required maxlength="1500"></textarea>
     </div>
     <re-captcha (resolved)="resolved($event)" siteKey="6LeYFKsUAAAAAOzwJXF1tERb8yoaOk9qVwQmORCY"></re-captcha>
     <button id="submit" [disabled]="!captchaResolved" class="submit-button" type="submit">
-      Submit
+      Send
     </button>
   </form>
   <span class="after-submit" *ngIf="formSubmitted && serverResponse!=null">{{serverResponse}}</span>
