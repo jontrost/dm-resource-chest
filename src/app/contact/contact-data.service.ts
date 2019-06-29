@@ -8,6 +8,6 @@ export class ContactDataService {
 	constructor(private httpClient: HttpClient) {}
 
 	async sendEmail(formData) {
-		return this.httpClient.post("http://localhost:3000/contact-submit", formData).toPromise();
+		return this.httpClient.post("https://dm-resource-chest-server.herokuapp.com/contact-submit", formData).toPromise();
 	}
 }
