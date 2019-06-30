@@ -70,12 +70,13 @@ a {
 .update-area {
   display: flex;
   flex-direction: column;
+  justify-self: flex-end;
   grid-area: news;
   height: 100%;
-  width: 100%;
+  width: 75%;
   box-sizing: border-box;
   // display: table;
-  //background-color: white-transparent(0.8);
+  // background-color: white-transparent(0.2);
   background-color: $white;
   padding: 3%;
   border-radius: 10px;
@@ -96,18 +97,21 @@ a {
   margin-bottom: 8%;
 }
 
-.update-header {
+.update-title {
+  font-size: 1vmax;
 }
 
 .update-date {
+  font-size: 1vmax;
 }
 
 .update-body {
+  font-size: 1vmax;
 }
 
 .area-header {
   @include header;
   text-align: center;
-  font-size: 36pt;
+  font-size: 2vmax;
   margin-bottom: 3%;
 }
