@@ -15,5 +15,15 @@
     <a href="https://amandalee.design/" target="_blank">Amanda Wade</a> for
     designing the website logo and all the icons.
   </p>
-  <img class="home-logo" src="logo.svg" />
+  <img class="home-logo" src="../../assets/icons/logo.svg" />
+  <div class="update-area">
+    <span class="area-header">Recent Updates</span>
+    <div class="update-post-group">
+      <div *ngFor="let update of updates$ | async" class="update-post">
+        <div class="update-date">{{ update.date }}</div>
+        <div class="update-title">{{ update.title }}</div>
+        <div class="update-body">{{ update.body }}</div>
+      </div>
+    </div>
+  </div>
 </div>
