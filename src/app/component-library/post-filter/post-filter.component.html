@@ -1,10 +1,15 @@
 <div class="filter-element">
-    <div *ngFor="let filter of filterGroup1" class="filter-group-1">
-        <input type="checkbox" [id]="filter">
-        <label [for]="filter">{{filter}}</label>
+    <div class="filter-group">
+        <span *ngFor="let filter of filterGroup1" class="filter-option">
+            <input type="checkbox" [id]="filter">
+            <label [for]="filter">{{filter}}</label>
+        </span>
     </div>
-    <div *ngFor="let filter of filterGroup2" class="filter-group-2">
-        <input type="checkbox" [id]="filter">
-        <label [for]="filter">{{filter}}</label>
+   
+    <div class="filter-group">
+        <span *ngFor="let filter of filterGroup2" class="filter-option">
+            <input type="checkbox" [id]="filter">
+            <label [for]="filter">{{filter}}</label>
+        </span>
     </div>
 </div>

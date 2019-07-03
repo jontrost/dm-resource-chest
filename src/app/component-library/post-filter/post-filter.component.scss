@@ -1,3 +1,28 @@
 .filter-element {
 	background-color: white;
+
+}
+
+.filter-group {
+// 	display: flex;
+// flex-direction: row;
+// justify-content: space-between;
+display: grid;
+grid-template-columns: auto auto auto auto auto;
+
+//NOT A REAL FIX ^^^^
+grid-template-rows: 1fr;
+
+}
+
+.filter-option {
+	//cursor: pointer;
+}
+
+
+
+label,
+input{
+	//pointer-events: none;
+	cursor: pointer;
 }
