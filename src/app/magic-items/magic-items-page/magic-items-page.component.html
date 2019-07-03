@@ -1,4 +1,5 @@
 <div class="nav-spacer"></div>
+<cl-post-filter [filterGroup1]="['Common','Uncommon','Rare','Very Rare','Legendary']" [filterGroup2]="['Armor','Potion','Jewelry','Scroll','Staff','Wand','Weapon','Wondrous Item']"></cl-post-filter>
 <div class="page">
     <a [routerLink]="['/magic-items', post.url]" class="post" *ngFor="let post of posts$ | async">
       <span class="title">
