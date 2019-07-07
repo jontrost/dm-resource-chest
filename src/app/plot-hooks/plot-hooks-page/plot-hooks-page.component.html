@@ -1,4 +1,5 @@
 <div class="nav-spacer"></div>
+<cl-post-filter [filter1]="'category'" [filterGroup1]="['Combat','Exploration','Horror','Humor','Mystery','Social']"></cl-post-filter>
 <div class="page">
   <a [routerLink]="['/plot-hooks', post.url]" class="post" *ngFor="let post of posts$ | async">
     <span class="title">
