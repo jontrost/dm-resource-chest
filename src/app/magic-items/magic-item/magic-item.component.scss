@@ -37,6 +37,7 @@
 .magic-item-type{
     font-size: 15pt;
     font-weight: bold;
+    text-transform: capitalize;
     color: $red;
     @include remove-margins;
 }
