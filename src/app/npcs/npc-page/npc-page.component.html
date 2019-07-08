@@ -1,5 +1,53 @@
 <div class="nav-spacer"></div>
-<cl-post-filter [filter1]="'sex'" [filterGroup1]="['male','female']" [filter2]="'age'" [filterGroup2]="['young','middle-aged','old']"></cl-post-filter>
+<div class="filter-element">
+  <div class="header">
+          Filter by sex
+  </div>
+  <div class="filter-group">
+      <div class="filter-option1">
+          <label for="male">
+                  <input type="checkbox" id="male" value="male" (click)="toggleMale()" checked>
+                  <span class="custom-checkbox"></span>
+                  Male
+          </label>
+      </div>
+      <div class="filter-option1">
+          <label for="female">
+                  <input type="checkbox" id="female" value="female" (click)="toggleFemale()" checked>
+                  <span class="custom-checkbox"></span>
+                  Female
+          </label>
+      </div>
+  </div>
+ 
+  <div class="header">
+  Filter by age
+  </div>
+  <div class="filter-group fg-2">
+      <div class="filter-option2"> 
+          <label for="young">
+                  <input type="checkbox" id="young" value="young" (click)="toggleYoung()" checked>
+                  <span class="custom-checkbox"></span>
+                  Young
+          </label>
+      </div>
+      <div class="filter-option2"> 
+          <label for="middle-aged">
+                  <input type="checkbox" id="middle-aged" value="middle-aged" (click)="toggleMiddleAged()" checked>
+                  <span class="custom-checkbox"></span>
+                  Middle-Aged
+          </label>
+      </div>
+      <div class="filter-option2"> 
+          <label for="old">
+                  <input type="checkbox" id="old" value="old" (click)="toggleOld()" checked>
+                  <span class="custom-checkbox"></span>
+                  Old
+          </label>
+      </div>
+  </div>
+</div>
+
 <div class="page">
   <a [routerLink]="['/npcs', post.url]" class="post" *ngFor="let post of posts$ | async">
     <span class="title">
