@@ -4,7 +4,6 @@ import { ShareButtonsModule } from '@ngx-share/buttons';
 import { NpcsRoutingModule } from './npcs-routing.module';
 import { NpcPageComponent } from './npc-page/npc-page.component';
 import { NpcComponent } from './npc/npc.component';
-import { ComponentLibraryModule } from '../component-library/component-library.module';
 
 
 @NgModule({
@@ -12,8 +11,7 @@ import { ComponentLibraryModule } from '../component-library/component-library.m
   imports: [
     CommonModule,
     NpcsRoutingModule,
-    ShareButtonsModule,
-    ComponentLibraryModule
+    ShareButtonsModule
   ]
 })
 export class NpcsModule { }

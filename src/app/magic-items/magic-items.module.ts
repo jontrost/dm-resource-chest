@@ -4,7 +4,6 @@ import { ShareButtonsModule } from '@ngx-share/buttons';
 import { MagicItemComponent } from './magic-item/magic-item.component';
 import { MagicItemsPageComponent } from './magic-items-page/magic-items-page.component';
 import { MagicItemsRoutingModule } from './magic-items-routing.module';
-import { ComponentLibraryModule } from '../component-library/component-library.module';
 
 
 @NgModule({
@@ -12,8 +11,7 @@ import { ComponentLibraryModule } from '../component-library/component-library.m
   imports: [
     CommonModule,
     MagicItemsRoutingModule,
-    ShareButtonsModule,
-    ComponentLibraryModule
+    ShareButtonsModule
   ]
 })
 export class MagicItemsModule { }
