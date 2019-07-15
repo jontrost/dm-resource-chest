@@ -1,10 +1,10 @@
 <nav id="main-nav">
   <img id="logo-nav" src="https://i.lensdump.com/i/WYDtGm.png">
-  <a id="home-nav" routerLink="home" routerLinkActive="current-tab" (click)="setTitle('Home')">Home</a>
-  <a id="magic-items-nav" routerLink="magic-items" routerLinkActive="current-tab" (click)="setTitle('Magic Items')">Magic Items</a>
-  <a id="npcs-nav" routerLink="npcs" routerLinkActive="current-tab" (click)="setTitle('NPCs')">NPCs</a>
-  <a id="plot-hooks-nav" routerLink="plot-hooks" routerLinkActive="current-tab" (click)="setTitle('Plot Hooks')">Plot Hooks</a>
-  <a id="contact-nav" routerLink="contact" routerLinkActive="current-tab" (click)="setTitle('Contact')">Contact</a>
-  <a id="support-nav" routerLink="support-the-site" (click)="setTitle('Support The Site')">Support The Site</a>
-  <span style="color: white;">Search Component</span>
+  <a id="home-nav" routerLink="home" (click)="setTitle('Home')" [ngClass]="menuClicked">Home</a>
+  <a id="magic-items-nav" routerLink="magic-items" (click)="setTitle('Magic Items')" [ngClass]="menuClicked">Magic Items</a>
+  <a id="npcs-nav" routerLink="npcs" (click)="setTitle('NPCs')" [ngClass]="menuClicked">NPCs</a>
+  <a id="plot-hooks-nav" routerLink="plot-hooks" (click)="setTitle('Plot Hooks')" [ngClass]="menuClicked">Plot Hooks</a>
+  <a id="contact-nav" routerLink="contact" (click)="setTitle('Contact')" [ngClass]="menuClicked">Contact</a>
+  <!-- <span style="color: white;">Search Component</span> -->
+  <img class="hamburger-menu-icon" src="../../assets/icons/hamburger-menu.svg" (click)="openMenu()" [ngClass]="menuClicked">
 </nav>
