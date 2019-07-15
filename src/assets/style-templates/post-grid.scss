@@ -8,6 +8,11 @@
     grid-auto-rows: auto;
     grid-gap: 50px;
     padding: 50px;
+    @media (max-width: 800px) {
+        grid-template-columns: 1fr;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
 }
 
 .post{
@@ -29,6 +34,9 @@
     font-size: 34pt;    
     font-family: $fantasy-font;
     margin-bottom: 2%;
+    @media (max-width: 800px) {
+        font-size: calc(2em + 2vw);
+    }
 }
 
 .preview{
@@ -37,6 +45,9 @@
     color: $red;
     margin-top: 2%;
     text-transform: capitalize;
+    @media (max-width: 800px) {
+        font-size: calc(1em + 1vw);
+    }
 }
 
 a:hover {

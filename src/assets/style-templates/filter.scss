@@ -8,6 +8,9 @@
 .filter-group {
 	display: flex;
 	justify-content: center;
+	@media (max-width: 800px) {
+		flex-direction: column;
+	}
 }
 
 .filter-option1,
@@ -57,7 +60,10 @@ label {
 label {
 	&:hover {
 		input + .custom-checkbox {
-			background-color: $red;
+			
+			@media (min-width: 801px){
+				background-color: $red;
+			}
 		}
 	}
 }
