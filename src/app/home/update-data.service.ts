@@ -12,7 +12,7 @@ export class UpdateDataService {
   @Cacheable()
   getJSONData(): Observable<any> {
     return this.httpClient.get(
-      "https://dm-resource-chest-server.herokuapp.com/updates"
+      "https://dm-resource-chest-server.herokuapp.com/api/updates"
     );
   }
 }

@@ -12,7 +12,7 @@ export class PlotHooksDataService {
 
   @Cacheable()
   getJSONData(): Observable<any> {
-    return this.httpClient.get('https://dm-resource-chest-server.herokuapp.com/plot-hooks');
+    return this.httpClient.get('https://dm-resource-chest-server.herokuapp.com/api/plot-hooks');
   }
 
 }

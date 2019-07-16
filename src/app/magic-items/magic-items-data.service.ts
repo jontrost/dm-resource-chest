@@ -12,6 +12,6 @@ export class MagicItemsDataService {
 
   @Cacheable()
   getJSONData(): Observable<any> {
-    return this.httpClient.get('https://dm-resource-chest-server.herokuapp.com/magic-items');
+    return this.httpClient.get('https://dm-resource-chest-server.herokuapp.com/api/magic-items');
   }
 }
