@@ -3,8 +3,8 @@
 @import "../../assets/style-templates/mixins.scss";
 @import "../../assets/style-templates/nav-spacer.scss";
 
-#home-page {
-  background: linear-gradient(black-transparent(0.85), black-transparent(0.85)),
+.home-page {
+  background: linear-gradient(black-transparent(0.85), black-transparent(0.88)),
     url("https://dm-resource-chest-server.herokuapp.com/api/dice-image");
   background-size: cover;
   background-position: center;

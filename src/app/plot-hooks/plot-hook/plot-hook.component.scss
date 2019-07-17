@@ -46,9 +46,10 @@
 	}
 }
 
-.test {
+.tags {
     display: flex;
     flex-direction: row;
+    text-transform: capitalize;
 }
 
 .plot-hook-content{
