@@ -5,6 +5,6 @@
   <a id="npcs-nav" routerLink="npcs" (click)="setTitle('NPCs')" [ngClass]="menuClicked">NPCs</a>
   <a id="plot-hooks-nav" routerLink="plot-hooks" (click)="setTitle('Plot Hooks')" [ngClass]="menuClicked">Plot Hooks</a>
   <a id="contact-nav" routerLink="contact" (click)="setTitle('Contact')" [ngClass]="menuClicked">Contact</a>
-  <!-- <span style="color: white;">Search Component</span> -->
+  <app-search [ngClass]="menuClicked"></app-search>
   <img class="hamburger-menu-icon" src="../../assets/icons/hamburger-menu.svg" (click)="openMenu()" [ngClass]="menuClicked">
 </nav>

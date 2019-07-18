@@ -75,4 +75,13 @@ a:hover{
     &:nth-child(2){
         padding-top: 3%;
     }
+
+    
 }
+
+app-search {
+    display: flex;
+    @media (max-width: 1300px) {
+        display: none;
+    }
+} 
