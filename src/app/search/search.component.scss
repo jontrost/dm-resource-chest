@@ -27,3 +27,32 @@ input {
 		display: flex;
 	}
 }
+
+.search-element {
+	display: flex;
+	flex-direction: column;
+	font-size: 10px;
+}
+
+.results-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+.result {
+	border: 1px solid #ddd; 
+	margin-top: -1px;
+	background-color: #f6f6f6;
+	//padding: 12px; 
+	text-decoration: none; 
+	font-size: 18px; 
+	color: black; 
+	& a {
+		display: block; 
+		height: 100%;
+		&:hover {
+			background-color: white;
+		}
+	}
+}

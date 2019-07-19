@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { SearchDataService } from './search-data.service';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-search',
@@ -8,14 +10,12 @@ import { SearchDataService } from './search-data.service';
 })
 export class SearchComponent {
 
+  posts$: Observable<any>;
   searchTerm: string;
 
   constructor(private searchDataService: SearchDataService) { }
 
-  //delete me
-  test(): void {
-    console.log(this.searchTerm);
-    this.searchDataService.getSearchResults(this.searchTerm).subscribe(value => console.log(value));
+  search() {
+    this.posts$ = this.searchDataService.getSearchResults(this.searchTerm.toLowerCase());
   }
-
 }
