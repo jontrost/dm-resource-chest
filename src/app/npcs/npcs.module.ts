@@ -4,10 +4,11 @@ import { ShareButtonsModule } from '@ngx-share/buttons';
 import { NpcsRoutingModule } from './npcs-routing.module';
 import { NpcPageComponent } from './npc-page/npc-page.component';
 import { NpcComponent } from './npc/npc.component';
+import { HighlightPipe } from './highlight.pipe';
 
 
 @NgModule({
-  declarations: [NpcPageComponent, NpcComponent],
+  declarations: [NpcPageComponent, NpcComponent, HighlightPipe],
   imports: [
     CommonModule,
     NpcsRoutingModule,

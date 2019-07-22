@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -6,26 +6,18 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
-export class NavigationComponent implements OnInit {
+export class NavigationComponent {
 
   constructor(private titleService: Title) { }
 
-  menuClicked: string = '';
+  menuClicked: boolean = false;
 
   setTitle(title: string){
     this.titleService.setTitle(title);
   }
 
   openMenu() {
-    if(this.menuClicked == '') {
-      this.menuClicked = 'menu-clicked';
-    }
-    else {
-      this.menuClicked = '';
-    }
-  }
-
-  ngOnInit() {
+    this.menuClicked = !this.menuClicked;
   }
 
 }

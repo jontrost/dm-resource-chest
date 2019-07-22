@@ -1,12 +1,13 @@
 <div class="search-element">
-<input type="text" placeholder="search" [(ngModel)]="searchTerm" (keyup.enter)="search()">
-    <ul class="results-list">
-        <li class="result" *ngFor="let post of posts$ | async">
-            <a>{{post.title}}</a>
+    <input type="text" placeholder="search" [(ngModel)]="searchTerm" (focusout)="hideResults()" (keyup.enter)="search()">
+    <ul class="results-list" [hidden]="hide">
+        <cdk-virtual-scroll-viewport class="scroll-viewport" itemSize="34">
+        <li class="result" *cdkVirtualFor="let post of posts$ | async">
+            <a [routerLink]="post.url">{{post.title}}<span class="post-type"> ({{post.type}})</span></a>
         </li>
+        </cdk-virtual-scroll-viewport>
     </ul>
+    
 </div>
 
-<!-- <a *ngFor="let post of posts$ | async" >
-    {{post.title}}
-</a> -->
+

@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { TextHighlightService } from './search/text-highlight.service';
 
 
 @NgModule({
@@ -15,15 +17,18 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    SearchComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ScrollingModule
   ],
-  providers: [],
+  providers: [
+    TextHighlightService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

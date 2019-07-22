@@ -11,6 +11,8 @@ input {
 	background: $white url('../../assets/icons/search.svg') no-repeat;
 	background-position: 5px 6px;
 	//background-size: 30px 30px;
+	padding: 0;
+	border: 0;
 	padding-left: 45px;
 	color: $black;
 	@media (max-width: 1300px) {
@@ -21,6 +23,7 @@ input {
 	&:focus {
 		width: auto;
 		max-width: 350px;
+		outline: none;
 	}
 
 	&:host {
@@ -32,27 +35,50 @@ input {
 	display: flex;
 	flex-direction: column;
 	font-size: 10px;
+	position: relative;
 }
 
 .results-list {
+	position: absolute;
+	top: 38px;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+	width: 100%;
+	height: 180px;
+	// overflow: hidden; 
+	overflow-y: scroll;
   }
   
 .result {
 	border: 1px solid #ddd; 
 	margin-top: -1px;
 	background-color: #f6f6f6;
-	//padding: 12px; 
+	padding: 6px; 
 	text-decoration: none; 
 	font-size: 18px; 
-	color: black; 
+	font-family: $normal-font;
+
+	&:hover {
+		background-color: $white;
+
+		& a {
+			color: $light-blue;
+		}
+	}
+	
 	& a {
 		display: block; 
 		height: 100%;
-		&:hover {
-			background-color: white;
-		}
+		width: 100%;
+		color: $black; 
 	}
+
+	& .post-type {
+		color: $red;
+	}
+}
+
+.scroll-viewport {
+	height: 100%;
 }

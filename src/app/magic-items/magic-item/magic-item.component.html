@@ -1,18 +1,14 @@
 <div class="nav-spacer"></div>
 <div class="magic-items-page">
 	<div class="magic-item-post" *ngIf="(post$ | async) as post">
-		<p class="magic-item-title">
-			{{post[0].title}}
-		</p>
-		<p class="magic-item-desc">
-			{{post[0].description}}
-		</p>
-		<p class="magic-item-type">
-			{{post[0].type}}, {{post[0].rarity}}
-		</p>
-		<p class="magic-item-details">
-			{{post[0].details}}
-		</p>
+		<p class="magic-item-title" [innerHTML]="post[0].title | highlight : textToHighlight"></p>
+		<p class="magic-item-desc" [innerHTML]="post[0].description | highlight : textToHighlight"></p>
+		<div>
+			<span class="magic-item-type" [innerHTML]="post[0].type | highlight : textToHighlight"></span>
+			<span class="magic-item-type">,&nbsp;</span>
+			<span class="magic-item-type" [innerHTML]="post[0].rarity | highlight : textToHighlight"></span>
+		</div>
+		<p class="magic-item-details" [innerHTML]="post[0].details | highlight : textToHighlight"></p>
 		<div class="social-buttons">
 			<share-buttons [theme]="'material-dark'"
 			[include]="['facebook','twitter','pinterest','reddit']"

@@ -3,6 +3,7 @@ import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { MagicItemsDataService } from '../magic-items-data.service';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { TextHighlightService } from 'src/app/search/text-highlight.service';
 
 @Component({
   selector: 'app-magic-item',
@@ -15,10 +16,12 @@ export class MagicItemComponent implements OnInit {
   filteredPosts$: Observable<any>;
   typesToShow;
   raritiesToShow;
+  textToHighlight: string = this.text.textToHighlight;
 
   constructor(
     private route: ActivatedRoute,
-    private service: MagicItemsDataService
+    private service: MagicItemsDataService,
+    private text: TextHighlightService
   ) {
   }
 

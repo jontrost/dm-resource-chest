@@ -1,20 +1,12 @@
 <div class="nav-spacer"></div>
 <div class="npc-page" *ngIf="(post$ | async) as post">
   <div class="npc-post">
-    <p class="npc-name">
-      {{post[0].name}}
-    </p>
+    <p class="npc-name" [innerHTML]="post[0].name | highlight : textToHighlight"></p>
     <div class="npc-quote-area">
-      <span class="npc-quote">
-        {{post[0].quote}}
-      </span>
-      <span class="npc-quote-author">
-        {{post[0].quoteAuthor}}
-      </span>
+      <span class="npc-quote" [innerHTML]="post[0].quote | highlight : textToHighlight"></span>
+      <span class="npc-quote-author" [innerHTML]="post[0].quoteAuthor | highlight : textToHighlight"></span>
     </div>
-    <p class="npc-description">
-      {{post[0].description}}
-    </p>
+    <p class="npc-description" [innerHTML]="post[0].description | highlight : textToHighlight"></p>
     <div class="npc-stats">
       <span class="npc-stat" *ngFor="let stat of post[0].stats; let i = index">
         <span *ngIf="i==0" class="strength"></span>

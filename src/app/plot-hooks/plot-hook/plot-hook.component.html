@@ -1,15 +1,11 @@
 <div class="nav-spacer"></div>
 <div class="plot-hooks-page">
   <div class="plot-hook-post" *ngIf="(post$ | async) as post">
-    <p class="plot-hook-title">
-      {{post[0].title}}
-    </p>
+    <p class="plot-hook-title" [innerHTML]="post[0].title | highlight : textToHighlight"></p>
     <div class="tags">
-      <span *ngFor="let tag of post[0].tags" class="plot-hook-tags">{{tag}}</span>
+      <span *ngFor="let tag of post[0].tags" class="plot-hook-tags" [innerHTML]="tag | highlight : textToHighlight"></span>
     </div>
-    <p class="plot-hook-content">
-      {{post[0].content}}
-    </p>
+    <p class="plot-hook-content" [innerHTML]="post[0].content | highlight : textToHighlight"></p>
     <div class="social-buttons">
       <share-buttons [theme]="'material-dark'" [include]="['facebook','twitter','pinterest','reddit']" [show]="4"></share-buttons>
     </div>
