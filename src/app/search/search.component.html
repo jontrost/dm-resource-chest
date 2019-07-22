@@ -1,5 +1,5 @@
 <div class="search-element">
-    <input type="text" placeholder="search" [(ngModel)]="searchTerm" (focusout)="hideResults()" (keyup.enter)="search()">
+    <input type="text" placeholder="search" [formControl]="input" (focus)="showResults()" (focusout)="hideResults()">
     <ul class="results-list" [hidden]="hide">
         <cdk-virtual-scroll-viewport class="scroll-viewport" itemSize="34">
         <li class="result" *cdkVirtualFor="let post of posts$ | async">
