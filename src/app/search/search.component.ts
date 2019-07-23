@@ -14,7 +14,7 @@ import { FormControl } from '@angular/forms';
 export class SearchComponent implements OnInit, OnDestroy {
 
   posts$: Observable<any>;
-  hide: boolean = false;
+  hide: boolean = true;
   inputStreamSub: Subscription;
   input = new FormControl('');
 
@@ -22,8 +22,8 @@ export class SearchComponent implements OnInit, OnDestroy {
 
   search(searchTerm: string) {
     if (searchTerm) {
-      this.posts$ = this.searchDataService.getSearchResults(searchTerm.toLowerCase());
       this.highlightService.textToHighlight = searchTerm;
+      this.posts$ = this.searchDataService.getSearchResults(searchTerm.toLowerCase());
     }
   }
 

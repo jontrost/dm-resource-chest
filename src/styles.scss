@@ -24,7 +24,7 @@ a{
 }
 
 a:hover {
-    transition: 0.25s;
+    transition-duration: 0.2s;
     color: $light-blue;
     cursor: pointer;
 }  

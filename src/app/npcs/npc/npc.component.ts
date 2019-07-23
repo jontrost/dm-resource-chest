@@ -33,6 +33,7 @@ export class NpcComponent implements OnInit, OnDestroy {
   }
 
   updateRoute(url: string) {
+    this.textToHighlight = this.text.textToHighlight;
     this.post$ = this.service.getJSONData().pipe(map(value => value.posts.filter(value => value.url == url)));
   }
 }
