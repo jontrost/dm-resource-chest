@@ -1,38 +1,38 @@
 <div class="nav-spacer"></div>
 <div class="filter-element">
-    <div class="header">
+    <div class="header" (click)="toggleGroup1()" [ngClass]="{'expanded' : !hideGroup1}">
             Filter by rarity
     </div>
     <div class="filter-group">
-        <div class="filter-option1">
+        <div class="filter-option1" [hidden]="hideGroup1">
             <label for="common">
                     <input type="checkbox" id="common" value="common" (click)="toggleCommon()" checked>
                     <span class="custom-checkbox"></span>
                     Common
             </label>
         </div>
-        <div class="filter-option1">
+        <div class="filter-option1" [hidden]="hideGroup1">
             <label for="uncommon">
                     <input type="checkbox" id="uncommon" value="uncommon" (click)="toggleUncommon()" checked>
                     <span class="custom-checkbox"></span>
                     Uncommon
             </label>
         </div>
-        <div class="filter-option1">
+        <div class="filter-option1" [hidden]="hideGroup1">
             <label for="rare">
                     <input type="checkbox" id="rare" value="rare" (click)="toggleRare()" checked>
                     <span class="custom-checkbox"></span>
                     Rare
             </label>
         </div>
-        <div class="filter-option1">
+        <div class="filter-option1" [hidden]="hideGroup1">
             <label for="very-rare">
                     <input type="checkbox" id="very-rare" value="very-rare" (click)="toggleVeryRare()" checked>
                     <span class="custom-checkbox"></span>
                     Very Rare
             </label>
         </div>
-        <div class="filter-option1">
+        <div class="filter-option1" [hidden]="hideGroup1">
             <label for="legendary">
                     <input type="checkbox" id="legendary" value="legendary" (click)="toggleLegendary()" checked>
                     <span class="custom-checkbox"></span>
@@ -41,60 +41,60 @@
         </div>
     </div>
    
-    <div class="header">
+    <div class="header header2" (click)="toggleGroup2()" [ngClass]="{'expanded' : !hideGroup2}">
     Filter by type
     </div>
     <div class="filter-group fg-2">
-        <div class="filter-option2"> 
+        <div class="filter-option2" [hidden]="hideGroup2"> 
             <label for="armor">
                     <input type="checkbox" id="armor" value="armor" (click)="toggleArmor()" checked>
                     <span class="custom-checkbox"></span>
                     Armor
             </label>
         </div>
-        <div class="filter-option2"> 
+        <div class="filter-option2" [hidden]="hideGroup2"> 
             <label for="jewelry">
                     <input type="checkbox" id="jewelry" value="jewelry" (click)="toggleJewelry()" checked>
                     <span class="custom-checkbox"></span>
                     Jewelry
             </label>
         </div>
-        <div class="filter-option2"> 
+        <div class="filter-option2" [hidden]="hideGroup2"> 
             <label for="potion">
                     <input type="checkbox" id="potion" value="potion" (click)="togglePotion()" checked>
                     <span class="custom-checkbox"></span>
                     Potion
             </label>
         </div>
-        <div class="filter-option2"> 
+        <div class="filter-option2" [hidden]="hideGroup2"> 
             <label for="scroll">
                     <input type="checkbox" id="scroll" value="scroll" (click)="toggleScroll()" checked>
                     <span class="custom-checkbox"></span>
                     Scroll
             </label>
         </div>
-        <div class="filter-option2"> 
+        <div class="filter-option2" [hidden]="hideGroup2"> 
             <label for="staff">
                     <input type="checkbox" id="staff" value="staff" (click)="toggleStaff()" checked>
                     <span class="custom-checkbox"></span>
                     Staff
             </label>
         </div>
-        <div class="filter-option2"> 
+        <div class="filter-option2" [hidden]="hideGroup2"> 
             <label for="wand">
                     <input type="checkbox" id="wand" value="wand" (click)="toggleWand()" checked>
                     <span class="custom-checkbox"></span>
                     Wand
             </label>
         </div>
-        <div class="filter-option2"> 
+        <div class="filter-option2" [hidden]="hideGroup2"> 
             <label for="weapon">
                     <input type="checkbox" id="weapon" value="weapon" (click)="toggleWeapon()" checked>
                     <span class="custom-checkbox"></span>
                     Weapon
             </label>
         </div>
-        <div class="filter-option2"> 
+        <div class="filter-option2" [hidden]="hideGroup2"> 
             <label for="wondrous-item">
                     <input type="checkbox" id="wondrous-item" value="wondrous-item" (click)="toggleWondrousItem()" checked>
                     <span class="custom-checkbox"></span>

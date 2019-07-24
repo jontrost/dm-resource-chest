@@ -14,6 +14,7 @@ export class PlotHooksPageComponent implements OnInit {
   filteredPosts$: Observable<any>;
   rawPosts$: Observable<any>;
 
+  hideGroup1: boolean = true;
   showHorror: string = 'horror';
   showHumor: string = 'humor';
   showMystery: string = 'mystery';
@@ -23,6 +24,10 @@ export class PlotHooksPageComponent implements OnInit {
 
   constructor(private plotHooksDataService: PlotHooksDataService) {
 
+  }
+
+  toggleGroup1() {
+    this.hideGroup1 = !this.hideGroup1;
   }
 
   updateFilters() {

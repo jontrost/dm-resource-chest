@@ -15,6 +15,8 @@ export class NpcPageComponent implements OnInit {
   filteredPosts$: Observable<any>;
   rawPosts$: Observable<any>;
 
+  hideGroup1: boolean = true;
+  hideGroup2: boolean = true;
   showMale: string = 'male';
   showFemale: string = 'female';
   showYoung: string = 'young';
@@ -23,6 +25,14 @@ export class NpcPageComponent implements OnInit {
 
   constructor(private npcsDataService: NpcsDataService) {
 
+  }
+
+  toggleGroup1() {
+    this.hideGroup1 = !this.hideGroup1;
+  }
+
+  toggleGroup2() {
+    this.hideGroup2 = !this.hideGroup2;
   }
 
   updateFilters() {

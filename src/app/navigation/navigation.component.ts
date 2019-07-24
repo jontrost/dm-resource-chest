@@ -14,10 +14,10 @@ export class NavigationComponent {
 
   setTitle(title: string){
     this.titleService.setTitle(title);
+    this.menuClicked = false;
   }
 
-  openMenu() {
+  toggleMenu() {
     this.menuClicked = !this.menuClicked;
   }
-
 }

@@ -16,6 +16,8 @@ export class MagicItemsPageComponent implements OnInit {
   filteredPosts$: Observable<any>;
   rawPosts$: Observable<any>;
 
+  hideGroup1: boolean = true
+  hideGroup2: boolean = true;
   showCommon: string = 'common';
   showUncommon: string = 'uncommon';
   showRare: string = 'rare';
@@ -32,6 +34,14 @@ export class MagicItemsPageComponent implements OnInit {
 
   constructor(private magicItemsDataService: MagicItemsDataService) {
 
+  }
+
+  toggleGroup1() {
+    this.hideGroup1 = !this.hideGroup1;
+  }
+
+  toggleGroup2() {
+    this.hideGroup2 = !this.hideGroup2;
   }
 
   updateFilters() {

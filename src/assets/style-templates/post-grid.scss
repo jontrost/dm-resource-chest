@@ -8,10 +8,11 @@
     grid-auto-rows: auto;
     grid-gap: 50px;
     padding: 50px;
+
     @media (max-width: 800px) {
         grid-template-columns: 1fr;
-        padding-left: 3vw;
-        padding-right: 3vw;
+        padding-left: 4.5vw;
+        padding-right: 4.5vw;
     }
 }
 
