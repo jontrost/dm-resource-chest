@@ -3,18 +3,22 @@
 @import '~@ngx-share/button/themes/material/material-dark-theme';
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Raleway&display=swap');
 
-html{
+html {
     background-color: $black;
     height: 100%;
     width: 100%;
 }
 
-body{
+body {
     margin: 0;
     font-family: $normal-font;
     height: inherit;
     width: inherit;
     color: $black;
+}
+
+main {
+    height: 100%;
 }
 
 a{

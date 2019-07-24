@@ -1,5 +1,5 @@
 <div class="search-element">
-    <input type="text" placeholder="search" [formControl]="input" (focus)="showResults()" (focusout)="hideResults()">
+    <input type="text" aria-label="search" placeholder="search" [formControl]="input" (focus)="showResults()" (focusout)="hideResults()">
         <cdk-virtual-scroll-viewport class="scroll-viewport" itemSize="40" [ngClass]="{ 'hide' : hide }">
             <a [routerLink]="post.url" class="result" *cdkVirtualFor="let post of posts$ | async" >
                 {{post.title}}<span class="post-type"> ({{post.type}})</span>

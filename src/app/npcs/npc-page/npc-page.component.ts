@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { NpcsDataService } from '../npcs-data.service';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
@@ -22,6 +22,12 @@ export class NpcPageComponent implements OnInit {
   showYoung: string = 'young';
   showMiddleAged: string = 'middle-aged';
   showOld: string = 'old';
+
+  @ViewChild('male', { static : false }) male: ElementRef<HTMLElement>;
+  @ViewChild('female', { static : false }) female: ElementRef<HTMLElement>;
+  @ViewChild('young', { static : false }) young: ElementRef<HTMLElement>;
+  @ViewChild('middleAged', { static : false }) middleAged: ElementRef<HTMLElement>;
+  @ViewChild('old', { static : false }) old: ElementRef<HTMLElement>;
 
   constructor(private npcsDataService: NpcsDataService) {
 
@@ -131,5 +137,25 @@ export class NpcPageComponent implements OnInit {
       this.showOld = 'old';
     }
     this.updateFilters();
+  }
+
+  tabToggleMale() {
+    this.male.nativeElement.click();
+  }
+
+  tabToggleFemale() {
+    this.female.nativeElement.click();
+  }
+
+  tabToggleYoung() {
+    this.young.nativeElement.click();
+  }
+
+  tabToggleMiddleAged() {
+    this.middleAged.nativeElement.click();
+  }
+
+  tabToggleOld() {
+    this.old.nativeElement.click();
   }
 }

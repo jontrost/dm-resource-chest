@@ -51,7 +51,9 @@
     }
 }
 
-a:hover {
+a:hover,
+a:focus {
     transition: 200ms;
     outline-color: $light-blue;
+    color: $light-blue;
 }
