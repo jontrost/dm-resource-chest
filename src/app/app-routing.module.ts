@@ -9,7 +9,8 @@ const routes: Routes = [
   {path: 'contact', loadChildren: './contact/contact.module#ContactModule'},
   {path: 'support-the-site', loadChildren: './support-the-site/support-the-site.module#SupportTheSiteModule'},
   {path: 'home', component: HomeComponent},
-  {path: '', component: HomeComponent}
+  {path: '', component: HomeComponent},
+  {path: "**", redirectTo: ''}
 ];
 
 @NgModule({
