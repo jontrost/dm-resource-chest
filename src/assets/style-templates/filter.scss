@@ -4,8 +4,6 @@
 .filter-element {
 	background-color: $white;
 	padding: 2%;
-	//z-index: 1;
-	//pointer-events: none;
 }
 
 .filter-group {
@@ -98,9 +96,12 @@ label .custom-checkbox:after {
 	display: flex;
 	justify-content: center;
 	font-size: 18pt;
-	//padding-top: 1%;
-	//z-index: 9;
 	cursor: pointer;
+	
+	&:focus {
+		outline: none;
+		@include tab-outline;
+	}
 
 		&::after {
 			content: "";

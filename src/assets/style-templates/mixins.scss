@@ -64,5 +64,7 @@
 }
 
 @mixin tab-outline {
-  outline: -webkit-focus-ring-color auto 5px;
+  @media (min-width: 801px) {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
 }
