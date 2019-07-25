@@ -5,28 +5,28 @@
   </div>
   <div class="filter-group">
       <div class="filter-option1" [hidden]="hideGroup1">
-          <label for="combat" (keydown.enter)="tabToggleCombat()">
+          <label role="checkbox" aria-checked="true" for="combat" (keydown.enter)="tabToggleCombat()">
                   <input #combat type="checkbox" id="combat" value="combat" (click)="toggleCombat()" checked>
                   <span class="custom-checkbox"></span>
                   Combat
           </label>
       </div>
       <div class="filter-option1" [hidden]="hideGroup1">
-          <label for="exploration" (keydown.enter)="tabToggleExploration()">
+          <label role="checkbox" aria-checked="true" for="exploration" (keydown.enter)="tabToggleExploration()">
                   <input #exploration type="checkbox" id="exploration" value="exploration" (click)="toggleExploration()" checked>
                   <span class="custom-checkbox"></span>
                   Exploration
           </label>
       </div>
       <div class="filter-option1" [hidden]="hideGroup1">
-          <label for="horror" (keydown.enter)="tabToggleHorror()">
+          <label role="checkbox" aria-checked="true" for="horror" (keydown.enter)="tabToggleHorror()">
                   <input #horror type="checkbox" id="horror" value="horror" (click)="toggleHorror()" checked>
                   <span class="custom-checkbox"></span>
                   Horror
           </label>
       </div>
       <div class="filter-option1" [hidden]="hideGroup1">
-        <label for="humor" (keydown.enter)="tabToggleHumor()">
+        <label role="checkbox" aria-checked="true" for="humor" (keydown.enter)="tabToggleHumor()">
                 <input #humor type="checkbox" id="humor" value="humor" (click)="toggleHumor()" checked>
                 <span class="custom-checkbox"></span>
                 Humor
@@ -34,7 +34,7 @@
     </div>
       
       <div class="filter-option1" [hidden]="hideGroup1">
-        <label for="mystery" (keydown.enter)="tabToggleMystery()">
+        <label role="checkbox" aria-checked="true" for="mystery" (keydown.enter)="tabToggleMystery()">
                 <input #mystery type="checkbox" id="mystery" value="mystery" (click)="toggleMystery()" checked>
                 <span class="custom-checkbox"></span>
                 Mystery
@@ -42,7 +42,7 @@
     </div>
 
 <div class="filter-option1" [hidden]="hideGroup1">
-  <label for="social" (keydown.enter)="tabToggleSocial()">
+  <label role="checkbox" aria-checked="true" for="social" (keydown.enter)="tabToggleSocial()">
           <input #social type="checkbox" id="social" value="social" (click)="toggleSocial()" checked>
           <span class="custom-checkbox"></span>
           Social

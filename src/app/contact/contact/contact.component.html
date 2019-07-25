@@ -10,6 +10,7 @@
         [(ngModel)]="formData.name"
         required
         maxlength="40"
+        aria-label="name input"
       />
     </div>
     <div class="field">
@@ -20,6 +21,7 @@
         [(ngModel)]="formData.email"
         required
         maxlength="40"
+        aria-label="email input"
       />
     </div>
     <div class="field">
@@ -30,6 +32,7 @@
         [(ngModel)]="formData.message"
         required
         maxlength="1500"
+        aria-label="message input"
       ></textarea>
     </div>
     <re-captcha
