@@ -16,12 +16,11 @@ export class MagicItemComponent implements OnInit {
   paramSub: Subscription;
   typesToShow;
   raritiesToShow;
-  textToHighlight: string = this.text.textToHighlight;
 
   constructor(
     private route: ActivatedRoute,
     private service: MagicItemsDataService,
-    private text: TextHighlightService
+    private highlightService: TextHighlightService
   ) {
   }
 
@@ -35,7 +34,6 @@ export class MagicItemComponent implements OnInit {
   }
 
   updateRoute(url: string) {
-    this.textToHighlight = this.text.textToHighlight;
     this.post$ = this.service.getJSONData().pipe(map(value => value.posts.filter(value => value.url == url)));
   }
 }

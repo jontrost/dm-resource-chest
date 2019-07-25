@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { MagicItemsDataService} from '../magic-items-data.service';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -32,6 +32,20 @@ export class MagicItemsPageComponent implements OnInit {
   showWeapon: string = 'weapon';
   showWondrousItem: string = 'wondrous item';
 
+  @ViewChild('common', { static : false }) common: ElementRef<HTMLElement>;
+  @ViewChild('uncommon', { static : false }) uncommon: ElementRef<HTMLElement>;
+  @ViewChild('rare', { static : false }) rare: ElementRef<HTMLElement>;
+  @ViewChild('veryRare', { static : false }) veryRare: ElementRef<HTMLElement>;
+  @ViewChild('legendary', { static: false }) legendary: ElementRef<HTMLElement>;
+  @ViewChild('armor', { static : false }) armor: ElementRef<HTMLElement>;
+  @ViewChild('potion', { static : false }) potion: ElementRef<HTMLElement>;
+  @ViewChild('jewelry', { static : false }) jewelry: ElementRef<HTMLElement>;
+  @ViewChild('scroll', { static : false }) scroll: ElementRef<HTMLElement>;
+  @ViewChild('staff', { static: false }) staff: ElementRef<HTMLElement>;
+  @ViewChild('wand', { static : false }) wand: ElementRef<HTMLElement>;
+  @ViewChild('weapon', { static : false }) weapon: ElementRef<HTMLElement>;
+  @ViewChild('wondrousItem', { static : false }) wondrousItem: ElementRef<HTMLElement>;
+
   constructor(private magicItemsDataService: MagicItemsDataService) {
 
   }
@@ -45,36 +59,6 @@ export class MagicItemsPageComponent implements OnInit {
   }
 
   updateFilters() {
-    if (this.showArmor == '' && this.showJewelry == '' && this.showPotion == '' && this.showScroll == '' && this.showStaff == '' && this.showWand == '' && this.showWeapon == '' && this.showWondrousItem == '') {
-      this.posts$ = this.rawPosts$.pipe(
-        map(posts => posts.posts.filter(
-          post =>
-            post.rarity == this.showCommon
-            || post.rarity == this.showUncommon
-            || post.rarity == this.showRare
-            || post.rarity == this.showVeryRare
-            || post.rarity == this.showLegendary
-          )
-        )
-      );
-    }
-    else if (this.showCommon  == '' && this.showUncommon == '' && this.showRare == '' && this.showVeryRare == '' && this.showLegendary == '') {
-      this.posts$ = this.rawPosts$.pipe(
-        map(posts => posts.posts.filter(
-          post =>
-            post.type == this.showArmor
-            || post.type == this.showPotion
-            || post.type == this.showJewelry
-            || post.type == this.showScroll
-            || post.type == this.showStaff
-            || post.type == this.showWand
-            || post.type == this.showWeapon
-            || post.type == this.showWondrousItem
-          )
-        )
-      );
-    }
-    else {
       this.posts$ = this.rawPosts$.pipe(
         map(posts => posts.posts.filter(
           post =>
@@ -100,7 +84,6 @@ export class MagicItemsPageComponent implements OnInit {
         )
       );
     }
-  }
 
   ngOnInit() {
     this.rawPosts$ = this.magicItemsDataService.getJSONData();
@@ -237,5 +220,57 @@ export class MagicItemsPageComponent implements OnInit {
       this.showWondrousItem = 'wondrous item';
     }
     this.updateFilters();
+  }
+
+  tabToggleCommon() {
+    this.common.nativeElement.click();
+  }
+
+  tabToggleUncommon() {
+    this.uncommon.nativeElement.click();
+  }
+
+  tabToggleRare() {
+    this.rare.nativeElement.click();
+  }
+
+  tabToggleVeryRare() {
+    this.veryRare.nativeElement.click();
+  }
+
+  tabToggleLegendary() {
+    this.legendary.nativeElement.click();
+  }
+
+  tabToggleArmor() {
+    this.armor.nativeElement.click();
+  }
+
+  tabTogglePotion() {
+    this.potion.nativeElement.click();
+  }
+
+  tabToggleJewelry() {
+    this.jewelry.nativeElement.click();
+  }
+
+  tabToggleScroll() {
+    this.scroll.nativeElement.click();
+  }
+
+  tabToggleStaff() {
+    this.staff.nativeElement.click();
+  }
+
+  tabToggleWand() {
+    this.wand.nativeElement.click();
+  }
+
+  tabToggleWeapon() {
+    this.weapon.nativeElement.click();
+  }
+
+  tabToggleWondrousItem() {
+    this.wondrousItem.nativeElement.click();
   }
 }

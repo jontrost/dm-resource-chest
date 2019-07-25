@@ -59,4 +59,19 @@
 
 .social-buttons {
     @include social-buttons;
+
+    & share-buttons {
+        & div {
+            & share-button:nth-child(3) {
+                button {
+                    border: 90px solid black;
+                }
+            }
+        }
+    }
 }
+
+body > app-root > main > app-magic-item > div.magic-items-page > div > div.social-buttons > share-buttons > div > share-button:nth-child(4) > button {
+    border: 90px solid black;
+}
+// .social-buttons > share-buttons > div > share-button:nth-child(3) > button

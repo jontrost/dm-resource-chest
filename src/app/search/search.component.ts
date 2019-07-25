@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { SearchDataService } from './search-data.service';
 import { Observable, Subscription } from 'rxjs';
 import { Router } from '@angular/router';
@@ -17,6 +17,9 @@ export class SearchComponent implements OnInit, OnDestroy {
   hide: boolean = true;
   inputStreamSub: Subscription;
   input = new FormControl('');
+  wideDisplay: boolean = true;
+
+  @ViewChild('searchElement', { static : false }) searchElement: ElementRef<HTMLElement>;
 
   constructor(private searchDataService: SearchDataService, private router: Router, private highlightService: TextHighlightService) {}
 
@@ -25,16 +28,27 @@ export class SearchComponent implements OnInit, OnDestroy {
       this.highlightService.textToHighlight = searchTerm;
       this.posts$ = this.searchDataService.getSearchResults(searchTerm.toLowerCase());
     }
+    else {
+      this.posts$ = null;
+    }
   }
 
-  hideResults() {
-    setTimeout(() => {
-      this.hide = true;
-    }, 180);
+  hideResults($event) {
+    if (!this.searchElement.nativeElement.contains($event.relatedTarget)) {
+      setTimeout(() => {
+        this.hide = true;
+        this.wideDisplay = false;
+      }, 180);
+    }
   }
 
   showResults() {
     this.hide = false;
+    this.wideDisplay = true;
+  }
+
+  resetHighlight() {
+    this.highlightService.showHighlight = true;
   }
 
   ngOnInit(): void {

@@ -49,3 +49,7 @@
 a {
     color: $white;
 }
+
+div.magic-items-page > div > div.social-buttons > share-buttons > div > share-button:nth-child(2) > button {
+    border: 90px solid black;
+}

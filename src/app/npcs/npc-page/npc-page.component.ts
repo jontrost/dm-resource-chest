@@ -42,27 +42,6 @@ export class NpcPageComponent implements OnInit {
   }
 
   updateFilters() {
-    if (this.showYoung == '' && this.showMiddleAged == '' && this.showOld == '') {
-      this.posts$ = this.rawPosts$.pipe(
-        map(posts => posts.posts.filter(
-          post =>
-            post.sex == this.showMale || post.sex == this.showFemale
-          )
-        )
-      );
-    }
-    else if (this.showMale  == '' && this.showFemale == '') {
-      this.posts$ = this.rawPosts$.pipe(
-        map(posts => posts.posts.filter(
-          post =>
-            post.age == this.showYoung
-            || post.age == this.showMiddleAged
-            || post.age == this.showOld
-          )
-        )
-      );
-    }
-    else {
       this.posts$ = this.rawPosts$.pipe(
         map(posts => posts.posts.filter(
           post =>
@@ -80,7 +59,6 @@ export class NpcPageComponent implements OnInit {
         )
       );
     }
-  }
 
   ngOnInit() {
     this.rawPosts$ = this.npcsDataService.getJSONData();

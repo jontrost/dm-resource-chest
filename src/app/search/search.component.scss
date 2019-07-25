@@ -1,5 +1,6 @@
 @import '../../assets/fonts/fonts.scss';
 @import '../../assets/colors/colors.scss';
+@import '../../assets/style-templates/mixins.scss';
 
 input {
 	max-width: 100px;
@@ -17,9 +18,12 @@ input {
 	color: $black;
 	
 	&:focus {
+		@include tab-outline();
+	}
+
+	&.wide {
 		width: auto;
 		max-width: 300px;
-		outline: none;
 	}
 
 	&:host {
@@ -63,12 +67,9 @@ input {
 	justify-content: center;
 
 
-	&:hover {
-		//border-color: black;
-
-		& a {
-			color: $light-blue;
-		}
+	&:hover,
+	&:focus {
+		color: $light-blue;
 	}
 	
 	& a {

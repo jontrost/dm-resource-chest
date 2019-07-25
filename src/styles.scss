@@ -1,5 +1,6 @@
 @import './assets/colors/colors.scss';
 @import './assets/fonts/fonts.scss';
+@import './assets/style-templates/mixins.scss';
 @import '~@ngx-share/button/themes/material/material-dark-theme';
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Raleway&display=swap');
 
@@ -32,3 +33,21 @@ a:hover {
     color: $light-blue;
     cursor: pointer;
 }  
+
+body > app-root > main > app-magic-item > div.magic-items-page > div > div.social-buttons > share-buttons > div > share-button > button {
+    &:focus {
+        @include tab-outline();
+    }
+}
+
+body > app-root > main > app-npc > div.npc-page > div > div.social-buttons > share-buttons > div > share-button > button {
+    &:focus {
+        @include tab-outline();
+    }
+}
+
+body > app-root > main > app-plot-hook > div.plot-hooks-page > div > div.social-buttons > share-buttons > div > share-button > button {
+    &:focus {
+        @include tab-outline();
+    }
+}

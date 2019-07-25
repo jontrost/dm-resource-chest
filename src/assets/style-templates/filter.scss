@@ -1,4 +1,5 @@
 @import '../colors/colors.scss';
+@import '../style-templates/mixins.scss';
 
 .filter-element {
 	background-color: $white;
@@ -35,7 +36,7 @@ label {
 	padding-left: 35px;
 
 	&:focus-within {
-		outline: 2px solid $light-blue;
+		@include tab-outline();
 	}
 	
 	& input {
@@ -66,7 +67,6 @@ label {
 label {
 	&:hover {
 		input + .custom-checkbox {
-			
 			@media (min-width: 801px){
 				background-color: $red;
 			}

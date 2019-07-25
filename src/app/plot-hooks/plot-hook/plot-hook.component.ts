@@ -14,12 +14,11 @@ export class PlotHookComponent implements OnInit, OnDestroy{
 
   post$: Observable<any>;
   paramSub: Subscription;
-  textToHighlight: string = this.text.textToHighlight;
 
   constructor(
     private route: ActivatedRoute,
     private service: PlotHooksDataService,
-    private text: TextHighlightService
+    private highlightService: TextHighlightService
   ) {}
 
   ngOnInit() {
@@ -32,7 +31,6 @@ export class PlotHookComponent implements OnInit, OnDestroy{
   }
 
   updateRoute(url: string) {
-    this.textToHighlight = this.text.textToHighlight;
     this.post$ = this.service.getJSONData().pipe(map(value => value.posts.filter(value => value.url == url)));
   }
 

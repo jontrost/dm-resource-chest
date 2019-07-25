@@ -62,3 +62,7 @@
   width: 40px;
   margin-right: 12px;
 }
+
+@mixin tab-outline {
+  outline: -webkit-focus-ring-color auto 5px;
+}
