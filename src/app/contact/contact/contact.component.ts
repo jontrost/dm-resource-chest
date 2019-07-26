@@ -1,6 +1,6 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { ContactDataService } from "../contact-data.service";
-//import * as nodemailer from "nodemailer";
+
 @Component({
   selector: "app-contact",
   templateUrl: "./contact.component.html",
