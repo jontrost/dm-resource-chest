@@ -1,21 +1,48 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-	<url>
-		<loc>https://dmresourcechest.com/</loc>
-	</url>
-	<url>
-		<loc>https://dmresourcechest.com/contact</loc>
-	</url>
-	<url>
-		<loc>https://dmresourcechest.com/home</loc>
-	</url>
-	<url>
-		<loc>https://dmresourcechest.com/magic-items</loc>
-	</url>
-	<url>
-		<loc>https://dmresourcechest.com/npcs</loc>
-	</url>
-	<url>
-		<loc>https://dmresourcechest.com/plot-hooks</loc>
-	</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://dmresourcechest.com</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/home</loc><priority>1</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/elixir-of-immortality</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/orb-of-darkness</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/beast-clay</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/gamblers-coin</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/staff-of-planar-suction</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/tankard-of-transformation</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/manacles-of-love</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/scroll-of-chronomancy</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/sticky-armor</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/gust</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/isolde</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/atugak</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/elegnos</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/lanashi</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/dibu</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/yugreg</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/orpi</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/bagra</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/quintus</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/heartsmasher</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/ruul</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/trapped-with-the-unknown</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/double-trouble</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/giant-trouble</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/drunken-warning</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/the-corrupted-tree</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/divine-heat</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/dark-captivity</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/the-mischievous-bug</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/untold-treasure</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/whispers-from-the-well</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/smithing-sabotage</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/the-cursed-text</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/rogue-contraption</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/a-secret-ingredient</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/the-stallion-message</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/test-subject</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/coin-before-family</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/glorious-grapes</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/mystery-in-the-mines</loc><priority>0.5</priority></url>
 </urlset>
