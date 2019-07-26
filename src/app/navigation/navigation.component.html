@@ -1,5 +1,5 @@
 <nav id="main-nav">
-  <img class="hamburger-menu-icon" [ngClass]="{'lock-menu-position' : menuClicked}" src="../../assets/icons/hamburger-menu.svg" (click)="toggleMenu()">
+  <img class="hamburger-menu-icon" [ngClass]="{'lock-menu-position' : menuClicked}" src="../../assets/icons/hamburger-menu.svg" (click)="toggleMenu()" alt="expand menu icon">
   <img id="logo-nav" src="../../assets/icons/d20.svg" alt="">
   <a id="home-nav" routerLink="home" (click)="setTitle('Home')" [ngClass]="{'menu-clicked' : menuClicked}">Home</a>
   <a id="magic-items-nav" routerLink="magic-items" (click)="setTitle('Magic Items')" [ngClass]="{'menu-clicked' : menuClicked}">Magic Items</a>
