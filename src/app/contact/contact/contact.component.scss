@@ -1,82 +1,72 @@
-@import '../../../assets/colors/colors.scss';
-@import '../../../assets/fonts/fonts.scss';
-@import '../../../assets/style-templates/mixins.scss';
+@import "../../../assets/colors/colors.scss";
+@import "../../../assets/fonts/fonts.scss";
+@import "../../../assets/style-templates/mixins.scss";
 @import "../../../assets/style-templates/nav-spacer.scss";
 
-.contact-page{
-    @include page-layout;
+.contact-page {
+	@include page-layout;
 }
 
-.contact-form{
-    @include post-spacing;
-    grid-row-gap: 30px;
+.contact-form {
+	@include post-spacing;
+	grid-row-gap: 30px;
 }
 
 .header {
-    @include header;
-    font-size: 28pt;
+	@include header;
+	font-size: 28pt;
 }
 
 .submit-button {
-    border: none;
-    font-family: $normal-font;
-    font-size: 12pt;
-    padding: 10px;
-    text-align: center;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: $white;
-    box-shadow: 0 0 20px #eee;
-    width: 150px;
-    border-radius: 3px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    cursor: pointer;
-    display: inline-block;
-    background-image: linear-gradient(to right, $light-blue 0%, $dark-blue 51%, $light-blue 100%);
+	border: none;
+	font-family: $normal-font;
+	font-size: 12pt;
+	padding: 10px;
+	text-align: center;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: $white;
+	box-shadow: 0 0 20px #eee;
+	width: 150px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	cursor: pointer;
+	display: inline-block;
+	background-image: linear-gradient(to right, $light-blue 0%, $dark-blue 51%, $light-blue 100%);
 
-    &[disabled] {
-        cursor: default;
-        background-image: 
-        linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)),
-        linear-gradient(to right, $light-blue 0%, $dark-blue 51%, $light-blue 100%),
-    }
+	&[disabled] {
+		cursor: default;
+		background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+			linear-gradient(to right, $light-blue 0%, $dark-blue 51%, $light-blue 100%);
+	}
 
-    &:hover:enabled {
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        background-position: right center;
-    }
-
+	&:hover:enabled {
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		background-position: right center;
+	}
 }
 
-input, textarea {
-    width: 100%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    resize: none;
-    font-family: $normal-font;
-    border: 1px solid $black;
-    border-radius: 3px;
+input,
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	resize: none;
+	font-family: $normal-font;
+	border: 1px solid $black;
+	border-radius: 3px;
 
-    &:focus {
-        border-color: $light-blue;
-        outline: none;
-    }
-
-    // &.ng-touched {
-    //     border-color: $red;
-    // }
-
-    // &.ng-valid {
-    //     border-color: $black;
-    // }
-
+	&:focus {
+		border-color: $light-blue;
+		outline: none;
+	}
 }
 
 textarea {
-    min-height: 150px;
+	min-height: 150px;
 }
 
 .after-submit {
-    @include post-spacing;
+	@include post-spacing;
 }

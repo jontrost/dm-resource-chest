@@ -1,45 +1,44 @@
-@import '../../../assets/colors/colors.scss';
-@import '../../../assets/fonts/fonts.scss';
-@import '../../../assets/style-templates/mixins.scss';
+@import "../../../assets/colors/colors.scss";
+@import "../../../assets/fonts/fonts.scss";
+@import "../../../assets/style-templates/mixins.scss";
 @import "../../../assets/style-templates/nav-spacer.scss";
 
-.plot-hooks-page{
-    @include page-layout;
+.plot-hooks-page {
+	@include page-layout;
 }
 
-.plot-hook-post{
-    @include post-spacing;
+.plot-hook-post {
+	@include post-spacing;
 }
 
-.plot-hook-title{
-    font-size: 36pt;
-    @include remove-margins;
-    @include header;
-    line-height: 1;
-	//color: $dark-red;
+.plot-hook-title {
+	font-size: 36pt;
+	@include remove-margins;
+	@include header;
+	line-height: 1;
 }
 
-.plot-hook-tags{
-    @include remove-margins;
-    font-size: 15pt;
-    font-weight: bold;
-    color: $red;
+.plot-hook-tags {
+	@include remove-margins;
+	font-size: 15pt;
+	font-weight: bold;
+	color: $red;
 
-    &::after {
-        content: ",";
-    }
-    
-    &::before {
-        content: "\00a0 ";
+	&::after {
+		content: ",";
 	}
-	
+
+	&::before {
+		content: "\00a0 ";
+	}
+
 	&:last-child {
 		&::after {
 			content: none;
 		}
-    }
-    
-    &:first-child {
+	}
+
+	&:first-child {
 		&::before {
 			content: none;
 		}
@@ -47,31 +46,40 @@
 }
 
 .tags {
-    display: flex;
-    flex-direction: row;
-    text-transform: capitalize;
+	display: flex;
+	flex-direction: row;
+	text-transform: capitalize;
 }
 
-.plot-hook-content{
-    font-size: 15pt;
-    @include remove-margins;
+.plot-hook-content {
+	font-size: 15pt;
+	@include remove-margins;
 }
 
 .social-buttons {
-    @include social-buttons;
+	@include social-buttons;
 
-    & share-buttons {
-        & div {
-            & share-button:nth-child(3) {
-                button {
-                    border: 90px solid black;
-                }
-            }
-        }
-    }
+	& share-buttons {
+		& div {
+			& share-button:nth-child(3) {
+				button {
+					border: 90px solid black;
+				}
+			}
+		}
+	}
 }
 
-body > app-root > main > app-magic-item > div.magic-items-page > div > div.social-buttons > share-buttons > div > share-button:nth-child(4) > button {
-    border: 90px solid black;
+body
+	> app-root
+	> main
+	> app-magic-item
+	> div.magic-items-page
+	> div
+	> div.social-buttons
+	> share-buttons
+	> div
+	> share-button:nth-child(4)
+	> button {
+	border: 90px solid black;
 }
-// .social-buttons > share-buttons > div > share-button:nth-child(3) > button

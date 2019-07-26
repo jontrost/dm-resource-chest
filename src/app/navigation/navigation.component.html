@@ -1,10 +1,14 @@
 <nav id="main-nav">
-  <img class="hamburger-menu-icon" [ngClass]="{'lock-menu-position' : menuClicked}" src="../../assets/icons/hamburger-menu.svg" (click)="toggleMenu()" alt="expand menu icon">
-  <img id="logo-nav" src="../../assets/icons/d20.svg" alt="">
-  <a id="home-nav" routerLink="home" (click)="setTitle('Home')" [ngClass]="{'menu-clicked' : menuClicked}">Home</a>
-  <a id="magic-items-nav" routerLink="magic-items" (click)="setTitle('Magic Items')" [ngClass]="{'menu-clicked' : menuClicked}">Magic Items</a>
-  <a id="npcs-nav" routerLink="npcs" (click)="setTitle('NPCs')" [ngClass]="{'menu-clicked' : menuClicked}">NPCs</a>
-  <a id="plot-hooks-nav" routerLink="plot-hooks" (click)="setTitle('Plot Hooks')" [ngClass]="{'menu-clicked' : menuClicked}">Plot Hooks</a>
-  <a id="contact-nav" routerLink="contact" (click)="setTitle('Contact')" [ngClass]="{'menu-clicked' : menuClicked}">Contact</a>
-  <app-search [ngClass]="{'menu-clicked' : menuClicked}"></app-search>
+	<img class="hamburger-menu-icon" [ngClass]="{ 'lock-menu-position': menuClicked }"
+		src="../../assets/icons/hamburger-menu.svg" (click)="toggleMenu()" alt="expand menu icon" />
+	<img id="logo-nav" src="../../assets/icons/d20.svg" alt="" />
+	<a id="home-nav" routerLink="home" (click)="setTitle('Home')" [ngClass]="{ 'menu-clicked': menuClicked }">Home</a>
+	<a id="magic-items-nav" routerLink="magic-items" (click)="setTitle('Magic Items')"
+		[ngClass]="{ 'menu-clicked': menuClicked }">Magic Items</a>
+	<a id="npcs-nav" routerLink="npcs" (click)="setTitle('NPCs')" [ngClass]="{ 'menu-clicked': menuClicked }">NPCs</a>
+	<a id="plot-hooks-nav" routerLink="plot-hooks" (click)="setTitle('Plot Hooks')"
+		[ngClass]="{ 'menu-clicked': menuClicked }">Plot Hooks</a>
+	<a id="contact-nav" routerLink="contact" (click)="setTitle('Contact')"
+		[ngClass]="{ 'menu-clicked': menuClicked }">Contact</a>
+	<app-search [ngClass]="{ 'menu-clicked': menuClicked }"></app-search>
 </nav>

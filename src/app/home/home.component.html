@@ -1,31 +1,30 @@
 <div class="nav-spacer"></div>
 <div class="home-page">
-  <div class="home-text">
-      <p class="home-title">
-          DM Resource Chest
-        </p>
-        <p class="home-desc">
-          DM Resource Chest is a treasure trove full of Dungeons and Dragons campaign
-          elements that can easily be added to your campaign. The resources you find
-          here can be inserted directly into your campaign or they can serve as
-          inspiration for your own fantastic creations. Plenty of new content is being
-          added on a regular basis, so be sure to check back frequently!
-        </p>
-        <p class="home-credits">
-          Special thanks to
-          <a href="https://amandalee.design/" target="_blank" rel="noopener">Amanda Wade</a> for
-          designing the website logo and all the icons.
-        </p>
-  </div>
-  <img class="home-logo" src="../../assets/icons/logo.svg" alt=""/>
-  <div class="update-area">
-    <span class="area-header">Recent Updates</span>
-    <div class="update-post-group">
-      <div *ngFor="let update of updates$ | async" class="update-post">
-        <div class="update-title">{{ update.title }}</div>
-        <div class="update-date">{{ update.date }}</div>
-        <div class="update-body">{{ update.body }}</div>
-      </div>
-    </div>
-  </div>
+	<div class="home-text">
+		<p class="home-title">
+			DM Resource Chest
+		</p>
+		<p class="home-desc">
+			DM Resource Chest is a treasure trove full of Dungeons and Dragons campaign elements that can easily be
+			added to your campaign. The resources you find here can be inserted directly into your campaign or they can
+			serve as inspiration for your own fantastic creations. Plenty of new content is being added on a regular
+			basis, so be sure to check back frequently!
+		</p>
+		<p class="home-credits">
+			Special thanks to
+			<a href="https://amandalee.design/" target="_blank" rel="noopener">Amanda Wade</a>
+			for designing the website logo and all the icons.
+		</p>
+	</div>
+	<img class="home-logo" src="../../assets/icons/logo.svg" alt="" />
+	<div class="update-area">
+		<span class="area-header">Recent Updates</span>
+		<div class="update-post-group">
+			<div *ngFor="let update of updates$ | async" class="update-post">
+				<div class="update-title">{{ update.title }}</div>
+				<div class="update-date">{{ update.date }}</div>
+				<div class="update-body">{{ update.body }}</div>
+			</div>
+		</div>
+	</div>
 </div>

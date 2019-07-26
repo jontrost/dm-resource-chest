@@ -1,5 +1,5 @@
-@import '../colors/colors.scss';
-@import '../style-templates/mixins.scss';
+@import "../colors/colors.scss";
+@import "../style-templates/mixins.scss";
 
 .filter-element {
 	background-color: $white;
@@ -21,13 +21,13 @@
 }
 
 label,
-input{
+input {
 	cursor: pointer;
 }
 
 label {
 	font-size: 16pt;
-	display: flex;	
+	display: flex;
 	align-items: center;
 	display: block;
 	position: relative;
@@ -36,12 +36,12 @@ label {
 	&:focus-within {
 		@include tab-outline();
 	}
-	
+
 	& input {
 		position: absolute;
-  		opacity: 0;
-  		cursor: pointer;
-  		height: 0;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
 		width: 0;
 	}
 }
@@ -65,7 +65,7 @@ label {
 label {
 	&:hover {
 		input + .custom-checkbox {
-			@media (min-width: 801px){
+			@media (min-width: 801px) {
 				background-color: $red;
 			}
 		}
@@ -76,11 +76,9 @@ input:checked + .custom-checkbox {
 	background-color: $red;
 }
 
-
-	input:checked + .custom-checkbox:after {
-		display: block;
-	  }
-
+input:checked + .custom-checkbox:after {
+	display: block;
+}
 
 label .custom-checkbox:after {
 	left: 9px;
@@ -90,28 +88,28 @@ label .custom-checkbox:after {
 	border: solid white;
 	border-width: 0 3px 3px 0;
 	transform: rotate(45deg);
-  }
+}
 
 .header {
 	display: flex;
 	justify-content: center;
 	font-size: 18pt;
 	cursor: pointer;
-	
+
 	&:focus {
 		outline: none;
 		@include tab-outline;
 	}
 
-		&::after {
-			content: "";
-			background-image: url("src/assets/icons/expand-arrow.png");
-			background-size: 30px;
-			//background-position: bottom;
-			height: 30px;
-			width: 30px;
-			margin-left: 12px;
-		}
+	&::after {
+		content: "";
+		background-image: url("src/assets/icons/expand-arrow.png");
+		background-size: 30px;
+		//background-position: bottom;
+		height: 30px;
+		width: 30px;
+		margin-left: 12px;
+	}
 	&.expanded {
 		&::after {
 			background-image: url("src/assets/icons/collapse-arrow.png");
@@ -122,4 +120,3 @@ label .custom-checkbox:after {
 		padding-top: 1%;
 	}
 }
-

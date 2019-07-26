@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: "root"
 })
 export class TextHighlightService {
-  textToHighlight: string;
-  showHighlight: boolean = true;
+	textToHighlight: string;
+	showHighlight: boolean = true;
 }

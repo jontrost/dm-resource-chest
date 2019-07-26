@@ -1,24 +1,25 @@
 <div class="nav-spacer"></div>
-<div class="npc-page" *ngIf="(post$ | async) as post">
-  <div class="npc-post">
-    <p class="npc-name" [innerHTML]="post[0].name | highlight : highlightService"></p>
-    <div class="npc-quote-area">
-      <span class="npc-quote" [innerHTML]="post[0].quote | highlight : highlightService"></span>
-      <span class="npc-quote-author" [innerHTML]="post[0].quoteAuthor | highlight : highlightService"></span>
-    </div>
-    <p class="npc-description" [innerHTML]="post[0].description | highlight : highlightService"></p>
-    <div class="npc-stats">
-      <span class="npc-stat" *ngFor="let stat of post[0].stats; let i = index">
-        <span *ngIf="i==0" class="strength"></span>
-        <span *ngIf="i==1" class="dexterity"></span>
-        <span *ngIf="i==2" class="constitution"></span>
-        <span *ngIf="i==3" class="intelligence"></span>
-        <span *ngIf="i==4" class="wisdom"></span>
-        <span *ngIf="i==5" class="charisma"></span>{{stat}}
-      </span>
-    </div>
-    <div class="social-buttons">
-      <share-buttons [theme]="'material-dark'" [include]="['facebook','twitter','pinterest','reddit']" [show]="4"></share-buttons>
-    </div>
-  </div>
+<div class="npc-page" *ngIf="post$ | async as post">
+	<div class="npc-post">
+		<p class="npc-name" [innerHTML]="post[0].name | highlight: highlightService"></p>
+		<div class="npc-quote-area">
+			<span class="npc-quote" [innerHTML]="post[0].quote | highlight: highlightService"></span>
+			<span class="npc-quote-author" [innerHTML]="post[0].quoteAuthor | highlight: highlightService"></span>
+		</div>
+		<p class="npc-description" [innerHTML]="post[0].description | highlight: highlightService"></p>
+		<div class="npc-stats">
+			<span class="npc-stat" *ngFor="let stat of post[0].stats; let i = index">
+				<span *ngIf="i == 0" class="strength"></span>
+				<span *ngIf="i == 1" class="dexterity"></span>
+				<span *ngIf="i == 2" class="constitution"></span>
+				<span *ngIf="i == 3" class="intelligence"></span>
+				<span *ngIf="i == 4" class="wisdom"></span>
+				<span *ngIf="i == 5" class="charisma"></span>{{ stat }}
+			</span>
+		</div>
+		<div class="social-buttons">
+			<share-buttons [theme]="'material-dark'" [include]="['facebook', 'twitter', 'pinterest', 'reddit']"
+				[show]="4"></share-buttons>
+		</div>
+	</div>
 </div>

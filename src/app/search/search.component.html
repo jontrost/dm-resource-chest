@@ -1,10 +1,10 @@
 <div #searchElement class="search-element" (focusout)="hideResults($event)">
-    <input type="text" aria-label="search" placeholder="search" [formControl]="input" (focus)="showResults()" [ngClass]="{ 'wide' : wideDisplay }">
-        <div class="scroll-viewport" [ngClass]="{ 'hide' : hide }">
-            <a [routerLink]="post.url" class="result" *ngFor="let post of posts$ | async" (click)="resetHighlight()" tabindex="0">
-                {{post.title}}<span class="post-type"> ({{post.type}})</span>
-            </a>
-        </div>
+	<input type="text" aria-label="search" placeholder="search" [formControl]="input" (focus)="showResults()"
+		[ngClass]="{ wide: wideDisplay }" />
+	<div class="scroll-viewport" [ngClass]="{ hide: hide }">
+		<a [routerLink]="post.url" class="result" *ngFor="let post of posts$ | async" (click)="resetHighlight()"
+			tabindex="0">
+			{{ post.title }}<span class="post-type"> ({{ post.type }})</span>
+		</a>
+	</div>
 </div>
-
-

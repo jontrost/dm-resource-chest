@@ -6,7 +6,7 @@ import { FormsModule } from "@angular/forms";
 import { RecaptchaModule } from "ng-recaptcha";
 
 @NgModule({
-  declarations: [ContactComponent],
-  imports: [CommonModule, ContactRoutingModule, FormsModule, RecaptchaModule]
+	declarations: [ContactComponent],
+	imports: [CommonModule, ContactRoutingModule, FormsModule, RecaptchaModule]
 })
-export class ContactModule {}
+export class ContactModule { }

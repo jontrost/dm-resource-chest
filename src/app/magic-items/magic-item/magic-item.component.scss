@@ -1,55 +1,52 @@
-@import '../../../assets/colors/colors.scss';
-@import '../../../assets/fonts/fonts.scss';
-@import '../../../assets/style-templates/mixins.scss';
+@import "../../../assets/colors/colors.scss";
+@import "../../../assets/fonts/fonts.scss";
+@import "../../../assets/style-templates/mixins.scss";
 @import "../../../assets/style-templates/nav-spacer.scss";
 
-.magic-items-page{
-    @include page-layout;
+.magic-items-page {
+	@include page-layout;
 }
 
-.magic-item-post{
-    @include post-spacing;
+.magic-item-post {
+	@include post-spacing;
 }
 
-.magic-item-title{
-    font-size: 36pt;
-    @include remove-margins;
-    line-height: 1;
-    @include header;
+.magic-item-title {
+	font-size: 36pt;
+	@include remove-margins;
+	line-height: 1;
+	@include header;
 }
 
-.magic-item-desc{
-    //display: flex;
-    //flex-direction: column;
-    //justify-content: space-around;
-    font-size: 15pt;
-    background-color: dark-blue-transparent(.1);
-    font-style: italic;
-    padding: 2%;
-    @include remove-margins;
+.magic-item-desc {
+	font-size: 15pt;
+	background-color: dark-blue-transparent(0.1);
+	font-style: italic;
+	padding: 2%;
+	@include remove-margins;
 }
 
-.magic-item-type{
-    font-size: 15pt;
-    font-weight: bold;
-    text-transform: capitalize;
-    color: $red;
-    @include remove-margins;
+.magic-item-type {
+	font-size: 15pt;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: $red;
+	@include remove-margins;
 }
 
-.magic-item-details{
-    font-size: 15pt;
-    @include remove-margins;
+.magic-item-details {
+	font-size: 15pt;
+	@include remove-margins;
 }
 
 .social-buttons {
-    @include social-buttons;
+	@include social-buttons;
 }
 
 a {
-    color: $white;
+	color: $white;
 }
 
 div.magic-items-page > div > div.social-buttons > share-buttons > div > share-button:nth-child(2) > button {
-    border: 90px solid black;
+	border: 90px solid black;
 }

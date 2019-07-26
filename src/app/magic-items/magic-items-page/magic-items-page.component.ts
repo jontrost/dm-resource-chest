@@ -1,276 +1,253 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { MagicItemsDataService} from '../magic-items-data.service';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { MagicItemsDataService } from "../magic-items-data.service";
+import { Observable } from "rxjs";
+import { map } from "rxjs/operators";
 
 @Component({
-  selector: 'app-magic-items-page',
-  templateUrl: './magic-items-page.component.html',
-  styleUrls: ['./magic-items-page.component.scss'],
-  providers: [MagicItemsDataService]
+	selector: "app-magic-items-page",
+	templateUrl: "./magic-items-page.component.html",
+	styleUrls: ["./magic-items-page.component.scss"],
+	providers: [MagicItemsDataService]
 })
-
 export class MagicItemsPageComponent implements OnInit {
+	posts$: Observable<any>;
+	filteredPosts$: Observable<any>;
+	rawPosts$: Observable<any>;
 
-  posts$: Observable<any>;
-  filteredPosts$: Observable<any>;
-  rawPosts$: Observable<any>;
+	hideGroup1: boolean = true;
+	hideGroup2: boolean = true;
+	showCommon: string = "common";
+	showUncommon: string = "uncommon";
+	showRare: string = "rare";
+	showVeryRare: string = "very rare";
+	showLegendary: string = "legendary";
+	showArmor: string = "armor";
+	showPotion: string = "potion";
+	showJewelry: string = "jewelry";
+	showScroll: string = "scroll";
+	showStaff: string = "staff";
+	showWand: string = "wand";
+	showWeapon: string = "weapon";
+	showWondrousItem: string = "wondrous item";
 
-  hideGroup1: boolean = true
-  hideGroup2: boolean = true;
-  showCommon: string = 'common';
-  showUncommon: string = 'uncommon';
-  showRare: string = 'rare';
-  showVeryRare: string = 'very rare';
-  showLegendary: string = 'legendary';
-  showArmor: string = 'armor';
-  showPotion: string = 'potion';
-  showJewelry: string = 'jewelry';
-  showScroll: string = 'scroll';
-  showStaff: string = 'staff';
-  showWand: string = 'wand';
-  showWeapon: string = 'weapon';
-  showWondrousItem: string = 'wondrous item';
+	@ViewChild("common", { static: false }) common: ElementRef<HTMLElement>;
+	@ViewChild("uncommon", { static: false }) uncommon: ElementRef<HTMLElement>;
+	@ViewChild("rare", { static: false }) rare: ElementRef<HTMLElement>;
+	@ViewChild("veryRare", { static: false }) veryRare: ElementRef<HTMLElement>;
+	@ViewChild("legendary", { static: false }) legendary: ElementRef<HTMLElement>;
+	@ViewChild("armor", { static: false }) armor: ElementRef<HTMLElement>;
+	@ViewChild("potion", { static: false }) potion: ElementRef<HTMLElement>;
+	@ViewChild("jewelry", { static: false }) jewelry: ElementRef<HTMLElement>;
+	@ViewChild("scroll", { static: false }) scroll: ElementRef<HTMLElement>;
+	@ViewChild("staff", { static: false }) staff: ElementRef<HTMLElement>;
+	@ViewChild("wand", { static: false }) wand: ElementRef<HTMLElement>;
+	@ViewChild("weapon", { static: false }) weapon: ElementRef<HTMLElement>;
+	@ViewChild("wondrousItem", { static: false }) wondrousItem: ElementRef<HTMLElement>;
 
-  @ViewChild('common', { static : false }) common: ElementRef<HTMLElement>;
-  @ViewChild('uncommon', { static : false }) uncommon: ElementRef<HTMLElement>;
-  @ViewChild('rare', { static : false }) rare: ElementRef<HTMLElement>;
-  @ViewChild('veryRare', { static : false }) veryRare: ElementRef<HTMLElement>;
-  @ViewChild('legendary', { static: false }) legendary: ElementRef<HTMLElement>;
-  @ViewChild('armor', { static : false }) armor: ElementRef<HTMLElement>;
-  @ViewChild('potion', { static : false }) potion: ElementRef<HTMLElement>;
-  @ViewChild('jewelry', { static : false }) jewelry: ElementRef<HTMLElement>;
-  @ViewChild('scroll', { static : false }) scroll: ElementRef<HTMLElement>;
-  @ViewChild('staff', { static: false }) staff: ElementRef<HTMLElement>;
-  @ViewChild('wand', { static : false }) wand: ElementRef<HTMLElement>;
-  @ViewChild('weapon', { static : false }) weapon: ElementRef<HTMLElement>;
-  @ViewChild('wondrousItem', { static : false }) wondrousItem: ElementRef<HTMLElement>;
+	constructor(private magicItemsDataService: MagicItemsDataService) { }
 
-  constructor(private magicItemsDataService: MagicItemsDataService) {
+	toggleGroup1() {
+		this.hideGroup1 = !this.hideGroup1;
+	}
 
-  }
+	toggleGroup2() {
+		this.hideGroup2 = !this.hideGroup2;
+	}
 
-  toggleGroup1() {
-    this.hideGroup1 = !this.hideGroup1;
-  }
+	updateFilters() {
+		this.posts$ = this.rawPosts$.pipe(
+			map(posts =>
+				posts.posts.filter(
+					post =>
+						(post.rarity == this.showCommon ||
+							post.rarity == this.showUncommon ||
+							post.rarity == this.showRare ||
+							post.rarity == this.showVeryRare ||
+							post.rarity == this.showLegendary) &&
+						(post.type == this.showArmor ||
+							post.type == this.showPotion ||
+							post.type == this.showJewelry ||
+							post.type == this.showScroll ||
+							post.type == this.showStaff ||
+							post.type == this.showWand ||
+							post.type == this.showWeapon ||
+							post.type == this.showWondrousItem)
+				)
+			)
+		);
+	}
 
-  toggleGroup2() {
-    this.hideGroup2 = !this.hideGroup2;
-  }
+	ngOnInit() {
+		this.rawPosts$ = this.magicItemsDataService.getJSONData();
+		this.posts$ = this.rawPosts$.pipe(map(posts => posts.posts));
+	}
 
-  updateFilters() {
-      this.posts$ = this.rawPosts$.pipe(
-        map(posts => posts.posts.filter(
-          post =>
-            (
-            post.rarity == this.showCommon
-            || post.rarity == this.showUncommon
-            || post.rarity == this.showRare
-            || post.rarity == this.showVeryRare
-            || post.rarity == this.showLegendary
-            )
-            &&
-            (
-            post.type == this.showArmor
-            || post.type == this.showPotion
-            || post.type == this.showJewelry
-            || post.type == this.showScroll
-            || post.type == this.showStaff
-            || post.type == this.showWand
-            || post.type == this.showWeapon
-            || post.type == this.showWondrousItem
-            )
-          )
-        )
-      );
-    }
+	toggleCommon() {
+		if (this.showCommon == "common") {
+			this.showCommon = "";
+		} else {
+			this.showCommon = "common";
+		}
+		this.updateFilters();
+	}
 
-  ngOnInit() {
-    this.rawPosts$ = this.magicItemsDataService.getJSONData();
-    this.posts$ = this.rawPosts$.pipe(
-      map(posts => posts.posts)
-    );
-  }
+	toggleUncommon() {
+		if (this.showUncommon == "uncommon") {
+			this.showUncommon = "";
+		} else {
+			this.showUncommon = "uncommon";
+		}
+		this.updateFilters();
+	}
 
-  toggleCommon() {
-    if (this.showCommon == 'common') {
-      this.showCommon = '';
-    }
-    else {
-      this.showCommon = 'common';
-    }
-    this.updateFilters();
-  }
+	toggleRare() {
+		if (this.showRare == "rare") {
+			this.showRare = "";
+		} else {
+			this.showRare = "rare";
+		}
+		this.updateFilters();
+	}
 
-  toggleUncommon() {
-    if (this.showUncommon == 'uncommon') {
-      this.showUncommon = '';
-    }
-    else {
-      this.showUncommon = 'uncommon';
-    }
-    this.updateFilters();
-  }
+	toggleVeryRare() {
+		if (this.showVeryRare == "very rare") {
+			this.showVeryRare = "";
+		} else {
+			this.showVeryRare = "very rare";
+		}
+		this.updateFilters();
+	}
 
-  toggleRare() {
-    if (this.showRare == 'rare') {
-      this.showRare = '';
-    }
-    else {
-      this.showRare = 'rare';
-    }
-    this.updateFilters();
-  }
+	toggleLegendary() {
+		if (this.showLegendary == "legendary") {
+			this.showLegendary = "";
+		} else {
+			this.showLegendary = "legendary";
+		}
+		this.updateFilters();
+	}
 
-  toggleVeryRare() {
-    if (this.showVeryRare == 'very rare') {
-      this.showVeryRare = '';
-    }
-    else {
-      this.showVeryRare = 'very rare';
-    }
-    this.updateFilters();
-  }
+	toggleArmor() {
+		if (this.showArmor == "armor") {
+			this.showArmor = "";
+		} else {
+			this.showArmor = "armor";
+		}
+		this.updateFilters();
+	}
 
-  toggleLegendary() {
-    if (this.showLegendary == 'legendary') {
-      this.showLegendary = '';
-    }
-    else {
-      this.showLegendary = 'legendary';
-    }
-    this.updateFilters();
-  }
+	togglePotion() {
+		if (this.showPotion == "potion") {
+			this.showPotion = "";
+		} else {
+			this.showPotion = "potion";
+		}
+		this.updateFilters();
+	}
 
-  toggleArmor() {
-    if (this.showArmor == 'armor') {
-      this.showArmor = '';
-    }
-    else {
-      this.showArmor = 'armor';
-    }
-    this.updateFilters();
-  }
+	toggleJewelry() {
+		if (this.showJewelry == "jewelry") {
+			this.showJewelry = "";
+		} else {
+			this.showJewelry = "jewelry";
+		}
+		this.updateFilters();
+	}
 
-  togglePotion() {
-    if (this.showPotion == 'potion') {
-      this.showPotion = '';
-    }
-    else {
-      this.showPotion = 'potion';
-    }
-    this.updateFilters();
-  }
+	toggleScroll() {
+		if (this.showScroll == "scroll") {
+			this.showScroll = "";
+		} else {
+			this.showScroll = "scroll";
+		}
+		this.updateFilters();
+	}
 
-  toggleJewelry() {
-    if (this.showJewelry == 'jewelry') {
-      this.showJewelry = '';
-    }
-    else {
-      this.showJewelry = 'jewelry';
-    }
-    this.updateFilters();
-  }
+	toggleStaff() {
+		if (this.showStaff == "staff") {
+			this.showStaff = "";
+		} else {
+			this.showStaff = "staff";
+		}
+		this.updateFilters();
+	}
 
-  toggleScroll() {
-    if (this.showScroll == 'scroll') {
-      this.showScroll = '';
-    }
-    else {
-      this.showScroll = 'scroll';
-    }
-    this.updateFilters();
-  }
+	toggleWand() {
+		if (this.showWand == "wand") {
+			this.showWand = "";
+		} else {
+			this.showWand = "wand";
+		}
+		this.updateFilters();
+	}
 
-  toggleStaff() {
-    if (this.showStaff == 'staff') {
-      this.showStaff = '';
-    }
-    else {
-      this.showStaff = 'staff';
-    }
-    this.updateFilters();
-  }
+	toggleWeapon() {
+		if (this.showWeapon == "weapon") {
+			this.showWeapon = "";
+		} else {
+			this.showWeapon = "weapon";
+		}
+		this.updateFilters();
+	}
 
-  toggleWand() {
-    if (this.showWand == 'wand') {
-      this.showWand = '';
-    }
-    else {
-      this.showWand = 'wand';
-    }
-    this.updateFilters();
-  }
+	toggleWondrousItem() {
+		if (this.showWondrousItem == "wondrous item") {
+			this.showWondrousItem = "";
+		} else {
+			this.showWondrousItem = "wondrous item";
+		}
+		this.updateFilters();
+	}
 
-  toggleWeapon() {
-    if (this.showWeapon == 'weapon') {
-      this.showWeapon = '';
-    }
-    else {
-      this.showWeapon = 'weapon';
-    }
-    this.updateFilters();
-  }
+	tabToggleCommon() {
+		this.common.nativeElement.click();
+	}
 
-  toggleWondrousItem() {
-    if (this.showWondrousItem == 'wondrous item') {
-      this.showWondrousItem = '';
-    }
-    else {
-      this.showWondrousItem = 'wondrous item';
-    }
-    this.updateFilters();
-  }
+	tabToggleUncommon() {
+		this.uncommon.nativeElement.click();
+	}
 
-  tabToggleCommon() {
-    this.common.nativeElement.click();
-  }
+	tabToggleRare() {
+		this.rare.nativeElement.click();
+	}
 
-  tabToggleUncommon() {
-    this.uncommon.nativeElement.click();
-  }
+	tabToggleVeryRare() {
+		this.veryRare.nativeElement.click();
+	}
 
-  tabToggleRare() {
-    this.rare.nativeElement.click();
-  }
+	tabToggleLegendary() {
+		this.legendary.nativeElement.click();
+	}
 
-  tabToggleVeryRare() {
-    this.veryRare.nativeElement.click();
-  }
+	tabToggleArmor() {
+		this.armor.nativeElement.click();
+	}
 
-  tabToggleLegendary() {
-    this.legendary.nativeElement.click();
-  }
+	tabTogglePotion() {
+		this.potion.nativeElement.click();
+	}
 
-  tabToggleArmor() {
-    this.armor.nativeElement.click();
-  }
+	tabToggleJewelry() {
+		this.jewelry.nativeElement.click();
+	}
 
-  tabTogglePotion() {
-    this.potion.nativeElement.click();
-  }
+	tabToggleScroll() {
+		this.scroll.nativeElement.click();
+	}
 
-  tabToggleJewelry() {
-    this.jewelry.nativeElement.click();
-  }
+	tabToggleStaff() {
+		this.staff.nativeElement.click();
+	}
 
-  tabToggleScroll() {
-    this.scroll.nativeElement.click();
-  }
+	tabToggleWand() {
+		this.wand.nativeElement.click();
+	}
 
-  tabToggleStaff() {
-    this.staff.nativeElement.click();
-  }
+	tabToggleWeapon() {
+		this.weapon.nativeElement.click();
+	}
 
-  tabToggleWand() {
-    this.wand.nativeElement.click();
-  }
-
-  tabToggleWeapon() {
-    this.weapon.nativeElement.click();
-  }
-
-  tabToggleWondrousItem() {
-    this.wondrousItem.nativeElement.click();
-  }
+	tabToggleWondrousItem() {
+		this.wondrousItem.nativeElement.click();
+	}
 }

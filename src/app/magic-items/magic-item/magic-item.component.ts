@@ -1,39 +1,39 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap, Router } from '@angular/router';
-import { MagicItemsDataService } from '../magic-items-data.service';
-import { Observable, Subscription } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { TextHighlightService } from 'src/app/search/text-highlight.service';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute, ParamMap, Router } from "@angular/router";
+import { MagicItemsDataService } from "../magic-items-data.service";
+import { Observable, Subscription } from "rxjs";
+import { map } from "rxjs/operators";
+import { TextHighlightService } from "src/app/search/text-highlight.service";
 
 @Component({
-  selector: 'app-magic-item',
-  templateUrl: './magic-item.component.html',
-  styleUrls: ['./magic-item.component.scss']
+	selector: "app-magic-item",
+	templateUrl: "./magic-item.component.html",
+	styleUrls: ["./magic-item.component.scss"]
 })
 export class MagicItemComponent implements OnInit {
+	post$: Observable<any>;
+	paramSub: Subscription;
+	typesToShow;
+	raritiesToShow;
 
-  post$: Observable<any>;
-  paramSub: Subscription;
-  typesToShow;
-  raritiesToShow;
+	constructor(
+		private route: ActivatedRoute,
+		private service: MagicItemsDataService,
+		private highlightService: TextHighlightService
+	) { }
 
-  constructor(
-    private route: ActivatedRoute,
-    private service: MagicItemsDataService,
-    private highlightService: TextHighlightService
-  ) {
-  }
+	ngOnInit() {
+		this.paramSub = this.route.params.subscribe(param => this.updateRoute(param["url"]));
+		this.post$ = this.service
+			.getJSONData()
+			.pipe(map(value => value.posts.filter(value => value.url == this.route.snapshot.paramMap.get("url"))));
+	}
 
-  ngOnInit() {
-    this.paramSub = this.route.params.subscribe(param => this.updateRoute(param['url']));
-    this.post$ = this.service.getJSONData().pipe(map(value => value.posts.filter(value => value.url == this.route.snapshot.paramMap.get('url'))));
-  }
+	ngOnDestroy(): void {
+		this.paramSub.unsubscribe();
+	}
 
-  ngOnDestroy(): void {
-    this.paramSub.unsubscribe();
-  }
-
-  updateRoute(url: string) {
-    this.post$ = this.service.getJSONData().pipe(map(value => value.posts.filter(value => value.url == url)));
-  }
+	updateRoute(url: string) {
+		this.post$ = this.service.getJSONData().pipe(map(value => value.posts.filter(value => value.url == url)));
+	}
 }

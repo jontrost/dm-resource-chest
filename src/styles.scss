@@ -1,53 +1,83 @@
-@import './assets/colors/colors.scss';
-@import './assets/fonts/fonts.scss';
-@import './assets/style-templates/mixins.scss';
-@import '~@ngx-share/button/themes/material/material-dark-theme';
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Raleway&display=swap');
+@import "./assets/colors/colors.scss";
+@import "./assets/fonts/fonts.scss";
+@import "./assets/style-templates/mixins.scss";
+@import "~@ngx-share/button/themes/material/material-dark-theme";
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Raleway&display=swap");
 
 html {
-    background-color: $black;
-    height: 100%;
-    width: 100%;
+	background-color: $black;
+	height: 100%;
+	width: 100%;
 }
 
 body {
-    margin: 0;
-    font-family: $normal-font;
-    height: inherit;
-    width: inherit;
-    color: $black;
+	margin: 0;
+	font-family: $normal-font;
+	height: inherit;
+	width: inherit;
+	color: $black;
 }
 
 main {
-    height: 100%;
+	height: 100%;
 }
 
-a{
-    text-decoration: none;
-    color: $dark-blue;
-    transition: 0.25s;
+a {
+	text-decoration: none;
+	color: $dark-blue;
+	transition: 0.25s;
 }
 
 a:hover {
-    transition-duration: 0.2s;
-    color: $light-blue;
-    cursor: pointer;
-}  
-
-body > app-root > main > app-magic-item > div.magic-items-page > div > div.social-buttons > share-buttons > div > share-button > button {
-    &:focus {
-        @include tab-outline();
-    }
+	transition-duration: 0.2s;
+	color: $light-blue;
+	cursor: pointer;
 }
 
-body > app-root > main > app-npc > div.npc-page > div > div.social-buttons > share-buttons > div > share-button > button {
-    &:focus {
-        @include tab-outline();
-    }
+body
+	> app-root
+	> main
+	> app-magic-item
+	> div.magic-items-page
+	> div
+	> div.social-buttons
+	> share-buttons
+	> div
+	> share-button
+	> button {
+	&:focus {
+		@include tab-outline();
+	}
 }
 
-body > app-root > main > app-plot-hook > div.plot-hooks-page > div > div.social-buttons > share-buttons > div > share-button > button {
-    &:focus {
-        @include tab-outline();
-    }
+body
+	> app-root
+	> main
+	> app-npc
+	> div.npc-page
+	> div
+	> div.social-buttons
+	> share-buttons
+	> div
+	> share-button
+	> button {
+	&:focus {
+		@include tab-outline();
+	}
+}
+
+body
+	> app-root
+	> main
+	> app-plot-hook
+	> div.plot-hooks-page
+	> div
+	> div.social-buttons
+	> share-buttons
+	> div
+	> share-button
+	> button {
+	&:focus {
+		@include tab-outline();
+	}
 }

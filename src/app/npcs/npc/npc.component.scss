@@ -4,112 +4,110 @@
 @import "../../../assets/style-templates/nav-spacer.scss";
 
 .npc-page {
-  @include page-layout;
+	@include page-layout;
 }
 
 .npc-post {
-  @include post-spacing;
+	@include post-spacing;
 }
 
 .npc-name {
-  font-size: 36pt;
-  @include remove-margins;
-  line-height: 1;
-  @include header;
+	font-size: 36pt;
+	@include remove-margins;
+	line-height: 1;
+	@include header;
 }
 
 .npc-quote-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-size: 15pt;
-  background-color: dark-blue-transparent(0.1);
-  font-style: italic;
-  padding: 2%;
-  @include remove-margins;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 15pt;
+	background-color: dark-blue-transparent(0.1);
+	font-style: italic;
+	padding: 2%;
+	@include remove-margins;
 }
 
 .npc-quote-author {
-  margin-top: 2%;
-  font-weight: bold;
-  color: $red;
+	margin-top: 2%;
+	font-weight: bold;
+	color: $red;
 }
 
 .npc-description {
-  font-size: 15pt;
-  @include remove-margins;
+	font-size: 15pt;
+	@include remove-margins;
 }
 
 .npc-stats {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 
-  @media (max-width:1450px) {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    justify-content: space-between;
-  }
-  
-  font-size: 15px;
-  list-style-position: inside;
-  list-style: none;
-  @include remove-margins;
-  //justify-items: center;
+	@media (max-width: 1450px) {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		justify-content: space-between;
+	}
 
-  @media (max-width: 1450px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 15%;
-  }
+	font-size: 15px;
+	list-style-position: inside;
+	list-style: none;
+	@include remove-margins;
+	//justify-items: center;
+
+	@media (max-width: 1450px) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		row-gap: 15%;
+	}
 }
 
 .npc-stat {
-  display: flex;
-  flex-direction: row;
-  color: $dark-blue;
-  font-size: 20pt;
-  //display: inherit;
-  align-items: center;
-  width: fit-content;
-  
-  
+	display: flex;
+	flex-direction: row;
+	color: $dark-blue;
+	font-size: 20pt;
+	//display: inherit;
+	align-items: center;
+	width: fit-content;
 
-  @media (max-width: 1450px) {
-    justify-self: center;
-  }
+	@media (max-width: 1450px) {
+		justify-self: center;
+	}
 }
 
 .strength {
-  @include stat-icon;
-  content: url(src\assets\icons\ability-scores\strength.svg);
+	@include stat-icon;
+	content: url(src\assets\icons\ability-scores\strength.svg);
 }
 
 .dexterity {
-  @include stat-icon;
-  content: url(src\assets\icons\ability-scores\dexterity.svg);
+	@include stat-icon;
+	content: url(src\assets\icons\ability-scores\dexterity.svg);
 }
 
 .constitution {
-  @include stat-icon;
-  content: url(src\assets\icons\ability-scores\constitution.svg);
+	@include stat-icon;
+	content: url(src\assets\icons\ability-scores\constitution.svg);
 }
 
 .intelligence {
-  @include stat-icon;
-  content: url(src\assets\icons\ability-scores\intelligence.svg);
+	@include stat-icon;
+	content: url(src\assets\icons\ability-scores\intelligence.svg);
 }
 
 .wisdom {
-  @include stat-icon;
-  content: url(src\assets\icons\ability-scores\wisdom.svg);
+	@include stat-icon;
+	content: url(src\assets\icons\ability-scores\wisdom.svg);
 }
 
 .charisma {
-  @include stat-icon;
-  content: url(src\assets\icons\ability-scores\charisma.svg);
+	@include stat-icon;
+	content: url(src\assets\icons\ability-scores\charisma.svg);
 }
 
 .social-buttons {
-  @include social-buttons;
+	@include social-buttons;
 }

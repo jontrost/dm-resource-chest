@@ -1,59 +1,59 @@
-@import '../colors/colors.scss';
-@import '../fonts/fonts.scss';
+@import "../colors/colors.scss";
+@import "../fonts/fonts.scss";
 @import "../../assets/style-templates/nav-spacer.scss";
 
-.page{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-    grid-auto-rows: auto;
-    grid-gap: 50px;
-    padding: 50px;
+.page {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+	grid-auto-rows: auto;
+	grid-gap: 50px;
+	padding: 50px;
 
-    @media (max-width: 800px) {
-        grid-template-columns: 1fr;
-        padding-left: 4.5vw;
-        padding-right: 4.5vw;
-    }
+	@media (max-width: 800px) {
+		grid-template-columns: 1fr;
+		padding-left: 4.5vw;
+		padding-right: 4.5vw;
+	}
 }
 
-.post{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    min-height: 200px;
-    background-color: $white;
-    padding: 5%;
-    outline: 5px solid $dark-blue;
-    outline-offset: -20px;
-    border-radius: 5px;
-    box-shadow: 8px 8px 23px 2px rgba(0,0,0,0.50);
+.post {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	min-height: 200px;
+	background-color: $white;
+	padding: 5%;
+	outline: 5px solid $dark-blue;
+	outline-offset: -20px;
+	border-radius: 5px;
+	box-shadow: 8px 8px 23px 2px rgba(0, 0, 0, 0.5);
 }
 
-.title{
-    font-size: 34pt;    
-    font-family: $fantasy-font;
-    margin-bottom: 2%;
-    @media (max-width: 800px) {
-        font-size: calc(2em + 2vw);
-    }
+.title {
+	font-size: 34pt;
+	font-family: $fantasy-font;
+	margin-bottom: 2%;
+	@media (max-width: 800px) {
+		font-size: calc(2em + 2vw);
+	}
 }
 
-.preview{
-    font-size: 15pt;
-    font-weight: bold;
-    color: $red;
-    margin-top: 2%;
-    text-transform: capitalize;
-    @media (max-width: 800px) {
-        font-size: calc(1em + 1vw);
-    }
+.preview {
+	font-size: 15pt;
+	font-weight: bold;
+	color: $red;
+	margin-top: 2%;
+	text-transform: capitalize;
+	@media (max-width: 800px) {
+		font-size: calc(1em + 1vw);
+	}
 }
 
 a:hover,
 a:focus {
-    transition: 200ms;
-    outline-color: $light-blue;
-    color: $light-blue;
+	transition: 200ms;
+	outline-color: $light-blue;
+	color: $light-blue;
 }

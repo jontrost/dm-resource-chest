@@ -1,116 +1,118 @@
 <div class="nav-spacer"></div>
 <div class="filter-element">
-    <div class="header" (click)="toggleGroup1()" (keydown.enter)="toggleGroup1()" [ngClass]="{'expanded' : !hideGroup1}" tabindex="0">
-            Filter by rarity
-    </div>
-    <div class="filter-group">
-        <div class="filter-option1" [hidden]="hideGroup1">
-            <label role="checkbox" aria-checked="true" for="common" (keydown.enter)="tabToggleCommon()">
-                    <input #common type="checkbox" id="common" value="common" (click)="toggleCommon()" checked>
-                    <span class="custom-checkbox"></span>
-                    Common
-            </label>
-        </div>
-        <div class="filter-option1" [hidden]="hideGroup1">
-            <label role="checkbox" aria-checked="true" for="uncommon" (keydown.enter)="tabToggleUncommon()">
-                    <input #uncommon type="checkbox" id="uncommon" value="uncommon" (click)="toggleUncommon()" checked>
-                    <span class="custom-checkbox"></span>
-                    Uncommon
-            </label>
-        </div>
-        <div class="filter-option1" [hidden]="hideGroup1">
-            <label role="checkbox" aria-checked="true" for="rare" (keydown.enter)="tabToggleRare()">
-                    <input #rare type="checkbox" id="rare" value="rare" (click)="toggleRare()" checked>
-                    <span class="custom-checkbox"></span>
-                    Rare
-            </label>
-        </div>
-        <div class="filter-option1" [hidden]="hideGroup1">
-            <label role="checkbox" aria-checked="true" for="very-rare" (keydown.enter)="tabToggleVeryRare()">
-                    <input #veryRare type="checkbox" id="very-rare" value="very-rare" (click)="toggleVeryRare()" checked>
-                    <span class="custom-checkbox"></span>
-                    Very Rare
-            </label>
-        </div>
-        <div class="filter-option1" [hidden]="hideGroup1">
-            <label role="checkbox" aria-checked="true" for="legendary" (keydown.enter)="tabToggleLegendary()">
-                    <input #legendary type="checkbox" id="legendary" value="legendary" (click)="toggleLegendary()" checked>
-                    <span class="custom-checkbox"></span>
-                    Legendary
-            </label>
-        </div>
-    </div>
-   
-    <div class="header header2" (click)="toggleGroup2()" (keydown.enter)="toggleGroup2()" [ngClass]="{'expanded' : !hideGroup2}" tabindex="0">
-    Filter by type
-    </div>
-    <div class="filter-group fg-2">
-        <div class="filter-option2" [hidden]="hideGroup2"> 
-            <label role="checkbox" aria-checked="true" for="armor" (keydown.enter)="tabToggleArmor()">
-                    <input #armor type="checkbox" id="armor" value="armor" (click)="toggleArmor()" checked>
-                    <span class="custom-checkbox"></span>
-                    Armor
-            </label>
-        </div>
-        <div class="filter-option2" [hidden]="hideGroup2"> 
-            <label role="checkbox" aria-checked="true" for="jewelry" (keydown.enter)="tabToggleJewelry()">
-                    <input #jewelry type="checkbox" id="jewelry" value="jewelry" (click)="toggleJewelry()" checked>
-                    <span class="custom-checkbox"></span>
-                    Jewelry
-            </label>
-        </div>
-        <div class="filter-option2" [hidden]="hideGroup2"> 
-            <label role="checkbox" aria-checked="true" for="potion" (keydown.enter)="tabTogglePotion()">
-                    <input #potion type="checkbox" id="potion" value="potion" (click)="togglePotion()" checked>
-                    <span class="custom-checkbox"></span>
-                    Potion
-            </label>
-        </div>
-        <div class="filter-option2" [hidden]="hideGroup2"> 
-            <label role="checkbox" aria-checked="true" for="scroll" (keydown.enter)="tabToggleScroll()">
-                    <input #scroll type="checkbox" id="scroll" value="scroll" (click)="toggleScroll()" checked>
-                    <span class="custom-checkbox"></span>
-                    Scroll
-            </label>
-        </div>
-        <div class="filter-option2" [hidden]="hideGroup2"> 
-            <label role="checkbox" aria-checked="true" for="staff" (keydown.enter)="tabToggleStaff()">
-                    <input #staff type="checkbox" id="staff" value="staff" (click)="toggleStaff()" checked>
-                    <span class="custom-checkbox"></span>
-                    Staff
-            </label>
-        </div>
-        <div class="filter-option2" [hidden]="hideGroup2"> 
-            <label role="checkbox" aria-checked="true" for="wand" (keydown.enter)="tabToggleWand()">
-                    <input #wand type="checkbox" id="wand" value="wand" (click)="toggleWand()" checked>
-                    <span class="custom-checkbox"></span>
-                    Wand
-            </label>
-        </div>
-        <div class="filter-option2" [hidden]="hideGroup2"> 
-            <label role="checkbox" aria-checked="true" for="weapon" (keydown.enter)="tabToggleWeapon()">
-                    <input #weapon type="checkbox" id="weapon" value="weapon" (click)="toggleWeapon()" checked>
-                    <span class="custom-checkbox"></span>
-                    Weapon
-            </label>
-        </div>
-        <div class="filter-option2" [hidden]="hideGroup2"> 
-            <label role="checkbox" aria-checked="true" for="wondrous-item" (keydown.enter)="tabToggleWondrousItem()">
-                    <input #wondrousItem type="checkbox" id="wondrous-item" value="wondrous-item" (click)="toggleWondrousItem()" checked>
-                    <span class="custom-checkbox"></span>
-                    Wondrous Item
-            </label>
-        </div>
-    </div>
+	<div class="header" (click)="toggleGroup1()" (keydown.enter)="toggleGroup1()" [ngClass]="{ expanded: !hideGroup1 }"
+		tabindex="0">
+		Filter by rarity
+	</div>
+	<div class="filter-group">
+		<div class="filter-option1" [hidden]="hideGroup1">
+			<label role="checkbox" aria-checked="true" for="common" (keydown.enter)="tabToggleCommon()">
+				<input #common type="checkbox" id="common" value="common" (click)="toggleCommon()" checked />
+				<span class="custom-checkbox"></span>
+				Common
+			</label>
+		</div>
+		<div class="filter-option1" [hidden]="hideGroup1">
+			<label role="checkbox" aria-checked="true" for="uncommon" (keydown.enter)="tabToggleUncommon()">
+				<input #uncommon type="checkbox" id="uncommon" value="uncommon" (click)="toggleUncommon()" checked />
+				<span class="custom-checkbox"></span>
+				Uncommon
+			</label>
+		</div>
+		<div class="filter-option1" [hidden]="hideGroup1">
+			<label role="checkbox" aria-checked="true" for="rare" (keydown.enter)="tabToggleRare()">
+				<input #rare type="checkbox" id="rare" value="rare" (click)="toggleRare()" checked />
+				<span class="custom-checkbox"></span>
+				Rare
+			</label>
+		</div>
+		<div class="filter-option1" [hidden]="hideGroup1">
+			<label role="checkbox" aria-checked="true" for="very-rare" (keydown.enter)="tabToggleVeryRare()">
+				<input #veryRare type="checkbox" id="very-rare" value="very-rare" (click)="toggleVeryRare()" checked />
+				<span class="custom-checkbox"></span>
+				Very Rare
+			</label>
+		</div>
+		<div class="filter-option1" [hidden]="hideGroup1">
+			<label role="checkbox" aria-checked="true" for="legendary" (keydown.enter)="tabToggleLegendary()">
+				<input #legendary type="checkbox" id="legendary" value="legendary" (click)="toggleLegendary()"
+					checked />
+				<span class="custom-checkbox"></span>
+				Legendary
+			</label>
+		</div>
+	</div>
+
+	<div class="header header2" (click)="toggleGroup2()" (keydown.enter)="toggleGroup2()"
+		[ngClass]="{ expanded: !hideGroup2 }" tabindex="0">
+		Filter by type
+	</div>
+	<div class="filter-group fg-2">
+		<div class="filter-option2" [hidden]="hideGroup2">
+			<label role="checkbox" aria-checked="true" for="armor" (keydown.enter)="tabToggleArmor()">
+				<input #armor type="checkbox" id="armor" value="armor" (click)="toggleArmor()" checked />
+				<span class="custom-checkbox"></span>
+				Armor
+			</label>
+		</div>
+		<div class="filter-option2" [hidden]="hideGroup2">
+			<label role="checkbox" aria-checked="true" for="jewelry" (keydown.enter)="tabToggleJewelry()">
+				<input #jewelry type="checkbox" id="jewelry" value="jewelry" (click)="toggleJewelry()" checked />
+				<span class="custom-checkbox"></span>
+				Jewelry
+			</label>
+		</div>
+		<div class="filter-option2" [hidden]="hideGroup2">
+			<label role="checkbox" aria-checked="true" for="potion" (keydown.enter)="tabTogglePotion()">
+				<input #potion type="checkbox" id="potion" value="potion" (click)="togglePotion()" checked />
+				<span class="custom-checkbox"></span>
+				Potion
+			</label>
+		</div>
+		<div class="filter-option2" [hidden]="hideGroup2">
+			<label role="checkbox" aria-checked="true" for="scroll" (keydown.enter)="tabToggleScroll()">
+				<input #scroll type="checkbox" id="scroll" value="scroll" (click)="toggleScroll()" checked />
+				<span class="custom-checkbox"></span>
+				Scroll
+			</label>
+		</div>
+		<div class="filter-option2" [hidden]="hideGroup2">
+			<label role="checkbox" aria-checked="true" for="staff" (keydown.enter)="tabToggleStaff()">
+				<input #staff type="checkbox" id="staff" value="staff" (click)="toggleStaff()" checked />
+				<span class="custom-checkbox"></span>
+				Staff
+			</label>
+		</div>
+		<div class="filter-option2" [hidden]="hideGroup2">
+			<label role="checkbox" aria-checked="true" for="wand" (keydown.enter)="tabToggleWand()">
+				<input #wand type="checkbox" id="wand" value="wand" (click)="toggleWand()" checked />
+				<span class="custom-checkbox"></span>
+				Wand
+			</label>
+		</div>
+		<div class="filter-option2" [hidden]="hideGroup2">
+			<label role="checkbox" aria-checked="true" for="weapon" (keydown.enter)="tabToggleWeapon()">
+				<input #weapon type="checkbox" id="weapon" value="weapon" (click)="toggleWeapon()" checked />
+				<span class="custom-checkbox"></span>
+				Weapon
+			</label>
+		</div>
+		<div class="filter-option2" [hidden]="hideGroup2">
+			<label role="checkbox" aria-checked="true" for="wondrous-item" (keydown.enter)="tabToggleWondrousItem()">
+				<input #wondrousItem type="checkbox" id="wondrous-item" value="wondrous-item"
+					(click)="toggleWondrousItem()" checked />
+				<span class="custom-checkbox"></span>
+				Wondrous Item
+			</label>
+		</div>
+	</div>
 </div>
 
 <div class="page">
-    <a [routerLink]="['/magic-items', post.url]" class="post" *ngFor="let post of posts$ | async">
-      <span class="title">
-        {{post.title}}
-      </span>
-      <span class="preview">
-        {{post.type}}, {{post.rarity}}
-      </span>
-    </a>
+	<a [routerLink]="['/magic-items', post.url]" class="post" *ngFor="let post of posts$ | async">
+		<span class="title">
+			{{ post.title }}
+		</span>
+		<span class="preview"> {{ post.type }}, {{ post.rarity }} </span>
+	</a>
 </div>
