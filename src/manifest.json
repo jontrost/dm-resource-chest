@@ -1,6 +1,6 @@
 {
-  "name": "dm-resource-chest",
-  "short_name": "dm-resource-chest",
+  "name": "DM Resource Chest",
+  "short_name": "DM Resource Chest",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
