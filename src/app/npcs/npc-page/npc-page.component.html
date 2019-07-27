@@ -1,8 +1,7 @@
 <div class="nav-spacer"></div>
 <div class="filter-element">
-	<div class="header" (click)="toggleGroup1()" (keydown.enter)="toggleGroup1()" [ngClass]="{ expanded: !hideGroup1 }"
-		tabindex="0">
-		Filter by sex
+	<div class="header" (click)="toggleGroup1()" (keydown.enter)="toggleGroup1()" tabindex="0">
+		<span class="inner-header" tabindex="-1" [ngClass]="{ expanded: !hideGroup1 }">Filter by sex</span>
 	</div>
 	<div class="filter-group">
 		<div class="filter-option1" [hidden]="hideGroup1">
@@ -23,7 +22,7 @@
 
 	<div class="header header2" (click)="toggleGroup2()" (keydown.enter)="toggleGroup2()"
 		[ngClass]="{ expanded: !hideGroup2 }" tabindex="0">
-		Filter by age
+		<span class="inner-header" tabindex="-1">Filter by age</span>
 	</div>
 	<div class="filter-group fg-2">
 		<div class="filter-option2" [hidden]="hideGroup2">

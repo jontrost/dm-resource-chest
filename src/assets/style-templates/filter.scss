@@ -90,26 +90,34 @@ label .custom-checkbox:after {
 	transform: rotate(45deg);
 }
 
+.inner-header,
+.header {
+	outline: none;
+}
+
 .header {
 	display: flex;
 	justify-content: center;
-	font-size: 18pt;
-	cursor: pointer;
 
-	&:focus {
-		outline: none;
+	&:focus > .inner-header {
 		@include tab-outline;
 	}
+}
+
+.inner-header {
+	display: flex;
+	font-size: 18pt;
+	cursor: pointer;
 
 	&::after {
 		content: "";
 		background-image: url("src/assets/icons/expand-arrow.png");
 		background-size: 30px;
-		//background-position: bottom;
 		height: 30px;
 		width: 30px;
 		margin-left: 12px;
 	}
+
 	&.expanded {
 		&::after {
 			background-image: url("src/assets/icons/collapse-arrow.png");
