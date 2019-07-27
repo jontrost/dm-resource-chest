@@ -9,10 +9,12 @@ import { HttpClientModule } from "@angular/common/http";
 import { SearchComponent } from "./search/search.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { TextHighlightService } from "./search/text-highlight.service";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
 	declarations: [AppComponent, NavigationComponent, HomeComponent, SearchComponent],
-	imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule],
+	imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
 	providers: [TextHighlightService],
 	bootstrap: [AppComponent]
 })
