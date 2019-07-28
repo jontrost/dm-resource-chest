@@ -9,7 +9,8 @@
 		<p class="plot-hook-content" [innerHTML]="post[0].content | highlight: highlightService"></p>
 		<div class="social-buttons">
 			<share-buttons [theme]="'material-dark'" [include]="['facebook', 'twitter', 'pinterest', 'reddit']"
-				[show]="4"></share-buttons>
+				[show]="4" [title]="post[0].title" [description]="post[0].content" [image]="post[0].shareImage"
+				[autoSetMeta]="false"></share-buttons>
 		</div>
 	</div>
 </div>
