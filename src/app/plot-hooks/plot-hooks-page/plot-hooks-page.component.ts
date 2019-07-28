@@ -13,6 +13,7 @@ export class PlotHooksPageComponent implements OnInit {
 	filteredPosts$: Observable<any>;
 	rawPosts$: Observable<any>;
 
+	click: boolean;
 	hideGroup1: boolean = true;
 	showHorror: string = "horror";
 	showHumor: string = "humor";
@@ -29,6 +30,10 @@ export class PlotHooksPageComponent implements OnInit {
 	@ViewChild("social", { static: false }) social: ElementRef<HTMLElement>;
 
 	constructor(private plotHooksDataService: PlotHooksDataService) { }
+
+	removeFocus() {
+		this.click = true;
+	}
 
 	toggleGroup1() {
 		this.hideGroup1 = !this.hideGroup1;

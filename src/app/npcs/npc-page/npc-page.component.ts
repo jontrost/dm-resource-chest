@@ -14,6 +14,7 @@ export class NpcPageComponent implements OnInit {
 	filteredPosts$: Observable<any>;
 	rawPosts$: Observable<any>;
 
+	click: boolean;
 	hideGroup1: boolean = true;
 	hideGroup2: boolean = true;
 	showMale: string = "male";
@@ -29,6 +30,10 @@ export class NpcPageComponent implements OnInit {
 	@ViewChild("old", { static: false }) old: ElementRef<HTMLElement>;
 
 	constructor(private npcsDataService: NpcsDataService) { }
+
+	removeFocus() {
+		this.click = true;
+	}
 
 	toggleGroup1() {
 		this.hideGroup1 = !this.hideGroup1;

@@ -5,14 +5,16 @@
 	</div>
 	<div class="filter-group">
 		<div class="filter-option1" [hidden]="hideGroup1">
-			<label role="checkbox" aria-checked="true" for="male" (keydown.enter)="tabToggleMale()">
+			<label role="checkbox" aria-checked="true" for="male" (keydown.enter)="tabToggleMale()"
+				(mousedown)="removeFocus()" [ngClass]="{ 'remove-focus' : click }">
 				<input #male type="checkbox" id="male" value="male" (click)="toggleMale()" checked />
 				<span class="custom-checkbox"></span>
 				Male
 			</label>
 		</div>
 		<div class="filter-option1" [hidden]="hideGroup1">
-			<label role="checkbox" aria-checked="true" for="female" (keydown.enter)="tabToggleFemale()">
+			<label role="checkbox" aria-checked="true" for="female" (keydown.enter)="tabToggleFemale()"
+				(mousedown)="removeFocus()" [ngClass]="{ 'remove-focus' : click }">
 				<input #female type="checkbox" id="female" value="female" (click)="toggleFemale()" checked />
 				<span class="custom-checkbox"></span>
 				Female
@@ -26,14 +28,16 @@
 	</div>
 	<div class="filter-group fg-2">
 		<div class="filter-option2" [hidden]="hideGroup2">
-			<label role="checkbox" aria-checked="true" for="young" (keydown.enter)="tabToggleYoung()">
+			<label role="checkbox" aria-checked="true" for="young" (keydown.enter)="tabToggleYoung()"
+				(mousedown)="removeFocus()" [ngClass]="{ 'remove-focus' : click }">
 				<input #young type="checkbox" id="young" value="young" (click)="toggleYoung()" checked />
 				<span class="custom-checkbox"></span>
 				Young
 			</label>
 		</div>
 		<div class="filter-option2" [hidden]="hideGroup2">
-			<label role="checkbox" aria-checked="true" for="middle-aged" (keydown.enter)="tabToggleMiddleAged()">
+			<label role="checkbox" aria-checked="true" for="middle-aged" (keydown.enter)="tabToggleMiddleAged()"
+				(mousedown)="removeFocus()" [ngClass]="{ 'remove-focus' : click }">
 				<input #middleAged type="checkbox" id="middle-aged" value="middle-aged" (click)="toggleMiddleAged()"
 					checked />
 				<span class="custom-checkbox"></span>
@@ -41,7 +45,8 @@
 			</label>
 		</div>
 		<div class="filter-option2" [hidden]="hideGroup2">
-			<label role="checkbox" aria-checked="true" for="old" (keydown.enter)="tabToggleOld()">
+			<label role="checkbox" aria-checked="true" for="old" (keydown.enter)="tabToggleOld()"
+				(mousedown)="removeFocus()" [ngClass]="{ 'remove-focus' : click }">
 				<input #old type="checkbox" id="old" value="old" (click)="toggleOld()" checked />
 				<span class="custom-checkbox"></span>
 				Old

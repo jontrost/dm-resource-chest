@@ -1,18 +1,20 @@
 <div class="nav-spacer"></div>
 <div class="filter-element">
 	<div class="header" (click)="toggleGroup1()" (keydown.enter)="toggleGroup1()" tabindex="0">
-		<span class="inner-header" tabindex="-1" [ngClass]="{ expanded: !hideGroup1 }">Filter by tag</span>
+		<span class="inner-header" tabindex="-1" [ngClass]="{ 'expanded' : !hideGroup1 }">Filter by tag</span>
 	</div>
 	<div class="filter-group">
 		<div class="filter-option1" [hidden]="hideGroup1">
-			<label role="checkbox" aria-checked="true" for="combat" (keydown.enter)="tabToggleCombat()">
+			<label role="checkbox" aria-checked="true" for="combat" (keydown.enter)="tabToggleCombat()"
+				(mousedown)="removeFocus()" [ngClass]="{ 'remove-focus' : click }">
 				<input #combat type="checkbox" id="combat" value="combat" (click)="toggleCombat()" checked />
 				<span class="custom-checkbox"></span>
 				Combat
 			</label>
 		</div>
 		<div class="filter-option1" [hidden]="hideGroup1">
-			<label role="checkbox" aria-checked="true" for="exploration" (keydown.enter)="tabToggleExploration()">
+			<label role="checkbox" aria-checked="true" for="exploration" (keydown.enter)="tabToggleExploration()"
+				(mousedown)="removeFocus()" [ngClass]="{ 'remove-focus' : click }">
 				<input #exploration type="checkbox" id="exploration" value="exploration" (click)="toggleExploration()"
 					checked />
 				<span class="custom-checkbox"></span>
@@ -20,14 +22,16 @@
 			</label>
 		</div>
 		<div class="filter-option1" [hidden]="hideGroup1">
-			<label role="checkbox" aria-checked="true" for="horror" (keydown.enter)="tabToggleHorror()">
+			<label role="checkbox" aria-checked="true" for="horror" (keydown.enter)="tabToggleHorror()"
+				(mousedown)="removeFocus()" [ngClass]="{ 'remove-focus' : click }">
 				<input #horror type="checkbox" id="horror" value="horror" (click)="toggleHorror()" checked />
 				<span class="custom-checkbox"></span>
 				Horror
 			</label>
 		</div>
 		<div class="filter-option1" [hidden]="hideGroup1">
-			<label role="checkbox" aria-checked="true" for="humor" (keydown.enter)="tabToggleHumor()">
+			<label role="checkbox" aria-checked="true" for="humor" (keydown.enter)="tabToggleHumor()"
+				(mousedown)="removeFocus()" [ngClass]="{ 'remove-focus' : click }">
 				<input #humor type="checkbox" id="humor" value="humor" (click)="toggleHumor()" checked />
 				<span class="custom-checkbox"></span>
 				Humor
@@ -35,7 +39,8 @@
 		</div>
 
 		<div class="filter-option1" [hidden]="hideGroup1">
-			<label role="checkbox" aria-checked="true" for="mystery" (keydown.enter)="tabToggleMystery()">
+			<label role="checkbox" aria-checked="true" for="mystery" (keydown.enter)="tabToggleMystery()"
+				(mousedown)="removeFocus()" [ngClass]="{ 'remove-focus' : click }">
 				<input #mystery type="checkbox" id="mystery" value="mystery" (click)="toggleMystery()" checked />
 				<span class="custom-checkbox"></span>
 				Mystery
@@ -43,7 +48,8 @@
 		</div>
 
 		<div class="filter-option1" [hidden]="hideGroup1">
-			<label role="checkbox" aria-checked="true" for="social" (keydown.enter)="tabToggleSocial()">
+			<label role="checkbox" aria-checked="true" for="social" (keydown.enter)="tabToggleSocial()"
+				(mousedown)="removeFocus()" [ngClass]="{ 'remove-focus' : click }">
 				<input #social type="checkbox" id="social" value="social" (click)="toggleSocial()" checked />
 				<span class="custom-checkbox"></span>
 				Social

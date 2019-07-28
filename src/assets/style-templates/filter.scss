@@ -44,6 +44,10 @@ label {
 		height: 0;
 		width: 0;
 	}
+
+	&.remove-focus {
+		outline: none;
+	}
 }
 
 .custom-checkbox {

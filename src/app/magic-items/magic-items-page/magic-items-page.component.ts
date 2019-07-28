@@ -14,6 +14,7 @@ export class MagicItemsPageComponent implements OnInit {
 	filteredPosts$: Observable<any>;
 	rawPosts$: Observable<any>;
 
+	click: boolean;
 	hideGroup1: boolean = true;
 	hideGroup2: boolean = true;
 	showCommon: string = "common";
@@ -45,6 +46,10 @@ export class MagicItemsPageComponent implements OnInit {
 	@ViewChild("wondrousItem", { static: false }) wondrousItem: ElementRef<HTMLElement>;
 
 	constructor(private magicItemsDataService: MagicItemsDataService) { }
+
+	removeFocus() {
+		this.click = true;
+	}
 
 	toggleGroup1() {
 		this.hideGroup1 = !this.hideGroup1;
