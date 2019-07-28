@@ -26,6 +26,10 @@
 		align-items: flex-start;
 		font-size: 22pt;
 		width: 100vw;
+
+		& app-search {
+			margin-top: 14px;
+		}
 	}
 }
 
