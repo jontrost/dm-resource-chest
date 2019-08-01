@@ -15,8 +15,7 @@
     },
     {
       "name": "assets",
-      "installMode": "lazy",
-      "updateMode": "prefetch",
+      "installMode": "prefetch",
       "resources": {
         "files": [
           "/assets/**",
@@ -31,13 +30,14 @@
       "urls": [
         "https://dm-resource-chest-server.herokuapp.com/api/magic-items",
         "https://dm-resource-chest-server.herokuapp.com/api/npcs",
-        "https://dm-resource-chest-server.herokuapp.com/api/plot-hooks"
+        "https://dm-resource-chest-server.herokuapp.com/api/plot-hooks",
+        "https://dm-resource-chest-server.herokuapp.com/api/updates"
       ],
       "cacheConfig": {
         "strategy": "performance",
         "maxSize": 100,
-        "maxAge": "3d",
-        "timeout": "30s"
+        "maxAge": "1d",
+        "timeout": "10s"
       }
     }
   ]

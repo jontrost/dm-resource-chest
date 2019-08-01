@@ -47,9 +47,8 @@
 		</div>
 	</div>
 
-	<div class="header header2" (click)="toggleGroup2()" (keydown.enter)="toggleGroup2()"
-		[ngClass]="{ expanded: !hideGroup2 }" tabindex="0">
-		<span class="inner-header" tabindex="-1">Filter by type</span>
+	<div class="header header2" (click)="toggleGroup2()" (keydown.enter)="toggleGroup2()" tabindex="0">
+		<span class="inner-header" tabindex="-1" [ngClass]="{ expanded: !hideGroup2 }">Filter by type</span>
 	</div>
 	<div class="filter-group fg-2">
 		<div class="filter-option2" [hidden]="hideGroup2">
