@@ -55,7 +55,6 @@
 	list-style-position: inside;
 	list-style: none;
 	@include remove-margins;
-	//justify-items: center;
 
 	@media (max-width: 1450px) {
 		grid-template-columns: 1fr 1fr 1fr;
@@ -69,7 +68,6 @@
 	flex-direction: row;
 	color: $dark-blue;
 	font-size: 20pt;
-	//display: inherit;
 	align-items: center;
 	width: fit-content;
 

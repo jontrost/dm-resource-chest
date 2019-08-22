@@ -140,7 +140,6 @@ a {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	//justify-content: space-evenly;
 	overflow-y: auto;
 	@media (max-width: 800px) {
 		height: fit-content;
