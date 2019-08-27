@@ -4,6 +4,7 @@ import { ActivatedRoute } from "@angular/router";
 import { PlotHooksDataService } from "../plot-hooks-data.service";
 import { map } from "rxjs/operators";
 import { TextHighlightService } from "src/app/search/text-highlight.service";
+import { MetaTagService } from 'src/app/services/meta-tag.service';
 
 @Component({
 	selector: "app-plot-hook",
@@ -13,11 +14,16 @@ import { TextHighlightService } from "src/app/search/text-highlight.service";
 export class PlotHookComponent implements OnInit, OnDestroy {
 	post$: Observable<any>;
 	paramSub: Subscription;
+	metaTitle: string;
+	metaDescription: string;
+	metaImageUrl: string;
+	metaUrl: string;
 
 	constructor(
 		private route: ActivatedRoute,
 		private service: PlotHooksDataService,
-		private highlightService: TextHighlightService
+		private highlightService: TextHighlightService,
+		private metaTagService: MetaTagService
 	) { }
 
 	ngOnInit() {
@@ -25,6 +31,7 @@ export class PlotHookComponent implements OnInit, OnDestroy {
 		this.post$ = this.service
 			.getJSONData()
 			.pipe(map(value => value.posts.filter(value => value.url == this.route.snapshot.paramMap.get("url"))));
+		this.generateMetaTags();
 	}
 
 	ngOnDestroy(): void {
@@ -33,5 +40,16 @@ export class PlotHookComponent implements OnInit, OnDestroy {
 
 	updateRoute(url: string) {
 		this.post$ = this.service.getJSONData().pipe(map(value => value.posts.filter(value => value.url == url)));
+	}
+
+	generateMetaTags() {
+		let subscription = this.post$.subscribe(post => {
+			this.metaTitle = post[0].title;
+			this.metaDescription = post[0].content;
+			this.metaImageUrl = post[0].shareImage;
+			this.metaUrl = 'https://dmresourcechest.com/plot-hooks/' + this.route.snapshot.url.toString();
+		});
+		this.metaTagService.updateMetaTags(this.metaTitle, this.metaDescription, this.metaImageUrl, this.metaUrl);
+		subscription.unsubscribe();
 	}
 }

@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 import { MagicItemsDataService } from "../magic-items-data.service";
 import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
+import { MetaTagService } from 'src/app/services/meta-tag.service';
 
 @Component({
 	selector: "app-magic-items-page",
@@ -45,7 +46,7 @@ export class MagicItemsPageComponent implements OnInit {
 	@ViewChild("weapon", { static: false }) weapon: ElementRef<HTMLElement>;
 	@ViewChild("wondrousItem", { static: false }) wondrousItem: ElementRef<HTMLElement>;
 
-	constructor(private magicItemsDataService: MagicItemsDataService) { }
+	constructor(private magicItemsDataService: MagicItemsDataService, private metaTagService: MetaTagService) { }
 
 	removeFocus() {
 		this.click = true;
@@ -85,6 +86,7 @@ export class MagicItemsPageComponent implements OnInit {
 	ngOnInit() {
 		this.rawPosts$ = this.magicItemsDataService.getJSONData();
 		this.posts$ = this.rawPosts$.pipe(map(posts => posts.posts));
+		this.metaTagService.updateMetaTags("Magic Items", "Homebrew Magic Items for D&D 5E", "https://i.imgur.com/2ZMkzYm.jpg", "https://dmresourcechest.com/magic-items");
 	}
 
 	toggleCommon() {

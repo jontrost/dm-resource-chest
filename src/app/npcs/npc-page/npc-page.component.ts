@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 import { NpcsDataService } from "../npcs-data.service";
 import { map } from "rxjs/operators";
 import { Observable } from "rxjs";
+import { MetaTagService } from 'src/app/services/meta-tag.service';
 
 @Component({
 	selector: "app-npc-page",
@@ -29,7 +30,7 @@ export class NpcPageComponent implements OnInit {
 	@ViewChild("middleAged", { static: false }) middleAged: ElementRef<HTMLElement>;
 	@ViewChild("old", { static: false }) old: ElementRef<HTMLElement>;
 
-	constructor(private npcsDataService: NpcsDataService) { }
+	constructor(private npcsDataService: NpcsDataService, private metaTagService: MetaTagService) { }
 
 	removeFocus() {
 		this.click = true;
@@ -59,6 +60,7 @@ export class NpcPageComponent implements OnInit {
 	ngOnInit() {
 		this.rawPosts$ = this.npcsDataService.getJSONData();
 		this.posts$ = this.rawPosts$.pipe(map(posts => posts.posts));
+		this.metaTagService.updateMetaTags("NPCs", "Homebrew NPCs for D&D 5E", "https://i.imgur.com/2ZMkzYm.jpg", "https://dmresourcechest.com/npcs");
 	}
 
 	toggleMale() {

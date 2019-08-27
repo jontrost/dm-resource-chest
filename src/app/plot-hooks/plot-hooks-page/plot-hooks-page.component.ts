@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 import { PlotHooksDataService } from "../plot-hooks-data.service";
 import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
+import { MetaTagService } from 'src/app/services/meta-tag.service';
 
 @Component({
 	selector: "app-plot-hooks-page",
@@ -29,7 +30,7 @@ export class PlotHooksPageComponent implements OnInit {
 	@ViewChild("mystery", { static: false }) mystery: ElementRef<HTMLElement>;
 	@ViewChild("social", { static: false }) social: ElementRef<HTMLElement>;
 
-	constructor(private plotHooksDataService: PlotHooksDataService) { }
+	constructor(private plotHooksDataService: PlotHooksDataService, private metaTagService: MetaTagService) { }
 
 	removeFocus() {
 		this.click = true;
@@ -58,6 +59,7 @@ export class PlotHooksPageComponent implements OnInit {
 	ngOnInit() {
 		this.rawPosts$ = this.plotHooksDataService.getJSONData();
 		this.posts$ = this.rawPosts$.pipe(map(posts => posts.posts));
+		this.metaTagService.updateMetaTags("Plot Hooks", "Homebrew Plot Hooks for D&D 5E", "https://i.imgur.com/2ZMkzYm.jpg", "https://dmresourcechest.com/plot-hooks");
 	}
 
 	toggleHorror() {
