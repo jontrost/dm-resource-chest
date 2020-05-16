@@ -6,7 +6,11 @@ import { NpcComponent } from "./npc/npc.component";
 const routes: Routes = [
 	{
 		path: "",
-		component: NpcPageComponent
+		component: NpcPageComponent,
+		data: {
+			shouldReuseRoute: true,
+			key: 'npcs'
+		}
 	},
 	{
 		path: ":url",

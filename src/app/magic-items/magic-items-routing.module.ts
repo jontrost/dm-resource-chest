@@ -7,7 +7,11 @@ import { MagicItemComponent } from "./magic-item/magic-item.component";
 const routes: Routes = [
 	{
 		path: "",
-		component: MagicItemsPageComponent
+		component: MagicItemsPageComponent,
+		data: {
+			shouldReuseRoute: true,
+			key: 'magic-items'
+		}
 	},
 	{
 		path: ":url",

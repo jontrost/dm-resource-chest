@@ -6,7 +6,11 @@ import { PlotHookComponent } from "./plot-hook/plot-hook.component";
 const routes: Routes = [
 	{
 		path: "",
-		component: PlotHooksPageComponent
+		component: PlotHooksPageComponent,
+		data: {
+			shouldReuseRoute: true,
+			key: 'plot-hooks'
+		}
 	},
 	{
 		path: ":url",

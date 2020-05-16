@@ -11,11 +11,13 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { TextHighlightService } from "./search/text-highlight.service";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { RouteReuseStrategy } from '@angular/router';
+import { CustomReuseStrategy } from './custom-reuse-strategy';
 
 @NgModule({
 	declarations: [AppComponent, NavigationComponent, HomeComponent, SearchComponent],
 	imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
-	providers: [TextHighlightService],
+	providers: [TextHighlightService, { provide: RouteReuseStrategy, useClass: CustomReuseStrategy }],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }
