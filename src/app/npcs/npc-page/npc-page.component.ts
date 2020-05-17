@@ -41,7 +41,6 @@ export class NpcPageComponent implements OnInit {
 	}
 
 	toggleGroup2() {
-		console.log('here');
 		this.hideGroup2 = !this.hideGroup2;
 	}
 
