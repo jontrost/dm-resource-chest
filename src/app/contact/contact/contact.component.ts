@@ -28,6 +28,7 @@ export class ContactComponent {
 		try {
 			this.serverResponse = await this.contactDataService.sendEmail(this.formData);
 		} catch (error) {
+			console.log('error', error);
 			this.serverResponse = "Your message was unable to send, please try again later.";
 		}
 	}
