@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://dmresourcechest.com</loc><priority>0.5</priority></url>
-<url><loc>https://dmresourcechest.com/home</loc><priority>1</priority></url>
+<url><loc>https://dmresourcechest.com/home</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/magic-items</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/npcs</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/plot-hooks</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/disintegration-scroll</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/joyful-ring</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/mask-of-many-faces</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/potion-of-false-death</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/wand-of-earthly-restraint</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/sunray-amulet</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/magic-items/mortals-demise</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/magic-items/elixir-of-immortality</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/magic-items/orb-of-darkness</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/magic-items/beast-clay</loc><priority>0.5</priority></url>
@@ -14,6 +21,16 @@
 <url><loc>https://dmresourcechest.com/magic-items/manacles-of-love</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/magic-items/scroll-of-chronomancy</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/magic-items/sticky-armor</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/yesla</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/silvia</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/nedda</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/brokatu</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/gorvenal</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/throgal</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/zari</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/gorme</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/adrianna</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/npcs/crescent-moon</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/npcs/gust</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/npcs/isolde</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/npcs/atugak</loc><priority>0.5</priority></url>
@@ -26,6 +43,18 @@
 <url><loc>https://dmresourcechest.com/npcs/quintus</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/npcs/heartsmasher</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/npcs/ruul</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/a-terrible-deal</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/a-long-way-down</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/enough-is-enough</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/pestering-bards</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/bad-omen</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/a-watchful-eye</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/a-lesson-in-trickery</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/descent-into-darkness</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/spore-sickness</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/feline-followers</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/storm-chaser</loc><priority>0.5</priority></url>
+<url><loc>https://dmresourcechest.com/plot-hooks/magical-blunder</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/plot-hooks/trapped-with-the-unknown</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/plot-hooks/double-trouble</loc><priority>0.5</priority></url>
 <url><loc>https://dmresourcechest.com/plot-hooks/giant-trouble</loc><priority>0.5</priority></url>
