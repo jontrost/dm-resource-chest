@@ -9,7 +9,7 @@ export class ContactDataService {
 
 	async sendEmail(formData) {
 		return this.httpClient
-			.post("https://dm-resource-chest-server.herokuapp.com/api/contact-submit", formData)
+			.post("http://trosthost.mynetgear.com:3000/api/contact-submit", formData)
 			.toPromise();
 	}
 }

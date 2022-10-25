@@ -11,7 +11,7 @@ export class SearchDataService {
 
 	@Cacheable()
 	getSearchResults(searchTerm: string): Observable<any> {
-		const route = "https://dm-resource-chest-server.herokuapp.com/api/search/" + searchTerm;
+		const route = "http://trosthost.mynetgear.com:3000/api/search/" + searchTerm;
 		return this.httpClient.get(route);
 	}
 }
