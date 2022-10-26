@@ -11,6 +11,6 @@ export class PlotHooksDataService {
 
 	@Cacheable()
 	getJSONData(): Observable<any> {
-		return this.httpClient.get("https://trosthost.mynetgear.com:3000/api/plot-hooks");
+		return this.httpClient.get("https://trosthost.mynetgear.com:443/api/plot-hooks");
 	}
 }

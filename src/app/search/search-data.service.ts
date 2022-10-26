@@ -11,7 +11,7 @@ export class SearchDataService {
 
 	@Cacheable()
 	getSearchResults(searchTerm: string): Observable<any> {
-		const route = "https://trosthost.mynetgear.com:3000/api/search/" + searchTerm;
+		const route = "https://trosthost.mynetgear.com:443/api/search/" + searchTerm;
 		return this.httpClient.get(route);
 	}
 }
