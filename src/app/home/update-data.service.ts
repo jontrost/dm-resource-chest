@@ -11,6 +11,6 @@ export class UpdateDataService {
 
 	@Cacheable()
 	getJSONData(): Observable<any> {
-		return this.httpClient.get("http://trosthost.mynetgear.com:3000/api/updates");
+		return this.httpClient.get("https://trosthost.mynetgear.com:3000/api/updates");
 	}
 }
