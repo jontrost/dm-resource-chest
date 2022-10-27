@@ -11,7 +11,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-devkit/schematics": "^14.2.7",
+    "@angular-devkit/schematics": "^14.2.6",
     "@angular/cdk": "^14.2.6",
     "@angular/common": "^14.2.8",
     "@angular/compiler": "^14.2.8",
@@ -28,15 +28,14 @@
     "@ngx-share/buttons": "^7.1.4",
     "@ngx-share/core": "^7.1.4",
     "emailjs-com": "^2.4.1",
-    "ng-recaptcha": "^10.0.0",
     "ngx-cacheable": "^1.4.1",
     "rxjs": "^6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^14.2.7",
-    "@angular/cli": "^14.2.7",
+    "@angular-devkit/build-angular": "^13.3.9",
+    "@angular/cli": "~13.3.9",
     "@angular/compiler-cli": "^14.2.8",
     "@angular/language-service": "^14.2.8",
     "@types/node": "~8.9.4",
