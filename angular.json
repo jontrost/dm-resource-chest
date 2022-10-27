@@ -129,5 +129,7 @@
       }
     }
   },
-  "defaultProject": "dm-resource-chest"
+  "cli": {
+    "analytics": "3cac19f9-6b7e-4790-8e34-6b33f966cdc4"
+  }
 }

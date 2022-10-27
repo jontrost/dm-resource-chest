@@ -115,7 +115,7 @@ label .custom-checkbox:after {
 
 	&::after {
 		content: "";
-		background-image: url("src/assets/icons/expand-arrow.png");
+		background-image: url("../icons/expand-arrow.png");
 		background-size: 30px;
 		height: 30px;
 		width: 30px;
@@ -124,7 +124,7 @@ label .custom-checkbox:after {
 
 	&.expanded {
 		&::after {
-			background-image: url("src/assets/icons/collapse-arrow.png");
+			background-image: url("../icons/collapse-arrow.png");
 		}
 	}
 
