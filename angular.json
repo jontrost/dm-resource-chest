@@ -35,8 +35,7 @@
             ],
             "scripts": [
               "node_modules/emailjs-com/dist/email.js"
-            ],
-            "es5BrowserSupport": true
+            ]
           },
           "configurations": {
             "production": {
@@ -49,7 +48,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -144,5 +142,8 @@
       }
     }
   },
-  "defaultProject": "dm-resource-chest"
+  "defaultProject": "dm-resource-chest",
+  "cli": {
+    "analytics": false
+  }
 }
