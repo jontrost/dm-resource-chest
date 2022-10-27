@@ -22,8 +22,8 @@ export class MagicItemComponent implements OnInit {
 	constructor(
 		private route: ActivatedRoute,
 		private service: MagicItemsDataService,
-		private highlightService: TextHighlightService,
-		private metaTagService: MetaTagService
+		private metaTagService: MetaTagService,
+		public highlightService: TextHighlightService,
 	) { }
 
 	ngOnInit() {

@@ -22,8 +22,8 @@ export class PlotHookComponent implements OnInit, OnDestroy {
 	constructor(
 		private route: ActivatedRoute,
 		private service: PlotHooksDataService,
-		private highlightService: TextHighlightService,
-		private metaTagService: MetaTagService
+		private metaTagService: MetaTagService,
+		public highlightService: TextHighlightService,
 	) { }
 
 	ngOnInit() {

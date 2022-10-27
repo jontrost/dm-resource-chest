@@ -28,11 +28,11 @@
     {
       "name": "posts",
       "urls": [
-        "https://dm-resource-chest-server.herokuapp.com/api/magic-items",
-        "https://dm-resource-chest-server.herokuapp.com/api/npcs",
-        "https://dm-resource-chest-server.herokuapp.com/api/plot-hooks",
-        "https://dm-resource-chest-server.herokuapp.com/api/updates",
-        "https://dm-resource-chest-server.herokuapp.com/api/dice-image"
+        "https://trosthost.mynetgear.com:443/api/magic-items",
+        "https://trosthost.mynetgear.com:443/api/npcs",
+        "https://trosthost.mynetgear.com:443/api/plot-hooks",
+        "https://trosthost.mynetgear.com:443/api/updates",
+        "https://trosthost.mynetgear.com:443/api/dice-image"
       ],
       "cacheConfig": {
         "strategy": "performance",

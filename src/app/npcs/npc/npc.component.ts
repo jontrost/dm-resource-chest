@@ -22,8 +22,8 @@ export class NpcComponent implements OnInit, OnDestroy {
 	constructor(
 		private route: ActivatedRoute,
 		private service: NpcsDataService,
-		private highlightService: TextHighlightService,
-		private metaTagService: MetaTagService
+		private metaTagService: MetaTagService,
+		public highlightService: TextHighlightService
 	) { }
 
 	ngOnInit() {
