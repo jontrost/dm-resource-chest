@@ -14,7 +14,7 @@
 			<textarea name="contactForm" class="textarea" placeholder="Message" [(ngModel)]="formData.message" required
 				maxlength="1500" aria-label="message input"></textarea>
 		</div>
-		<re-captcha (resolved)="resolved()" siteKey="6LdvFKsUAAAAAL-N-a55KHK2laPYLYQbGLiVxvoA"></re-captcha>
+		<re-captcha (resolved)="resolved($event)" siteKey="6LdvFKsUAAAAAL-N-a55KHK2laPYLYQbGLiVxvoA"></re-captcha>
 		<button id="submit" [disabled]="!captchaResolved" class="submit-button" type="submit">
 			Send
 		</button>

@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit, ViewChild, ElementRef } from "@angular/core";
 import { SearchDataService } from "./search-data.service";
 import { Observable, Subscription } from "rxjs";
+import { Router } from "@angular/router";
 import { distinctUntilChanged, debounceTime } from "rxjs/operators";
 import { TextHighlightService } from "./text-highlight.service";
 import { UntypedFormControl } from "@angular/forms";
@@ -21,6 +22,7 @@ export class SearchComponent implements OnInit, OnDestroy {
 
 	constructor(
 		private searchDataService: SearchDataService,
+		private router: Router,
 		private highlightService: TextHighlightService
 	) { }
 
