@@ -78,32 +78,32 @@
 
 .strength {
 	@include stat-icon;
-	content: url(src\assets\icons\ability-scores\strength.svg);
+	content: url("../../../assets/icons/ability-scores/strength.svg");
 }
 
 .dexterity {
 	@include stat-icon;
-	content: url(src\assets\icons\ability-scores\dexterity.svg);
+	content: url("../../../assets/icons/ability-scores/dexterity.svg");
 }
 
 .constitution {
 	@include stat-icon;
-	content: url(src\assets\icons\ability-scores\constitution.svg);
+	content: url("../../../assets/icons/ability-scores/constitution.svg");
 }
 
 .intelligence {
 	@include stat-icon;
-	content: url(src\assets\icons\ability-scores\intelligence.svg);
+	content: url("../../../assets/icons/ability-scores/intelligence.svg");
 }
 
 .wisdom {
 	@include stat-icon;
-	content: url(src\assets\icons\ability-scores\wisdom.svg);
+	content: url("../../../assets/icons/ability-scores/wisdom.svg");
 }
 
 .charisma {
 	@include stat-icon;
-	content: url(src\assets\icons\ability-scores\charisma.svg);
+    content: url("../../../assets/icons/ability-scores/charisma.svg")
 }
 
 .social-buttons {

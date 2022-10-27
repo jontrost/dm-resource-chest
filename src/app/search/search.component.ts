@@ -4,7 +4,7 @@ import { Observable, Subscription } from "rxjs";
 import { Router } from "@angular/router";
 import { distinctUntilChanged, debounceTime } from "rxjs/operators";
 import { TextHighlightService } from "./text-highlight.service";
-import { FormControl } from "@angular/forms";
+import { UntypedFormControl } from "@angular/forms";
 
 @Component({
 	selector: "app-search",
@@ -15,7 +15,7 @@ export class SearchComponent implements OnInit, OnDestroy {
 	posts$: Observable<any>;
 	hide: boolean = true;
 	inputStreamSub: Subscription;
-	input = new FormControl("");
+	input = new UntypedFormControl("");
 	wideDisplay: boolean = true;
 
 	@ViewChild("searchElement", { static: false }) searchElement: ElementRef<HTMLElement>;
